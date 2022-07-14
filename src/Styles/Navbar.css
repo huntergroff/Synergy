@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgb(150, 150, 214);
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left-logo {
+    display: flex;
+}
+
+.top-left-title {
+    font-size: 40px;
+    line-height: 37px;
+    height: fit-content;
+    width: 290px;
+    color: white;
+    margin: 0px;
+}
+
+.navbar-links {
+    background-color: green;
+    list-style-type: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.App-logo {
+    height: 100%;
+  }
