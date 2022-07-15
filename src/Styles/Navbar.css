@@ -1,10 +1,12 @@
+@import './Global.css';
+
 .navbar {
     display: flex;
-    background-color: #F9F6EE;
+    background-color: var(--synergy-beige);
     height: 100px;
     width: 100%;
     position: fixed;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px 15px 20px;
     box-shadow: 0px 2px 10px 6px rgba(0,0,0,0.5);
     justify-content: space-between;
     font-family: articulat-cf;
@@ -15,12 +17,17 @@
     display: flex;
 }
 
+a.navbar-logo-and-title {
+    text-decoration: none;
+    border-bottom-color: none;
+}
+
 .navbar-title {
     font-size: 26px;
     line-height: 24px;
     height: 100%;
     width: 180px;
-    color: #008080;
+    color: var(--synergy-teal);
     margin: 0px 0px 0px 10px;
     font-weight: 200;
 }
@@ -29,8 +36,9 @@
     list-style-type: none;
     display: flex;
     width: 60%;
-    padding: 0px;
+    min-width: 450px;
     max-width: 700px;
+    padding: 0px;
     justify-content: space-between;
     margin: 0px;
     align-items: flex-end;
@@ -38,19 +46,24 @@
 }
 
 .link {
-    padding-bottom: 12px;
+    padding-bottom: 9px;
     transition-duration: 100ms;
-    color: #008080;
+    color: var(--synergy-teal);
+    text-decoration: none;
+    top: 0px;
 }
 
 .link:hover {
-    color: #5A5D87;
+    color: var(--synergy-purple);
+    border-color: var(--synergy-purple);
+    font-weight: 800;
+}
+
+.link.active {
+    border-bottom: 2px solid;
+    font-weight: 800;
 }
 
 .navbar-logo {
     height: 100%;
   }
-
-.syenrgy-logo img path {
-    fill: blue;
-}
