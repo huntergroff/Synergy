@@ -1,35 +1,56 @@
 .navbar {
-    background-color: rgb(150, 150, 214);
-    height: 15%;
+    display: flex;
+    background-color: #F9F6EE;
+    height: 100px;
     width: 100%;
     position: fixed;
-    padding: 10px 10px 10px 10px;
-    display: flex;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 0px 2px 10px 6px rgba(0,0,0,0.5);
     justify-content: space-between;
+    font-family: articulat-cf;
+    box-sizing: border-box;
 }
 
-.top-left-logo {
+.navbar-logo-and-title {
     display: flex;
 }
 
-.top-left-title {
-    font-size: 40px;
-    line-height: 37px;
-    height: fit-content;
-    width: 290px;
-    color: white;
-    margin: 0px;
+.navbar-title {
+    font-size: 26px;
+    line-height: 24px;
+    height: 100%;
+    width: 180px;
+    color: #008080;
+    margin: 0px 0px 0px 10px;
+    font-weight: 200;
 }
 
 .navbar-links {
-    background-color: green;
     list-style-type: none;
     display: flex;
     width: 60%;
-    justify-content: space-evenly;
-    color: white;
+    padding: 0px;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: flex-end;
+    font-weight: 400;
 }
 
-.App-logo {
+.link {
+    padding-bottom: 12px;
+    transition-duration: 100ms;
+    color: #008080;
+}
+
+.link:hover {
+    color: #5A5D87;
+}
+
+.navbar-logo {
     height: 100%;
   }
+
+.syenrgy-logo img path {
+    fill: blue;
+}
