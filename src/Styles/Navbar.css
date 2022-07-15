@@ -3,14 +3,16 @@
 .navbar {
     display: flex;
     background-color: var(--synergy-beige);
-    height: 100px;
+    height: var(--navbar-height);
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     padding: 15px 30px 15px 20px;
     box-shadow: 0px 2px 10px 6px rgba(0,0,0,0.5);
     justify-content: space-between;
     font-family: articulat-cf;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .navbar-logo-and-title {
