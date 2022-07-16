@@ -3,12 +3,13 @@ import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import {MenuItems} from './Components/MenuItems.js';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+      <Navbar />
       <Routes>
       {MenuItems.map((menu, index) => {
             return (
@@ -16,6 +17,7 @@ function App() {
             );
           })}
     </Routes>
+    <Footer />
     </Router>
     </div>
   );

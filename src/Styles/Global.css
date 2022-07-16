@@ -5,6 +5,7 @@
     --synergy-coral: #C27D7D;
 
     --navbar-height: 100px;
+    --footer-height: 160px;
 }
 
 body {
@@ -13,9 +14,6 @@ body {
 
 .container {
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
     padding-top: 50px;
-    padding-bottom: 50px;
     box-sizing: border-box;
 }

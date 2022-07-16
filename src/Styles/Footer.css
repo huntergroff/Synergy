@@ -1,0 +1,79 @@
+@import url('./Global.css');
+
+.footer {
+    width: 100%;
+    background-color: var(--synergy-purple);
+    height: var(--footer-height);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 20px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.footer-logo-and-socials {
+    height: 100%;
+}
+
+.footer-logo {
+    height: 50%;
+    width: 360px;
+    color: white;
+    font-weight: 200;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid white;
+}
+
+.footer-logo img {
+    height: 44px;
+}
+
+.footer-logo p {
+    margin: 0px 0px 0px 10px;
+    font-size: 24px;
+}
+
+.footer-socials {
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-icon {
+    height: 30px;
+    width: auto;
+    color: white;
+    margin-right: 12px;
+}
+
+.footer-info-container {
+    width: 55%;
+    min-width: 680px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-info-container h1 {
+    margin: 0;
+    font-family: articulat-heavy-cf;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.footer-info-container p {
+    margin: 0;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.footer-info {
+    padding-left: 15px;
+    margin-left: 30px;
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
