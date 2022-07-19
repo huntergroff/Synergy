@@ -3,15 +3,18 @@ import '../../Styles/Navbar.css';
 import { MenuItems } from './MenuItems.js';
 import SynergyLogo from '../../Images/SynergyLogo.svg';
 import MenuLink from './MenuLink';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <header>
       <div className='navbar'>
-        <a href="/" className='navbar-logo-and-title'>
+        <div className='navbar-logo-and-title'>
+          <Link to="/" >
             <img src={SynergyLogo} className="navbar-logo" alt="Synergy Logo"/>
             <p className="navbar-title">SYNERGY CENTER FOR DANCE</p>
-        </a>
+          </Link>
+        </div>
         <nav>
           <ul className="navbar-menus">
           {MenuItems.map((menu, index) => {

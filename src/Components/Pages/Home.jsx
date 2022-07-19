@@ -11,7 +11,7 @@ const Home = () => {
           <h1>Synergy</h1>
           <h2>Center for Dance and the<br></br>Performing Arts</h2>
         </div>
-        <div className='home-mia-message'>
+        <div className='home-mia-message' id='home-message'>
         </div> 
       </div>
     </>

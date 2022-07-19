@@ -52,7 +52,7 @@ export const MenuItems = [
                     }, 
                     {
                         title: "Focus Fitness",
-                        link: "/"
+                        link: "/#home-message"
                     }
                 ]
             }
