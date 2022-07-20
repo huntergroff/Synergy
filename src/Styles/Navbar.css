@@ -88,7 +88,6 @@ header {
 
 .navbar-dropdown {
     position: absolute;
-    left: auto;
     font-size: 0.875rem;
     z-index: 9999;
     min-width: 10rem;

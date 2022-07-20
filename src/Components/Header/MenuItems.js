@@ -20,39 +20,39 @@ export const MenuItems = [
         submenu: [
             {
                 title: "Classes At Synergy",
-                link: "/"
+                link: "/classes"
             },
             {
                 title: "Schedules and Sessions",
-                link: "/"
+                link: "/classes#schedules"
             }, 
             {
                 title: "Registration",
-                link: "/",
+                link: "/classes#registration",
             },
             {
                 title: "Class Descriptions",
-                link: "/",
+                link: "/classes#descriptions",
                 submenu: [
                     {
                         title: "Ballet",
-                        link: "/"
+                        link: "/classes#ballet"
                     }, 
                     {
                         title: "Lyrical/Contemporary",
-                        link: "/"
+                        link: "/classes#lyrical"
                     },
                     {  
                         title: "Hip Hop",
-                        link: "/"
+                        link: "/classes#hiphop"
                     }, 
                     {
                         title: "Explore Teen/Adult",
-                        link: "/"
+                        link: "/classes#explore"
                     }, 
                     {
                         title: "Focus Fitness",
-                        link: "/#home-message"
+                        link: "/classes#focus"
                     }
                 ]
             }
@@ -62,7 +62,25 @@ export const MenuItems = [
         id: "3",
         title: "Events",
         link: "/events",
-        element: <Events />
+        element: <Events />,
+        submenu: [
+            {
+                title: "Recital",
+                link: "/events#recital"
+            },
+            {
+                title: "Intensives",
+                link: "/events#intensives"
+            },
+            {
+                title: "Pop-ups and Masterclasses",
+                link: "/events#popups"
+            },
+            {
+                title: "Summer Camps",
+                link: "/events#summercamps"
+            }
+        ]
     },
     {
         id: "4",
@@ -74,12 +92,28 @@ export const MenuItems = [
         id: "5",
         title: "Resources",
         link: "/resources",
-        element: <Resources />
+        element: <Resources />,
+        submenu: [
+            {
+                title: "FAQ",
+                link:"/faq"
+            }
+        ]
     },
     {
         id: "6",
         title: "About",
         link: "/about",
-        element: <About />
+        element: <About />,
+        submenu: [
+            {
+                title: "Contact Us",
+                link: "/contact"
+            },
+            {
+                title: "Facilities",
+                link: "/about#facilities"
+            }
+        ]
     },
 ]

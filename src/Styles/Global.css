@@ -1,6 +1,8 @@
 :root {
     --synergy-teal: #008080;
+    --synergy-light-teal: #d3f2f2;
     --synergy-purple: #5A5D87;
+    --synergy-light-purple: #F6F6F6;
     --synergy-beige: #F9F6EE;
     --synergy-coral: #C27D7D;
 
@@ -14,6 +16,9 @@ body {
 
 .container {
     width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 50px;
+    padding-bottom: 50px;
     box-sizing: border-box;
 }
