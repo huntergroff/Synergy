@@ -3,6 +3,7 @@ import '../Styles/Footer.css';
 import SynergyLogoWhite from '../Images/SynergyLogoWhite.svg';
 import { FaFacebookF, FaInstagram } from "react-icons/fa"; 
 import { MdLocationPin } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,21 +25,21 @@ const Footer = () => {
                 <p>16 River Road, Jericho, VT 05465</p>
                 <p>mia@synergydance.org</p>
                 <p>802-598-8523</p>
-                <p>Contact Us!</p>
+                <Link to="/contact">Contact Us!</Link>
             </div>
             <div className='footer-info'>
                 <h1>SERVICES</h1>
-                <p>Dance classes for all ages</p>
-                <p>Community-oriented programs</p>
-                <p>Summer camps, intensives, and shows</p>
-                <p>Brand new dance facilites</p>
+                <Link to="/classes">Dance classes for all ages</Link>
+                <Link to="/programs">Community-oriented programs</Link>
+                <Link to="/events">Summer camps, intensives, and shows</Link>
+                <Link to="/resources#facilities">Brand new dance facilities</Link>
             </div>
             <div className='footer-info'>
                 <h1>LINKS</h1>
-                <p>Register for classes (Parent Portal)</p>
-                <p>Daily and Annual Schedules</p>
-                <p>Teacher information</p>
-                <p>About Us</p>
+                <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank">Register for classes (Parent Portal)</a>
+                <Link to="classes/#schedules">Daily and Annual Schedules</Link>
+                <Link to="resources/#teachers">Teacher information</Link>
+                <Link to="/about">About Us</Link>
             </div>
         </div>
     </footer>

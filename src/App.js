@@ -21,6 +21,8 @@ function App() {
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView();
+          // scroll by additional 80px to avoid navbar
+          window.scrollBy(0, -80);
         }
       }, 0);
     }
