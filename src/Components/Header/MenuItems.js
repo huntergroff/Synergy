@@ -19,7 +19,7 @@ export const MenuItems = [
         element: <Classes />,
         submenu: [
             {
-                title: "Classes At Synergy",
+                title: "Classes Overview",
                 link: "/classes"
             },
             {
@@ -55,6 +55,10 @@ export const MenuItems = [
                         link: "/classes#focus"
                     }
                 ]
+            },
+            {
+                title: "View All Classes",
+                link: "/classtables"
             }
         ]
     },

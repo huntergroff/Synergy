@@ -1,0 +1,44 @@
+@import url('./Global.css');
+
+.classtables-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    color: var(--synergy-teal);
+}
+
+.classtables-header h1 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 200;
+}
+
+.classtables-menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.classtables-menus form {
+    display: flex;
+    flex-direction: column;
+}
+
+.classtables-menus label {
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.classtables-menus select, .classtables-menus option {
+    padding: 6px 4px 4px 4px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.class-table {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid var(--synergy-purple);
+}

@@ -5,6 +5,7 @@ import { Routes, Route, useLocation }
 import { MenuItems } from './Components/Header/MenuItems.js';
 import Footer from './Components/Footer';
 import { useEffect } from 'react';
+import ClassTables from './Components/Pages/ClassTables';
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -37,6 +38,7 @@ function App() {
                 <Route exact path={menu.link} element={menu.element} />
             );
           })}
+      <Route exact path="/classtables" element={<ClassTables />}/>
     </Routes>
     <Footer />
     </div>

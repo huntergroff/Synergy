@@ -4,7 +4,6 @@ import { RiFocus3Line } from 'react-icons/ri';
 import { GoCalendar } from 'react-icons/go'
 import Pathway from '../Pathway';
 import '../../Styles/Classes.css'
-import { Link } from 'react-router-dom'
 
 const Classes = () => {
   return (
@@ -53,7 +52,7 @@ const Classes = () => {
               title="Daily Schedule"
               blurb="Click to view a schedule of all classes, by day of the week."
               icon={<AiOutlineClockCircle className='pathway-icon'/>}
-              link="/"
+              link="/classtables"
             />
             <Pathway 
               title="Annual Schedule"
@@ -74,7 +73,7 @@ const Classes = () => {
         </h3>
         <div class="registration-button-container">
           <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank">Visit Parent Portal</a>
-          <p>View Class Descriptions</p>
+          <button>View Class Descriptions</button>
         </div>
       </div>
     </div>
