@@ -4,8 +4,34 @@ import { RiFocus3Line } from 'react-icons/ri'
 import { GoCalendar } from 'react-icons/go'
 import Pathway from '../Pathway'
 import '../../Styles/Classes.css'
-import ClassDescription from '../ClassDescription'
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
+
+const ClassDescription = ({ descriptionItem, index }) => {
+  return (
+    <div className='class-description-container' key={index}>
+        <div className='banner-img'>
+            {descriptionItem.categoryImg}
+        </div>
+        <div className='body container' id={descriptionItem.categoryUrlTag}>
+            <div className='header'>
+                <h2>{descriptionItem.categoryTitle}</h2>
+                <p>{descriptionItem.categoryBlurb}</p>
+            </div>
+            {descriptionItem.classes.map((classItem, index) => {
+                return (
+                    <div className='description' key={index}>
+                        <div className='title-and-age'>
+                            <h3>{classItem.title}</h3>
+                            <h4>{classItem.age}</h4>
+                        </div>
+                        <p>{classItem.blurb}</p>
+                    </div>
+                );
+            })}
+        </div>
+    </div>
+  )
+}
 
 const Classes = () => {
   return (
@@ -80,7 +106,7 @@ const Classes = () => {
           </div>
         </div>
       </div>
-      <div className='classes-descriptions'>
+      <div className='classes-descriptions' id="descriptions">
         {ClassDescriptionItems.map((descriptionItem, index) => {
           return (
             <ClassDescription descriptionItem={descriptionItem} index={index} />
