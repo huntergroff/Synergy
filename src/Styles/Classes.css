@@ -135,3 +135,73 @@
 #registration a:hover {
     background-color: var(--synergy-coral);
 }
+
+.classes-descriptions, .class-description-container {
+    width: 100%;
+}
+
+.class-description-container .banner-img {
+    width: 100%;
+    height: 18vw;
+    overflow: hidden;
+    margin-top: 4%;
+}
+
+.class-description-container img {
+    width: 100%;
+    position: relative;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.class-description-container .header {
+    color: var(--synergy-purple);
+    width: 100%;
+    max-width: 900px;
+}
+
+.class-description-container .header h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.class-description-container .header p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.class-description-container .description {
+    color: var(--synergy-coral);
+    width: 100%;
+    max-width: 850px;
+    border-top: 2px solid var(--synergy-coral);
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.class-description-container .title-and-age {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.class-description-container .title-and-age h3 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.class-description-container .title-and-age h4 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 20px;
+    min-width: fit-content;
+}
+
+.class-description-container .description p {
+    font-size: 15px;
+    line-height: 25px;
+}

@@ -1,17 +1,24 @@
 import '../../Styles/ClassTables.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 /** Configure all settings for table URL generation! */
 const baseUrl = "https://app.jackrabbitclass.com/jr3.0/Openings/Openingsdirect?OrgID=";
 const orgID = "538745";
 
-// List of columns to be hidden
+/** List of columns to be hidden */
 const hideCols = ["Instructors", "Gender", "Ages", "EndDate", "Session", "Description", "StartDate", "Openings", "Tuition"];
 
-// List of auto-hidden colums to be shown
-// Cat1 = Class Type (Ballet, Hip Hop, Etc.)
-// Cat2 = Ignite, Explore, Focus
+
+/** 
+ * List of auto-hidden colums to be shown
+ *      Cat1 = Class Type (Ballet, Hip Hop, Etc.)
+ *      Cat2 = Program (Ignite, Explore, Focus)
+*/
 const showCols = ["Cat1", "Cat2"];
+
+/** Order of sort parameters when different sort options are selected by the user. */
+const daysSort = ["Days", "StartTime", "Cat1", "Class", "Cat2"];
+const classSort = ["Cat1", "Cat2", "Class", "Days", "StartTime"];
 
 /**
  * List of styles to be appended to the url.
@@ -32,62 +39,69 @@ function generateStaticParam(urlParam, list, regex) {
     return finalParam;
 }
 
+// Helper method to generate a url parameter based on user selection.
 function generateSelectedParam(urlParam, value) {
-    return (value == "All") ? "" : "&" + urlParam + "=" + value;
+    return (value === "All") ? "" : "&" + urlParam + "=" + value;
 }
 
-/**
-https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsDirect?OrgID=538745
-&Cat2=Ignite&sort=Days,StartTime,Cat1,Class&style=font-size:15px&hidecols=
-Instructors,Gender,Ages,EndDate,Session,Description,StartDate,Openings,Tuition&showcols=Cat1
- */
-
-const ClassTables = () => {
+const ClassTables = ({ initialClasstype, initialPathway, initialSort }) => {
 
     // state and event handlers for selecting a new classtype
-    const [classtype, setClasstype] = useState("All");
+    const [classtype, setClasstype] = useState(initialClasstype);
     const changeClasstype = event => {
         setClasstype(event.target.value);
     }
 
     // state and event handlers for selecting a new pathway
-    const [pathway, setPathway] = useState("All");
+    const [pathway, setPathway] = useState(initialPathway);
     const changePathway = event => {
         setPathway(event.target.value);
     }
 
-    useEffect(() => {
-      resetUrl();
-    }, [pathway, classtype])
-    
-
-    const [tableURL, setTableURL] = useState(generateTableUrl());
-    function resetUrl() {
-        const url = generateTableUrl();
-        setTableURL(url);
+    // state and event handlers for sorting the list in different ways.
+    // note that sort requires two states, one for the sort itself and one for the list to be used in the url generation
+    const [sort, setSort] = useState(initialSort);
+    const getSortList = (sortInput) => {
+        return (sortInput === "Days") ? daysSort : classSort;
+    }
+    const [sortList, setSortList] = useState(getSortList(sort));
+    const changeSort = event => {
+        setSort(event.target.value);
+        setSortList(getSortList(event.target.value));
     }
 
-    function generateTableUrl() {
+    // generate url for table based on static params and user-selected params.
+    // uses callback to satisfy the dependency of useEffect.
+    const generateTableUrl = useCallback(() => {
         const finalUrl = baseUrl
         + orgID 
         + generateStaticParam("hideCols", hideCols, ",") 
         + generateStaticParam("showCols", showCols, ",") 
-        + generateStaticParam("style", styles, ";") 
+        + generateStaticParam("style", styles, ";")
+        + generateStaticParam("sort", sortList, ",")
         + generateSelectedParam("Cat1", classtype) 
         + generateSelectedParam("Cat2", pathway);
         return finalUrl;
-    }
+    }, [classtype, pathway, sortList]);
 
+    // state for table url, with effect handler that updates the table url when user makes a new classtype or pathway selection.
+    const [tableURL, setTableURL] = useState(generateTableUrl);
+    useEffect(() => {
+        const url = generateTableUrl;
+        setTableURL(url);
+      }, [pathway, classtype, sort, generateTableUrl])
+
+      // return component
   return (
     <div className='container'>
         <div className='classtables-header'>
-            <h1>All Classes</h1>
+            <h1>{pathway === "All" ? "" : pathway} { classtype === "All" ? "" : classtype } Classes</h1>
             <div className='classtables-menus'>
                 <form>
                     <label>Select Class Type</label>
                     <select value={classtype} name="pathways" onChange={changeClasstype}>
                         <option value="Ballet">Ballet</option>
-                        <option value="Hip Hop">Hip-Hop</option>
+                        <option value="Hip Hop">Hip Hop</option>
                         <option value="Creative Movement">Creative Movement</option>
                         <option value="All">All</option>
                     </select>
@@ -101,9 +115,16 @@ const ClassTables = () => {
                         <option value="All">All</option>
                     </select>
                 </form>
+                <form>
+                    <label>Sort By</label>
+                    <select value={sort} name="sort" onChange={changeSort}>
+                        <option value="Days">Days</option>
+                        <option value="Classes">Class Type</option>
+                    </select>
+                </form>
             </div>
         </div>
-        <iframe src={tableURL} className='class-table'/>
+        <iframe src={tableURL} className='class-table' title='jackrabbit-classes-table'/>
     </div>
   )
 }

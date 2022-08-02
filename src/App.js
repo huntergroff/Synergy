@@ -38,7 +38,10 @@ function App() {
                 <Route exact path={menu.link} element={menu.element} />
             );
           })}
-      <Route exact path="/classtables" element={<ClassTables />}/>
+      <Route exact path="/classtables" element={<ClassTables initialClasstype="All" initialPathway="All" initialSort="Classes"/>}/>
+      <Route exact path="/classtables-explore" element={<ClassTables initialClasstype="All" initialPathway="Explore" initialSort="Days" />}/>
+      <Route exact path="/classtables-ignite" element={<ClassTables initialClasstype="All" initialPathway="Ignite" initialSort="Days" />}/>
+      <Route exact path="/classtables-focus" element={<ClassTables initialClasstype="All" initialPathway="Focus" initialSort="Days" />}/>
     </Routes>
     <Footer />
     </div>
