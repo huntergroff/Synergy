@@ -17,10 +17,10 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className="navbar-menus">
-          {MenuItems.map((menu, index) => {
+          {MenuItems.map((menu, index, MenuItems) => {
             const depthLevel = 0;
             return (
-                <MenuLink menu={menu} key={index} depthLevel={depthLevel} />
+                <MenuLink menu={menu} key={index} depthLevel={depthLevel} isLastHeader={(index + 1 === MenuItems.length)} />
             );
           })}
           </ul>

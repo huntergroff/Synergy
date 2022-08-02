@@ -55,7 +55,7 @@ const Classes = () => {
                 title="Daily Schedule"
                 blurb="Click to view a schedule of all classes, by day of the week."
                 icon={<AiOutlineClockCircle className='pathway-icon'/>}
-                link="/classtables"
+                link="/classtables-daily"
               />
               <Pathway 
                 title="Annual Schedule"

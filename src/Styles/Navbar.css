@@ -98,6 +98,10 @@ header {
     display: none;
 }
 
+.navbar-dropdown.last-header {
+    right: 0px;
+}
+
 .navbar-dropdown.show {
     display: block;
 }

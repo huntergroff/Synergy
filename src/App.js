@@ -6,6 +6,7 @@ import { MenuItems } from './Components/Header/MenuItems.js';
 import Footer from './Components/Footer';
 import { useEffect } from 'react';
 import ClassTables from './Components/Pages/ClassTables';
+import FAQ from './Components/Pages/FAQ';
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -42,6 +43,8 @@ function App() {
       <Route exact path="/classtables-explore" element={<ClassTables initialClasstype="All" initialPathway="Explore" initialSort="Days" />}/>
       <Route exact path="/classtables-ignite" element={<ClassTables initialClasstype="All" initialPathway="Ignite" initialSort="Days" />}/>
       <Route exact path="/classtables-focus" element={<ClassTables initialClasstype="All" initialPathway="Focus" initialSort="Days" />}/>
+      <Route exact path="/classtables-daily" element={<ClassTables initialClasstype="All" initialPathway="All" initialSort="Days" />}/>
+      <Route exact path="/faq" element={<FAQ />}/>
     </Routes>
     <Footer />
     </div>

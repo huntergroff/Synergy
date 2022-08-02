@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Dropdown from './Dropdown';
 
-const MenuLink = ({ menu, depthLevel }) => {
+const MenuLink = ({ menu, depthLevel, isLastHeader }) => {
     /** State handler for opening and closing dropdown */
     const [open, setOpen] = useState(false);
 
@@ -17,7 +17,7 @@ const MenuLink = ({ menu, depthLevel }) => {
     /** If the menu has a submenu, prepare a dropdown component. */
     let dropdown;
     if (menu.submenu) {
-        dropdown = <Dropdown submenus={menu.submenu} isOpen={open} depthLevel={depthLevel + 1}/>;
+        dropdown = <Dropdown submenus={menu.submenu} isOpen={open} depthLevel={depthLevel + 1} isLastHeader={isLastHeader}/>;
     } else {
         dropdown = <></>
     }
