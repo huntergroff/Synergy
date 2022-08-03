@@ -13,7 +13,6 @@
 
 .faq .question {
     width: 100%;
-    height: fit-content;
     max-width: 900px;
     background-color: #FAFAFA;
     padding: 10px 12px 8px 12px;
@@ -27,8 +26,13 @@
     cursor: pointer;
 }
 
+.faq .question::-webkit-scrollbar {
+    display: none;
+}
+
 .faq .question.expand {
     max-height: 500px;
+    overflow-y: scroll;
 }
 
 .faq .q {
@@ -63,6 +67,7 @@
 
 .faq .expand .a {
     max-height: 300px;
+    overflow:initial;
 }
 
 .faq p {

@@ -25,6 +25,7 @@
 
 .home-title {
     height: 65vh;
+    min-height: 420px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -43,15 +44,15 @@
     margin: 0;
     font-weight: 900;
     font-family: articulat-heavy-cf;
-    font-size: 140px;
+    font-size: 135px;
     line-height: 160px;
 }
 
 .home-title h2 {
     margin: 0;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 42px;
+    line-height: 42px;
 }
 
 .home-alert-container {
@@ -118,8 +119,8 @@
     font-size: 80px;
     line-height: 80px;
     width: fit-content;
-    min-width: 605px;
     margin: 0 0 10px 0;
+    font-weight: 400;
 }
 
 .home-mia-message h3 {
@@ -131,8 +132,8 @@
 }
 
 .home-mia-message h3, .home-mia-message p {
-    width: 60%;
-    min-width: 400px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .home-mia-message p {
@@ -144,6 +145,7 @@
     background-color: var(--synergy-light-purple);
     height: 20vw;
     padding: 10vw 5vw;
+    transition: all .1s;
 }
 
 .home-banner.reverse {
@@ -206,7 +208,6 @@
     color: white;
     font-family: articulat-heavy-cf;
     width: fit-content;
-    transition-duration: 300ms;
 }
 
 .home-banner a:hover {
@@ -215,6 +216,8 @@
 
 .home-bottom {
     height: 80vh;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: flex-end;
     color: white;
@@ -225,4 +228,71 @@
     font-weight: 800;
     text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
     padding-left: 5%;
+}
+
+/** MEDIUM MEDIA SCREEN RESIZE **/
+@media screen and (max-width: 640px) {
+    .home-title p {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    
+    .home-title h1 {
+        font-size: 21vw;
+        line-height: 25vw;
+    }
+    
+    .home-title h2 {
+        font-size: 7vw;
+        line-height: 7vw;
+        margin-top: 1.5vw;
+    }
+
+    .home-mia-message h1 {
+        font-size: 12.5vw;
+        line-height: 12.5vw;
+    }
+    
+    .home-banner-content {
+        flex-direction: column;
+    }
+
+    .home-banner-content, .reverse .home-banner-content{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .banner-info, .reverse .banner-info {
+        align-items: center;
+    }
+
+    .home-banner {
+        height: fit-content;
+        padding: 10vw 5vw;
+    }
+
+    .home-banner img {
+        max-width: 80%;
+        margin-bottom: 7vw;
+    }
+    
+    .banner-info h1 {
+        font-size: 12vw;
+        font-weight: 300;
+        margin: 0;
+        width: fit-content;
+    }
+    
+    .banner-info p {
+        font-size: 5vw;
+        font-weight: 200;
+        margin: 4vw 0;
+        width: 100%;
+    }
+
+    .home-banner a {
+        font-size: 3vw;
+        padding: 2.5vw 2.7vw 1.8vw 2.7vw;
+    }
 }

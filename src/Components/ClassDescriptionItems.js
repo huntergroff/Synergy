@@ -43,12 +43,5 @@ export const ClassDescriptionItems = [
                 blurb: "The ballet 4/5 class is designed to give students in Level 4 or 5 and option for a second ballet class each week. For the most part, students in this class will also be taking either a Ballet 4 or Ballet 5 class each week where they can focus on specific fundamentals of technique and would take Ballet 4/5 as a second class option."
             }
         ]
-    },
-    {
-        categoryTitle: "Lyrical & Contemporary",
-        categoryUrlTag: "lyricalcontemp",
-        categoryImg: (<img src={Pointe} alt="Ballet" style={{top:"-250px"}} />),
-        categoryBlurb: "Lyrical and contemporary!",
-        classes: []
     }
 ]
