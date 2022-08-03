@@ -1,13 +1,19 @@
-import '../../Styles/ClassTables.css'
+//React Imports
 import { useState, useEffect, useCallback } from 'react';
 
+//CSS
+import '../../Styles/ClassTables.css'
+
+
 /** Configure all settings for table URL generation! */
+
+//Base url:
 const baseUrl = "https://app.jackrabbitclass.com/jr3.0/Openings/Openingsdirect?OrgID=";
+//Org id:
 const orgID = "538745";
 
-/** List of columns to be hidden */
+//List of columns to be hidden:
 const hideCols = ["Instructors", "Gender", "Ages", "EndDate", "Session", "Description", "StartDate", "Openings", "Tuition"];
-
 
 /** 
  * List of auto-hidden colums to be shown
@@ -16,7 +22,7 @@ const hideCols = ["Instructors", "Gender", "Ages", "EndDate", "Session", "Descri
 */
 const showCols = ["Cat1", "Cat2"];
 
-/** Order of sort parameters when different sort options are selected by the user. */
+//Order of sort parameters when different sort options are selected by the user.
 const daysSort = ["Days", "StartTime", "Cat1", "Class", "Cat2"];
 const classSort = ["Cat1", "Cat2", "Class", "Days", "StartTime"];
 
@@ -44,6 +50,12 @@ function generateSelectedParam(urlParam, value) {
     return (value === "All") ? "" : "&" + urlParam + "=" + value;
 }
 
+/**
+ * Main element for the "classtables" page.
+ * @param {initialClasstype} the initial classtype selected when the page loads.
+ * @param {initialPathway} the initial pathway (Explore, Ignite, Focus) selected when the page loads.
+ * @param {initialSort} the initial sort option selected when the page loads. 
+ */
 const ClassTables = ({ initialClasstype, initialPathway, initialSort }) => {
 
     // state and event handlers for selecting a new classtype

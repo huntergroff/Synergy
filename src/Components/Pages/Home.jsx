@@ -1,11 +1,44 @@
+//React Imports
 import React from 'react'
-import '../../Styles/Home.css'
-import HomeBanner from '../HomeBanner'
+import { Link } from 'react-router-dom'
+
+//Icons and Images
+import { AiOutlineInfoCircle } from 'react-icons/ai'
 import Dancer from '../../Images/dancer.jpg'
 import DanceClass from '../../Images/danceclass.jpg'
 import StudioFront from '../../Images/studio-front.jpg'
-import { AiOutlineInfoCircle } from 'react-icons/ai'
 
+//CSS
+import '../../Styles/Home.css'
+
+/**
+ * Renders a banner with 
+ * @param {title} large text
+ * @param {blurb} small text
+ * @param {btnLink} where the button leads, as a string
+ * @param {btnText} text on the button
+ * @param {image} image to be displayed, as a url
+ * @param {reverse} true = image on right, false = image on left
+ * @returns 
+ */
+const HomeBanner = ({ title, blurb, btnLink, btnText, image, reverse }) => {
+  return (
+    <div className={`home-banner ${reverse ? 'reverse' : ''}`}>
+        <div className='home-banner-content'>
+            <img src={image} alt="alt" />
+            <div className='banner-info'>
+                <h1>{title}</h1>
+                <p>{blurb}</p>
+                <Link to={btnLink}>{btnText}</Link>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+/**
+ * Main element for the Home page.
+ */
 const Home = () => {
   return (
     <>

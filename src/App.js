@@ -34,17 +34,24 @@ function App() {
     <div>
       <Navbar />
       <Routes>
+
+      {/** Automatically render all routes from MenuItems.js */}
       {MenuItems.map((menu, index) => {
             return (
                 <Route exact path={menu.link} element={menu.element} />
             );
           })}
+
+      {/** Routes for classtables page to load with different initial values */}
       <Route exact path="/classtables" element={<ClassTables initialClasstype="All" initialPathway="All" initialSort="Classes"/>}/>
       <Route exact path="/classtables-explore" element={<ClassTables initialClasstype="All" initialPathway="Explore" initialSort="Days" />}/>
       <Route exact path="/classtables-ignite" element={<ClassTables initialClasstype="All" initialPathway="Ignite" initialSort="Days" />}/>
       <Route exact path="/classtables-focus" element={<ClassTables initialClasstype="All" initialPathway="Focus" initialSort="Days" />}/>
       <Route exact path="/classtables-daily" element={<ClassTables initialClasstype="All" initialPathway="All" initialSort="Days" />}/>
+      
+      {/** Other pages not included in MenuItems but requiring their own page */}
       <Route exact path="/faq" element={<FAQ />}/>
+      
     </Routes>
     <Footer />
     </div>

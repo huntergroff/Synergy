@@ -1,13 +1,23 @@
+//React Imports
 import React, { useState } from 'react'
-import '../../Styles/FAQ.css'
+
+//Icons and Images
 import { BiChevronDown } from 'react-icons/bi'
+
+//CSS
+import '../../Styles/FAQ.css'
+
+//Import the list of JS objects that generates ALL FAQs.
 import { FAQItems } from '../FAQItems.js'
 
-
-const FAQRow = ({ question, answer }) => {
+/**
+ * Given a question and answer, generates one expandable FAQ entry.
+ * @param {question} the question, displayed always
+ * @param {answer} the answer, displayed on expand. 
+ */
+const FAQEntry = ({ question, answer }) => {
     const [expand, setExpand] = useState(false);
     const toggleExpand = () => {setExpand(!expand)};
-
     return (
         <div className={`question ${expand ? 'expand' : ''}`} onClick={toggleExpand}>
             <div className='q'>
@@ -21,6 +31,9 @@ const FAQRow = ({ question, answer }) => {
     )
 }
 
+/**
+ * The main element for the FAQ page.
+ */
 const FAQ = () => {
   return (
     <div className='faq container'>
@@ -28,7 +41,7 @@ const FAQ = () => {
         <div className='questions-container'>
             {FAQItems.map((item, index) => {
                 return (
-                    <FAQRow question={item.question} answer={item.answer} />
+                    <FAQEntry question={item.question} answer={item.answer} />
                 );
             })}
         </div>

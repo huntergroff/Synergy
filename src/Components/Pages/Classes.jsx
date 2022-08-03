@@ -1,11 +1,45 @@
+//React Imports
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+//Icons and Images
 import { AiOutlineCompass, AiOutlineFire, AiOutlineClockCircle } from 'react-icons/ai'
 import { RiFocus3Line } from 'react-icons/ri'
 import { GoCalendar } from 'react-icons/go'
-import Pathway from '../Pathway'
+
+//CSS
 import '../../Styles/Classes.css'
+
+//Import the list of JS objects that generates ALL class descriptions.
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
 
+
+/**
+ * Creates a styled link with a title, short blurb, and icon.
+ * @param {title} the large text of the link
+ * @param {blurb} the small text of the link
+ * @param {icon} the icon behind the link
+ * @param {link} the destination of the link 
+ */
+const Pathway = ({title, blurb, icon, link}) => {
+  return (
+    <div className='classes-pathway'>
+        <Link to={link}>
+            <h2>{title}</h2>
+            <p>{blurb}</p>
+        </Link>
+        {icon}
+    </div>
+  )
+}
+
+/**
+ * Draws info from a descriptionItem (one object from ClassDescriptionItems.js)
+ * and renders all info: category/category blurb followed by all classes and blurbs within the category.
+ * For instance, one descriptionItem, "Ballet", would contain the image, title, and blurb for ballet,
+ * as well as the title and blurb for every ballet class offered.
+ * @param {descriptionItem} the descriptionItem object taken from ClassDescriptionItems.js
+ */
 const ClassDescription = ({ descriptionItem, index }) => {
   return (
     <div className='class-description-container' key={index}>
@@ -33,6 +67,9 @@ const ClassDescription = ({ descriptionItem, index }) => {
   )
 }
 
+/**
+ * Main element for the "classes" page. 
+ */
 const Classes = () => {
   return (
     <>

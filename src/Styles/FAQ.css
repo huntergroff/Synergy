@@ -24,6 +24,7 @@
     transition: all .3s;
     overflow: hidden;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .faq .question.expand {
