@@ -134,8 +134,118 @@ header {
     top: 0px;
 }
 
+/** MOBILE MENU */
+
+.mobile-hamburger {
+    height: 44px;
+    width: auto;
+    cursor: pointer;
+}
+
+.mobile-menu-open-close {
+    display: none;
+    color: var(--synergy-teal);
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: var(--synergy-beige);
+    z-index: 11;
+    box-sizing: border-box;
+    transition-duration: 300ms;
+    left: 100%;
+    top: var(--navbar-height);
+    height: 500px;
+}
+
+.mobile-menu.show {
+    left: 50%;
+}
+
+.mobile-menu-links {
+    position: relative;
+    overflow-x: hidden;
+    width: 50vw;
+    height: fit-content;
+    box-sizing: border-box;
+    transition-duration: 300ms;
+    padding: 0 30px 0 0;
+    margin: 0;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile-menu li {
+    color: var(--synergy-teal);
+    font-size: 20px;
+    transition-duration: 100ms;
+}
+
+.mobile-dropdown li {
+    font-size: 17px;
+}
+
+.mobile-menu a, .mobile-menu .dropdown-item {
+    color: inherit;
+    font-weight: 300;
+    text-decoration: none;
+    height: 100%;
+    display: block;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
+.mobile-menu a:hover, .mobile-menu .dropdown-item:hover {
+    color: var(--synergy-purple);
+    font-weight: 800;
+}
+
+.mobile-menu .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-dropdown {
+    display: none;
+}
+
+.mobile-dropdown.show {
+    display: block;
+}
+
+/** list within a list (dropdown) */
+.mobile-menu li ul {
+    padding-left: 15px;
+}
+
+.mobile-menu .arrow {
+    height: 100%;
+    width: auto;
+    transition-duration: 250ms;
+}
+
+.mobile-menu .arrow.open {
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width: 640px) {
     .navbar nav {
         display: none;
+    }
+
+    .mobile-menu-open-close {
+        display: block;
+    }
+    
+    .mobile-menu {
+        display: block;
     }
 }
