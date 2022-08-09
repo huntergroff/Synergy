@@ -5,17 +5,15 @@
 }
 
 .classes h1 {
-    min-width: 800px;
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 200;
     color: var(--synergy-teal);
     margin: 0;
 }
 
 .classes h3 {
-    width: 60%;
-    min-width: 500px;
-    max-width: 900px;
+    width: 100%;
+    max-width: 800px;
     font-weight: 500;
     color: var(--synergy-teal);
     font-size: 24px;
@@ -26,11 +24,12 @@
 
 .pathways-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .classes-pathway {
-    width: 30%;
+    width: 31%;
     height: 12vw;
     position: relative;
     display: flex;
@@ -55,7 +54,7 @@
 .classes-pathway h2 {
     margin: 0;
     font-family: articulat-heavy-cf;
-    font-size: 4vw;
+    font-size: 5vw;
     transition: 200ms;
 }
 
@@ -204,4 +203,52 @@
 .class-description-container .description p {
     font-size: 15px;
     line-height: 25px;
+}
+
+/** */
+@media screen and (max-width: 1006px) {
+    .pathways-container, .schedules-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classes-pathway {
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0;
+    }
+
+    #schedules .classes-pathway {
+        width: 100%;
+    }
+
+    .classes-pathway h2 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .classes-pathway p {
+        font-size: 3vw;
+        line-height: 3vw;
+        text-align: center;
+        width: 66%;
+        margin: 10px auto 0 auto;
+    }
+
+    .classes .container {
+        padding-bottom: 0;
+    }
+}
+
+/** MEDIUM SCREEN RESIZE **/
+@media screen and (max-width: 640px) {
+    .classes h1 {
+        font-size: 18vw;
+        overflow: wrap;
+    }
+
+    .classes h3 {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
 }

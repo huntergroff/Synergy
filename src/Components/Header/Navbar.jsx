@@ -17,7 +17,6 @@ import MobileMenuLink from './MobileMenuLink.jsx';
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
-  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
     <header>

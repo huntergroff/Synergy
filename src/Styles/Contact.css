@@ -1,0 +1,73 @@
+@import url('./Global.css');
+
+.contact {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-intro {
+    color: var(--synergy-teal);
+}
+
+.contact-intro h1 {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.contact-intro p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+    border-top: 2px solid var(--synergy-teal);
+    padding-top: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form-control {
+    width: 100%;
+    margin: 10px 0;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    font-family: inherit;
+    font-weight: 800;
+    color: white;
+    background-color: var(--synergy-purple);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    margin: 10px 0;
+}
+
+.contact textarea {
+    max-width: 100%;
+    min-width: 33%;
+    min-height: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+.contact button:hover {
+    background-color: var(--synergy-coral);
+}

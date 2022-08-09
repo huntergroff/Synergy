@@ -208,6 +208,7 @@
     color: white;
     font-family: articulat-heavy-cf;
     width: fit-content;
+    transition-duration: 300ms;
 }
 
 .home-banner a:hover {

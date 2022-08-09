@@ -45,6 +45,8 @@
     border: 1px solid var(--synergy-purple);
 }
 
+
+
 /** MEDIUM MEDIA SCREEN RESIZE **/
 @media screen and (max-width: 1007px) {
     .classtables-header {
@@ -62,6 +64,15 @@
         max-width: 600px;
         justify-content: space-between;
         text-align: center;
+    }
+}
+
+/** RESIZE FOR AUTO MOBILE DISPLAY */
+@media screen and (max-width: 709px) {
+    .class-table {
+        display: block;
+        max-width: 440px;
+        margin: 0 auto;
     }
 }
 

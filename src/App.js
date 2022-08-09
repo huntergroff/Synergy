@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import { useEffect } from 'react';
 import ClassTables from './Components/Pages/ClassTables';
 import FAQ from './Components/Pages/FAQ';
+import Contact from './Components/Pages/Contact';
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -51,6 +52,7 @@ function App() {
       
       {/** Other pages not included in MenuItems but requiring their own page */}
       <Route exact path="/faq" element={<FAQ />}/>
+      <Route exact path="/contact" element={<Contact />}/>
       
     </Routes>
     <Footer />
