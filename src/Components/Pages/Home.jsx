@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 
 //Icons and Images
 import { AiOutlineInfoCircle } from 'react-icons/ai'
-import Dancer from '../../Images/dancer.jpg'
-import DanceClass from '../../Images/danceclass.jpg'
+import OutdoorRecital from '../../Images/outdoor-recital.jpg'
+import RecitalPose from '../../Images/recital-pose.jpg'
+import DanceClass from '../../Images/studio-a-class.jpg'
 import StudioFront from '../../Images/studio-front.jpg'
 
 //CSS
@@ -72,7 +73,7 @@ const Home = () => {
           blurb={<span>Hip Hop, Aerial, Ballet, and more, <br></br> for ages 3 to adult</span>}
           btnText="View Schedule and Register!"
           btnLink="/classes"
-          image={Dancer}
+          image={DanceClass}
           reverse={true}
         />
         <HomeBanner
@@ -80,7 +81,7 @@ const Home = () => {
           blurb="Summer camps, masterclasses, and performances throughout the year!"
           btnText="More info"
           btnLink="/events"
-          image={DanceClass}
+          image={OutdoorRecital}
           reverse={false}
         />
         <HomeBanner
@@ -88,7 +89,7 @@ const Home = () => {
           blurb='SPARC repertory company, "STEP", and student ambassadors.'
           btnText="Get involved!"
           btnLink="/programs"
-          image={DanceClass}
+          image={RecitalPose}
           reverse={true}
         />
         <HomeBanner
