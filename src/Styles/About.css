@@ -1,6 +1,6 @@
 @import url('./Global.css');
 
-#facilities {
+#facilities, #teachers {
     color: var(--synergy-teal);
     padding: 5% 5% 0 5%;
 }
@@ -16,7 +16,7 @@
     margin: 4% 0;
 }
 
-#facilities .title h1 {
+#facilities h1, #teachers h1 {
     font-size: 120px;
     font-weight: 200;
     margin: 0;
@@ -52,7 +52,49 @@
 
 #facilities .text-2 {
     border-bottom: 2px solid var(--synergy-teal);
-    margin-bottom: 4%;
+}
+
+#teachers {
+    padding-bottom: 5%;
+}
+
+#teachers .title {
+    margin-bottom: 2%;
+}
+
+#teachers h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#teachers .teacher {
+    display: flex;
+    padding-top: 4%;
+    color: var(--synergy-purple);
+}
+
+#teachers .teacher img {
+    width: 30%;
+    max-width: 300px;
+    height: fit-content;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+#teachers .teacher h3 {
+    margin: 0;
+    font-size: 36px;
+}
+
+#teachers .teacher p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 800px;
 }
 
 @media screen and (max-width: 640px) {
@@ -81,6 +123,16 @@
 
     #facilities .photos-3-2 img, #facilities .photos-4-2 img {
         width: 48%;
+    }
+
+    #teachers .teacher {
+        flex-direction: column;
+    }
+    
+    #teachers .teacher img {
+        width: 60%;
+        max-width: 400px;
+        margin-bottom: 20px;
     }
 }
 

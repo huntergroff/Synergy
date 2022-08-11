@@ -106,6 +106,10 @@ export const MenuItems = [
             {
                 title: "Facilities",
                 link: "/about#facilities"
+            },
+            {
+                title: "Teachers",
+                link: "/about#teachers"
             }
         ]
     },

@@ -92,7 +92,8 @@ const ClassTables = ({ initialClasstype, initialPathway, initialSort }) => {
         + generateStaticParam("style", styles, ";")
         + generateStaticParam("sort", sortList, ",")
         + generateSelectedParam("Cat1", classtype) 
-        + generateSelectedParam("Cat2", pathway);
+        + generateSelectedParam("Cat2", pathway)
+        + "&Status=Active";
         return finalUrl;
     }, [classtype, pathway, sortList]);
 

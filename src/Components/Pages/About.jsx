@@ -16,6 +16,8 @@ import StudioLobby from '../../Images/studio-lobby-party.jpg'
 //CSS
 import '../../Styles/About.css'
 
+//Import the list of JS objects that generates ALL Teacher Bios.
+import { TeacherBioItems } from '../TeacherBioItems.js'
 
 const Facilities = () => {
   return (
@@ -78,14 +80,47 @@ const Facilities = () => {
   )
 }
 
+const TeacherBio = ({ name, bio, picture }) => {
+  return (
+    <div className='teacher'>
+      {picture}
+      <div className='name-and-bio'>
+        <h3>{name}</h3>
+        <p>{bio}</p>
+      </div>
+    </div>
+  )
+}
+
 const Teachers = () => {
-  
+  return (
+    <div id="teachers">
+      <div className='title'>
+        <h1>Our Team</h1>
+        <h2>
+          Our focus at Synergy Dance is to instill a love of dance in our entire community. 
+          Our students will find themselves in an environment where they feel safe to express 
+          themselves on the dance floor and will be challenged to continue to achieve. At Synergy 
+          Dance we believe that a solid technical foundation is critical in the development of a 
+          successful dancer. Our teachers provide instruction that combines proper technique with a 
+          balance of fun that enables all our students to reach the highest level of dancing that will 
+          carry them through a lifetime love of dance.
+        </h2>
+      </div>
+      {TeacherBioItems.map((teacherItem) => {
+        return (
+          <TeacherBio name={teacherItem.name} bio={teacherItem.bio} picture={teacherItem.picture} />
+        );
+      })}
+    </div>
+  )
 }
 
 const About = () => {
   return (
     <div className='about'>
       <Facilities />
+      <Teachers />
     </div>
   )
 }

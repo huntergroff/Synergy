@@ -26,7 +26,7 @@ const HomeBanner = ({ title, blurb, btnLink, btnText, image, reverse }) => {
   return (
     <div className={`home-banner ${reverse ? 'reverse' : ''}`}>
         <div className='home-banner-content'>
-            <img src={image} alt="alt" />
+            <img src={image} />
             <div className='banner-info'>
                 <h1>{title}</h1>
                 <p>{blurb}</p>
