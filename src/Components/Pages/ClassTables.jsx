@@ -112,10 +112,16 @@ const ClassTables = ({ initialClasstype, initialPathway, initialSort }) => {
             <div className='classtables-menus'>
                 <form>
                     <label>Select Class Type</label>
-                    <select value={classtype} name="pathways" onChange={changeClasstype}>
+                    <select value={classtype} name="classtypes" onChange={changeClasstype}>
+                        <option value="AfterSchool">After School</option>
                         <option value="Ballet">Ballet</option>
-                        <option value="Hip Hop">Hip Hop</option>
+                        <option value="Camp">Camp</option>
                         <option value="Creative Movement">Creative Movement</option>
+                        <option value="Hip Hop">Hip Hop</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Lyrical">Lyrical</option>
+                        <option value="PBT">PBT</option>
+                        <option value="Pointe">Pointe</option>
                         <option value="All">All</option>
                     </select>
                 </form>
