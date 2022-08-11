@@ -38,13 +38,13 @@ const Footer = () => {
             <Link to="/classes">Dance classes for all ages</Link>
             <Link to="/programs">Community-oriented programs</Link>
             <Link to="/events">Summer camps, intensives, shows</Link>
-            <Link to="/resources#facilities">Brand new dance facilities</Link>
+            <Link to="/about#facilities">Brand new dance facilities</Link>
         </div>
         <div className='footer-info' id="footerlinks">
             <h1>LINKS</h1>
             <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noreferrer">Parent Portal</a>
-            <Link to="classes/#schedules">Daily and Annual Schedules</Link>
-            <Link to="resources/#teachers">Teacher information</Link>
+            <Link to="/classes#schedules">Daily and Annual Schedules</Link>
+            <Link to="/about#teachers">Teacher information</Link>
             <Link to="/about">About Us</Link>
         </div>
     </footer>

@@ -1,0 +1,95 @@
+@import url('./Global.css');
+
+#facilities {
+    color: var(--synergy-teal);
+    padding: 5% 5% 0 5%;
+}
+
+#facilities img {
+    width: 100%;
+    display: block;
+}
+
+#facilities p {
+    font-size: 26px;
+    line-height: 34px;
+    margin: 4% 0;
+}
+
+#facilities .title h1 {
+    font-size: 120px;
+    font-weight: 200;
+    margin: 0;
+}
+
+#facilities .title h2 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0;
+}
+
+#facilities .photos-1, #facilities .photos-3, #facilities .photos-4 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+#facilities .photos-1-1, #facilities .photos-3-1, #facilities .photos-4-1 {
+    width: 66%;
+}
+
+#facilities .photos-1-2, #facilities .photos-3-2, #facilities .photos-4-2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#facilities .photos-1, #facilities .photos-2, #facilities .photos-4 {
+    margin-top: 4%;
+}
+
+#facilities .text-2 {
+    border-bottom: 2px solid var(--synergy-teal);
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 640px) {
+    #facilities p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #facilities .photos-3 {
+        flex-direction: column;
+    }
+
+    #facilities .photos-4 {
+        flex-direction: column-reverse;
+    }
+
+    #facilities .photos-3-1, #facilities .photos-4-1 {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    
+    #facilities .photos-3-2, #facilities .photos-4-2 {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #facilities .photos-3-2 img, #facilities .photos-4-2 img {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    #facilities .title h1 {
+        font-size: 24vw;
+    }
+
+    #facilities .title h2 {
+        font-size: 5vw;
+    }
+}
