@@ -23,6 +23,9 @@ const Footer = () => {
                 <a href="https://goo.gl/maps/s5Y7zxw6RemQE5pdA" target="_blank" rel="noreferrer">
                     <MdLocationPin className='footer-social-icon' />
                 </a>
+                <div className='faq-social-link'>
+                    <Link to="/faq" className='footer-social-icon'><div className='faq-icon'><p>FAQ</p></div></Link>
+                </div>
             </div>
             <Link to="/contact" className='mobile-contact-button'>Contact Us</Link>
         </div>

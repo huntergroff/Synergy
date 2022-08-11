@@ -40,16 +40,32 @@
 
 .footer-socials {
     height: 45%;
-    width: 120px;
+    width: 190px;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.footer-socials a{
+.footer-socials a {
     height: 32px;
     width: 32px;
+    text-decoration: none;
+}
+
+.footer-socials a .faq-icon {
+    font-size: 28px;
+    height: 100%;
+    display: flex;
+    font-family: articulat-heavy-cf;
+}
+
+.footer-socials .faq-social-link a {
+    width: fit-content;
+}
+
+.footer-socials a .faq-icon p {
+    margin: 4px 0px 0px 0px;
 }
 
 .footer-social-icon {
