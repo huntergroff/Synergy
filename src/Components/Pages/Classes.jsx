@@ -1,5 +1,5 @@
 //React Imports
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 //Icons and Images
@@ -43,13 +43,13 @@ const Pathway = ({title, blurb, icon, link}) => {
 const ClassDescription = ({ descriptionItem, index }) => {
   return (
     <div className='class-description-container' key={index}>
-        <div className='banner-img'>
-            {descriptionItem.categoryImg}
-        </div>
         <div className='body container' id={descriptionItem.categoryUrlTag}>
             <div className='header'>
                 <h2>{descriptionItem.categoryTitle}</h2>
-                <p>{descriptionItem.categoryBlurb}</p>
+                <div className='blurb'>
+                  {descriptionItem.categoryImg}
+                  <p>{descriptionItem.categoryBlurb}</p>
+                </div>
             </div>
             {descriptionItem.classes.map((classItem, index) => {
                 return (
@@ -71,6 +71,11 @@ const ClassDescription = ({ descriptionItem, index }) => {
  * Main element for the "classes" page. 
  */
 const Classes = () => {
+  //reference for class descriptions for scroll
+  const descriptionsRef = useRef(null)
+
+   const scrollToClasses = () => descriptionsRef.current.scrollIntoView()    
+
   return (
     <>
       <div className='classes'>
@@ -138,12 +143,15 @@ const Classes = () => {
             working to add extra classes where there are waitlists but we need to know who is interested.
           </h3>
           <div className="registration-button-container">
-            <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noreferrer">Visit Parent Portal</a>
-            <button>View Class Descriptions</button>
+            <div className='buttons'>
+              <Link to="/classtables">View All Classes</Link>
+              <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noreferrer">Visit Parent Portal</a>
+            </div>
+            <p>View Class Descriptions Below!</p>
           </div>
         </div>
       </div>
-      <div className='classes-descriptions' id="descriptions">
+      <div className='classes-descriptions' id="descriptions" ref={descriptionsRef}>
         {ClassDescriptionItems.map((descriptionItem, index) => {
           return (
             <ClassDescription descriptionItem={descriptionItem} index={index} />

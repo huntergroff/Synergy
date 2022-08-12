@@ -1,10 +1,10 @@
-import Pointe from '../Images/pointe.webp'
+import Pointe from '../Images/pointe.jpg'
 
 export const ClassDescriptionItems = [
     {
         categoryTitle: "Ballet",
         categoryUrlTag: "ballet",
-        categoryImg: (<img src={Pointe} alt="Ballet" style={{top:"-250px"}} />),
+        categoryImg: (<img src={Pointe} alt="Ballet"/>),
         categoryBlurb: "Need a blurb for ballet!",
         classes: [
             {
