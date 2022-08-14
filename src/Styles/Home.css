@@ -63,6 +63,10 @@
     overflow: hidden;
 }
 
+.home-alert-container.hide {
+    display: none
+}
+
 .home-alert {
     position: absolute;
     top: var(--navbar-height);
@@ -112,6 +116,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home-mia-message.hide {
+    display: none;
 }
 
 .home-mia-message h1 {

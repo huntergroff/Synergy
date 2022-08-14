@@ -1,5 +1,5 @@
 //React Imports
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 //Icons and Images
@@ -71,11 +71,6 @@ const ClassDescription = ({ descriptionItem, index }) => {
  * Main element for the "classes" page. 
  */
 const Classes = () => {
-  //reference for class descriptions for scroll
-  const descriptionsRef = useRef(null)
-
-   const scrollToClasses = () => descriptionsRef.current.scrollIntoView()    
-
   return (
     <>
       <div className='classes'>
@@ -151,7 +146,7 @@ const Classes = () => {
           </div>
         </div>
       </div>
-      <div className='classes-descriptions' id="descriptions" ref={descriptionsRef}>
+      <div className='classes-descriptions' id="descriptions">
         {ClassDescriptionItems.map((descriptionItem, index) => {
           return (
             <ClassDescription descriptionItem={descriptionItem} index={index} />

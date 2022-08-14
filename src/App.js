@@ -39,7 +39,7 @@ function App() {
       {/** Automatically render all routes from MenuItems.js */}
       {MenuItems.map((menu, index) => {
             return (
-                <Route exact path={menu.link} element={menu.element} />
+                <Route exact path={menu.link} element={menu.element} key={index} />
             );
           })}
 

@@ -1,6 +1,7 @@
 //React Imports
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Papa from "papaparse";
 
 //Icons and Images
 import { AiOutlineInfoCircle } from 'react-icons/ai'
@@ -41,6 +42,26 @@ const HomeBanner = ({ title, blurb, btnLink, btnText, image, reverse }) => {
  * Main element for the Home page.
  */
 const Home = () => {
+  
+  // State for loading data from google sheets.
+  const [googleSheetData, setGoogleSheetData] = useState({});
+  
+  // This useEffect hook fetches the data from google sheets on page load.
+  useEffect(() => {
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQvCf3uHNT26Wb9ApDfYVSPbUIBsX7fjqejut1LCRptL8TET9DDmPElpL9IsJgosqT1aMUscfVIrzjC/pub?gid=0&single=true&output=csv", {
+      download: true,
+      header: true,
+      complete: function(results) {
+        setGoogleSheetData(results.data);
+      }
+    // BLOCK THIS ERROR SO THAT ABOVE USEEFFECT ONLY RUNS ONCE
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  })}, [])
+
+  // splitting the google sheet data into individual items that can be used to render various dynamic messages.
+  const mini_alert = googleSheetData[0];
+  const mia_message = googleSheetData[1];
+
   return (
     <>
       <div className='bg'></div>
@@ -51,20 +72,17 @@ const Home = () => {
           <h2>Center for Dance and the<br></br>Performing Arts</h2>
         </div>
       </div>
-      <div className='home-alert-container'>
+      <div className={`home-alert-container ${mini_alert ? '' : 'hide'}`}>
         <div className='home-alert'>
             <AiOutlineInfoCircle className='home-alert-icon'/>
-            <h1>This week at Synergy!</h1>
-            <p>
-              Pop-up hip hop classes with Amy, Owen, and Hunter, on Wednesday, August 29!
-              See "Events: Pop-ups and Masterclasses" for more details. 
-            </p>
+            <h1>{mini_alert ? mini_alert.CONTENT_A : "This Week at Synergy!"}</h1>
+            <p>{mini_alert ? mini_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
         </div>
       </div>
-      <div className='home-mia-message container'>
-        <h1>Welcome to our new website!</h1>
-        <h3>July 19 - July 26</h3>
-        <p>Welcome to our new website! We have been working on this website for a long time and it's super good, right? Right? Please like it. I really hope you like the website because i spend a lot of time on it and I really want people to like it and think it's good! I want you to like it! Ahhhhhh!</p>
+      <div className={`home-mia-message container ${mia_message ? '' : 'hide'}`}>
+        <h1>{mia_message ? mia_message.CONTENT_A : 'Welcome to Synergy Dance!'}</h1>
+        <h3>{mia_message ? mia_message.CONTENT_B : ''}</h3>
+        <p>{mia_message ? mia_message.CONTENT_C : 'Please enjoy exploring our website!'}</p>
         <h2>-Mia</h2>
       </div> 
       <div className='home-banners'>
