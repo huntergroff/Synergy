@@ -51,7 +51,7 @@ header {
 
 .navbar nav {
     display: flex;
-    width: 60%;
+    width: 100%;
     min-width: 450px;
     max-width: 600px;
 }
@@ -82,8 +82,12 @@ header {
     color: var(--synergy-purple);
 }
 
-.navbar a.active {
+.navbar-header-item a.active {
     font-weight: 800;
+}
+
+.navbar-dropdown a.active {
+    font-weight: 400;
 }
 
 .navbar-dropdown {
@@ -158,7 +162,7 @@ header {
     transition-duration: 300ms;
     left: 100%;
     top: var(--navbar-height);
-    height: 500px;
+    height: 410px;
 }
 
 .mobile-menu.show {
@@ -236,7 +240,7 @@ header {
     transform: rotate(180deg);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     .navbar nav {
         display: none;
     }

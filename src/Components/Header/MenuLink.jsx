@@ -15,16 +15,10 @@ const MenuLink = ({ menu, depthLevel, isLastHeader }) => {
     };
 
     /** If the menu has a submenu, prepare a dropdown component. */
-    let dropdown;
-    if (menu.submenu) {
-        dropdown = <Dropdown submenus={menu.submenu} isOpen={open} depthLevel={depthLevel + 1} isLastHeader={isLastHeader}/>;
-    } else {
-        dropdown = <></>
-    }
   return (
     <li className={`menu-link ${depthLevel > 0 ? 'navbar-dropdown-item' : 'navbar-header-item'}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <NavLink to={menu.link}>{menu.title}</NavLink>
-        {dropdown}
+        {menu.submenu ? <Dropdown submenus={menu.submenu} isOpen={open} depthLevel={depthLevel + 1} isLastHeader={isLastHeader}/> : <></>}
     </li>
   )
 }
