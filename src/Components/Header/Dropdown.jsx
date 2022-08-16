@@ -1,4 +1,7 @@
+//React Imports
 import React from 'react'
+
+//Other Components
 import MenuLink from './MenuLink';
 
 const Dropdown = ({ submenus, isOpen, depthLevel, isLastHeader }) => {

@@ -1,3 +1,13 @@
+/**
+ * FAQItems user guide:
+ *      1. Add an item to the "FAQItems" array in the following format:
+ *         {
+ *              question: "QUESTION",
+ *              answer: "ANSWER"
+ *         }
+ *      2. Save this file and check that your question has been added to the FAQ page of the website!
+ */
+
 export const FAQItems = [
     {
         question: "What happened to my children?",

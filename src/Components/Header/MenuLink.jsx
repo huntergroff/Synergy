@@ -1,5 +1,8 @@
+//React Imports
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+
+//Other Components
 import Dropdown from './Dropdown';
 
 const MenuLink = ({ menu, depthLevel, isLastHeader }) => {

@@ -1,13 +1,15 @@
-import './App.css';
-import Navbar from './Components/Header/Navbar';
-import { Routes, Route, useLocation }
-    from 'react-router-dom';
-import { MenuItems } from './Components/Header/MenuItems.js';
-import Footer from './Components/Footer';
+//React Imports
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+
+//Some component imports
 import ClassTables from './Components/Pages/ClassTables';
 import FAQ from './Components/Pages/FAQ';
 import Contact from './Components/Pages/Contact';
+import Navbar from './Components/Header/Navbar';
+import { MenuItems } from './Components/Header/MenuItems.js';
+import Footer from './Components/Footer';
+
 
 function App() {
   const { pathname, hash, key } = useLocation();

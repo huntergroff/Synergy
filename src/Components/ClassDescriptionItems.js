@@ -1,3 +1,32 @@
+/**
+ * ClassDescriptionItems usage guide:
+ *      1. Import an image for the class category header to 'src/Images/' and name it something simple
+ *      2. Add an "import" statement to this file matching the other import statements
+ *      3. Add an item to the "ClassDescriptionItems" array in the following format:
+ *         {
+ *              categoryTitle: "CATEGORY_NAME",
+                categoryUrlTag: "CATEGORY_NAME_LOWERCASE_NO_SPACES",
+                categoryImg: (<img src={IMPORT_NAME} alt="SHORT_ALT_TEXT"/>),
+                categoryBlurb: "BLURB_FOR_CATEGORY",
+                classes: [
+                    {
+                        title: "CLASS_1_TITLE",
+                        age: "CLASS_1_AGE",
+                        blurb: "CLASS_1_BLURB"
+                    },
+                    {
+                        title: "CLASS_2_TITLE",
+                        age: "CLASS_2_AGE",
+                        blurb: "CLASS_2_BLURB"
+                    },
+                    ...
+                ]
+ *         }
+ *      4. Save this file and check that your class category and classes have been added to the Class Descriptions section of the website!
+ *      5. Check that the category is now listed in the navbar under Classes -> Class Descriptions
+ */
+
+//Images - add your import statement here
 import Pointe from '../Images/pointe.jpg'
 
 export const ClassDescriptionItems = [

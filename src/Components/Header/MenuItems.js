@@ -1,8 +1,12 @@
+//Import all components that are used directly in header navbar
 import Home from '../Pages/Home';
 import Classes from '../Pages/Classes';
 import About from '../Pages/About';
-import { ClassDescriptionItems } from '../ClassDescriptionItems';
 import ComingSoon from '../Pages/ComingSoon';
+
+//Import ClassDescriptionItems to autogenerate dropdown of classes under class descriptions
+import { ClassDescriptionItems } from '../ClassDescriptionItems';
+
 
 export const MenuItems = [
     {

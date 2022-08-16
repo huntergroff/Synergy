@@ -1,6 +1,11 @@
+//React Imports
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+//Icons and Images
 import { BiChevronDown } from 'react-icons/bi';
+
+//Other Components
 import MobileDropdown from './MobileDropdown';
 
 const MobileMenuLink = ({ menu, toggleMenu }) => {

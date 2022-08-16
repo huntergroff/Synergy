@@ -19,6 +19,9 @@ import '../../Styles/About.css'
 //Import the list of JS objects that generates ALL Teacher Bios.
 import { TeacherBioItems } from '../TeacherBioItems.js'
 
+/**
+ * Renders "facilities" section
+ */
 const Facilities = () => {
   return (
     <div id="facilities">
@@ -80,6 +83,12 @@ const Facilities = () => {
   )
 }
 
+/**
+ * Renders a single teacher bio given the following params:
+ * @param {name} the teacher's name
+ * @param {bio} the teacher's bio
+ * @param {picture} the teacher's picture 
+ */
 const TeacherBio = ({ name, bio, picture }) => {
   return (
     <div className='teacher'>
@@ -92,6 +101,9 @@ const TeacherBio = ({ name, bio, picture }) => {
   )
 }
 
+/**
+ * Renders all the teacher bios and a short blurb at the top.
+ */
 const Teachers = () => {
   return (
     <div id="teachers">
@@ -116,6 +128,9 @@ const Teachers = () => {
   )
 }
 
+/**
+ * Main element for the about page.
+ */
 const About = () => {
   return (
     <div className='about'>

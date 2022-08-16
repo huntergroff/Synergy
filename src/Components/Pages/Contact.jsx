@@ -4,6 +4,9 @@ import React, { Component } from 'react'
 //CSS
 import '../../Styles/Contact.css'
 
+/**
+ * Renders the title and blurb.
+ */
 const ContactIntro = () => {
   return (
     <div className='contact-intro'>
@@ -20,6 +23,9 @@ const ContactIntro = () => {
   )
 }
 
+/**
+ * Main element for the contact page.
+ */
 export default class Contact extends Component {
     constructor(props) {
         super(props);
@@ -33,6 +39,7 @@ export default class Contact extends Component {
     }
 
   render() {
+    //render the form
     return (
         <div className='contact container'>
             <ContactIntro />
@@ -50,12 +57,14 @@ export default class Contact extends Component {
     )
   }
 
+  //every time something different is typed into a box, the state keeps track of it
   handleChange(event) {
     this.setState({
         [event.target.name]: event.target.value
     })
   }
 
+  //when the send button is clicked:
   handleSubmit(event) {
     event.preventDefault()
 
