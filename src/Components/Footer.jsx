@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='footer-logo-and-socials'>
             <div className='footer-logo'>
                 <img src={SynergyLogoWhite} alt="synergy logo" />
-                <p>SYNERGY CENTER FOR DANCE AND THE PERFORMING ARTS</p>
+                <p>SYNERGY CENTER<br></br>FOR DANCE AND THE<br></br>PERFORMING ARTS</p>
             </div>
             <div className='footer-socials'>
                 <a href="https://www.facebook.com/synergydancevt/" target="_blank" rel="noreferrer">
