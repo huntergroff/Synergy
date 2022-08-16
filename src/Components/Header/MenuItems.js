@@ -1,10 +1,8 @@
 import Home from '../Pages/Home';
 import Classes from '../Pages/Classes';
-import Events from '../Pages/Events';
-import Programs from '../Pages/Programs';
-import Resources from '../Pages/Resources';
 import About from '../Pages/About';
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
+import ComingSoon from '../Pages/ComingSoon';
 
 export const MenuItems = [
     {
@@ -55,7 +53,7 @@ export const MenuItems = [
         id: "3",
         title: "Events",
         link: "/events",
-        element: <Events />,
+        element: <ComingSoon />,
         submenu: [
             {
                 title: "Recital",
@@ -79,13 +77,13 @@ export const MenuItems = [
         id: "4",
         title: "Programs",
         link: "/programs",
-        element: <Programs />
+        element: <ComingSoon />
     },
     {
         id: "5",
         title: "Resources",
         link: "/resources",
-        element: <Resources />,
+        element: <ComingSoon />,
         submenu: [
             {
                 title: "FAQ",
