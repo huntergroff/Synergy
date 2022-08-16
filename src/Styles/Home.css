@@ -71,7 +71,7 @@
     position: absolute;
     top: var(--navbar-height);
     margin-top: 20px;
-    right: -600px;
+    right: -50vw;
     display: flex;
     align-items: center;
     background-color: rgba(0,128,128,0.75);
@@ -81,6 +81,12 @@
 
 .home-alert:hover {
     right: 0px;
+}
+
+.home-alert .icon-and-header {
+    display: flex;
+    align-items: center;
+    transition-duration: 200ms;
 }
 
 .home-alert-icon {
@@ -97,7 +103,7 @@
 }
 
 .home-alert p {
-    width: 600px;
+    width: 50vw;
     font-size: 16px;
     line-height: 20px;
     margin: 8px 0px;
@@ -240,7 +246,7 @@
 }
 
 /** MEDIUM MEDIA SCREEN RESIZE **/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     .home-title p {
         font-size: 8vw;
         line-height: 8vw;
@@ -256,6 +262,39 @@
         line-height: 7vw;
         margin-top: 1.5vw;
     }
+    
+
+    .home-alert-container {
+        position:static;
+    }
+    
+    .home-alert {
+        position: static;
+        margin-top: 20px;
+        right: 0vw;
+        flex-direction: column;
+        display: block;
+        padding: 20px 15px 20px 5px;
+    }
+
+    
+    .home-alert h1 {
+        width: 100%;;
+        text-transform: uppercase;
+        margin: 12px 0;
+    }
+    
+    .home-alert p {
+        width: 100%;
+        border-left: none;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
 
     .home-mia-message h1 {
         font-size: 12.5vw;

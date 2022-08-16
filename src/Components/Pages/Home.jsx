@@ -65,18 +65,20 @@ const Home = () => {
   return (
     <>
       <div className='bg'></div>
+      <div className={`home-alert-container ${mini_alert ? '' : 'hide'}`}>
+        <div className='home-alert'>
+          <div className='icon-and-header'>
+            <AiOutlineInfoCircle className='home-alert-icon'/>
+            <h1>{mini_alert ? mini_alert.CONTENT_A : "This Week at Synergy!"}</h1>
+          </div>
+            <p>{mini_alert ? mini_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
+        </div>
+      </div>
       <div className='container'>
         <div className='home-title'>
           <p>welcome to</p>
           <h1>Synergy</h1>
           <h2>Center for Dance and the<br></br>Performing Arts</h2>
-        </div>
-      </div>
-      <div className={`home-alert-container ${mini_alert ? '' : 'hide'}`}>
-        <div className='home-alert'>
-            <AiOutlineInfoCircle className='home-alert-icon'/>
-            <h1>{mini_alert ? mini_alert.CONTENT_A : "This Week at Synergy!"}</h1>
-            <p>{mini_alert ? mini_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
         </div>
       </div>
       <div className={`home-mia-message container ${mia_message ? '' : 'hide'}`}>
