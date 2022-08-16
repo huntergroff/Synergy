@@ -85,10 +85,10 @@ const Classes = () => {
           </h3>
           <div className='pathways-container'>
             <Pathway 
-              title="Explore"
-              blurb="Dance classes in a peer-grouped, open-level style of program."
-              icon={<AiOutlineCompass className='pathway-icon'/>}
-              link="/classtables-explore"
+              title="Focus"
+              blurb="Fitness classes for adults who enjoy guided movement and rythm."
+              icon={<RiFocus3Line className='pathway-icon'/>}
+              link="/classtables-focus"
             />
             <Pathway 
               title="Ignite"
@@ -97,10 +97,10 @@ const Classes = () => {
               link="/classtables-ignite"
             />
             <Pathway 
-              title="Focus"
-              blurb="Fitness classes for adults who enjoy guided movement and rythm."
-              icon={<RiFocus3Line className='pathway-icon'/>}
-              link="/classtables-focus"
+              title="Explore"
+              blurb="Dance classes in a peer-grouped, open-level style of program."
+              icon={<AiOutlineCompass className='pathway-icon'/>}
+              link="/classtables-explore"
             />
           </div>
         </div>
@@ -115,13 +115,13 @@ const Classes = () => {
           </h3>
           <div className='schedules-container'>
             <Pathway 
-                title="Daily Schedule"
+                title="Daily"
                 blurb="Click to view a schedule of all classes, by day of the week."
                 icon={<AiOutlineClockCircle className='pathway-icon'/>}
                 link="/classtables-daily"
               />
               <Pathway 
-                title="Annual Schedule"
+                title="Annual"
                 blurb="Click to view the schedule for classes, sessions, and holidays in 2022- 2023."
                 icon={<GoCalendar className='pathway-icon'/>}
                 link="/"
