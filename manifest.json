@@ -1,0 +1,20 @@
+{
+  "short_name": "Synergy Dance",
+  "name": "Synergy Center for Dance and the Performing Arts",
+  "icons": [
+    {
+      "src": "synergy-logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "synergy-logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
