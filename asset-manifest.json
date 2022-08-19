@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Synergy/static/css/main.3ca39b23.css",
-    "main.js": "/Synergy/static/js/main.36b8b074.js",
+    "main.js": "/Synergy/static/js/main.e2cf6763.js",
     "static/media/pointe.jpg": "/Synergy/static/media/pointe.12c4da3eb530ff7f19cc.jpg",
     "static/media/recital-pose.jpg": "/Synergy/static/media/recital-pose.626f6a2d27d43f7e55e9.jpg",
     "static/media/studio-front.jpg": "/Synergy/static/media/studio-front.021457739eba1fc9ecb6.jpg",
@@ -22,10 +22,10 @@
     "static/media/SynergyLogo.svg": "/Synergy/static/media/SynergyLogo.1930bee98b62abff1bf67436224bf459.svg",
     "static/media/SynergyLogoWhite.svg": "/Synergy/static/media/SynergyLogoWhite.0a43760d09afb047f14c5b1fa855a2ff.svg",
     "main.3ca39b23.css.map": "/Synergy/static/css/main.3ca39b23.css.map",
-    "main.36b8b074.js.map": "/Synergy/static/js/main.36b8b074.js.map"
+    "main.e2cf6763.js.map": "/Synergy/static/js/main.e2cf6763.js.map"
   },
   "entrypoints": [
     "static/css/main.3ca39b23.css",
-    "static/js/main.36b8b074.js"
+    "static/js/main.e2cf6763.js"
   ]
 }
