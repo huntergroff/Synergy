@@ -55,6 +55,7 @@
 
 .footer-socials a .faq-icon {
     font-size: 32px;
+    line-height: 32px;
     height: 100%;
     display: flex;
     font-family: articulat-heavy-cf;
@@ -195,5 +196,6 @@
 
     .footer-socials a .faq-icon {
         font-size: 30px;
+        line-height: 30px;
     }
 }

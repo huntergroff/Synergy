@@ -40,8 +40,8 @@ header {
 }
 
 .navbar-title {
-    font-size: 100%;
-    line-height: 100%;
+    font-size: 16px;
+    line-height: 16px;
     height: 100%;
     width: 120px;
     color: var(--synergy-teal);
