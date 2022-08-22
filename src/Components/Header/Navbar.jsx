@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 //Icons and Images
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import SynergyLogo from '../../Images/SynergyLogo.svg'
+import SynergyLogo from '../../Images/SynergyLogo.js'
 
 //CSS
 import '../../Styles/Navbar.css';
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className='navbar'>
         <div className='navbar-logo-and-title'>
           <Link to="/" >
-            <img src={SynergyLogo} className="navbar-logo" alt="Synergy Logo"/>
+            <SynergyLogo fill="#008080" />
             <p className="navbar-title">SYNERGY CENTER FOR DANCE</p>
           </Link>
         </div>

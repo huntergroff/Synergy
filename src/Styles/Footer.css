@@ -30,7 +30,7 @@
     margin-bottom: 20px;
 }
 
-.footer-logo img {
+.footer-logo svg {
     height: 80px;
 }
 
@@ -51,28 +51,6 @@
 .footer-socials a {
     height: 32px;
     text-decoration: none;
-}
-
-.footer-socials a .faq-icon {
-    font-size: 32px;
-    line-height: 32px;
-    height: 100%;
-    display: flex;
-    font-family: articulat-heavy-cf;
-}
-
-.footer-socials .faq-social-link a {
-    width: fit-content;
-}
-
-.footer-socials .faq-social-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-socials a .faq-icon p {
-    margin: 3px 0 0 0;
 }
 
 .footer-social-icon {
@@ -155,7 +133,7 @@
 
     .footer-socials {
         height: fit-content;
-        width: 190px;
+        width: 160px;
     }
 
     .footer-logo p {
@@ -185,7 +163,7 @@
         border: 0;
     }
 
-    .footer-logo img {
+    .footer-logo svg {
         height: 32px;
     }
 
@@ -193,9 +171,30 @@
         height: 100%;
         width: auto;
     }
+}
 
-    .footer-socials a .faq-icon {
-        font-size: 30px;
-        line-height: 30px;
+@media screen and (max-width: 360px) {
+    .footer-socials {
+        width: 40vw;
+    }
+
+    .footer-socials a {
+        height: 8vw;
+    }
+    
+    .footer-social-icon {
+        height: 8vw;
+    }
+
+    .mobile-contact-button {
+        display: none;
+    }
+
+    .footer-logo {
+        display: none; 
+    }
+
+    .footer-logo-and-socials {
+        justify-content: center;
     }
 }

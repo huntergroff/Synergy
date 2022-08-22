@@ -1,16 +1,23 @@
+//React Imports
 import React from 'react'
-import '../Styles/Footer.css';
-import SynergyLogoWhite from '../Images/SynergyLogoWhite.svg';
-import { FaFacebookF, FaInstagram } from "react-icons/fa"; 
-import { MdLocationPin } from "react-icons/md";
 import { Link } from "react-router-dom";
+
+//Icons and Images
+import { FaFacebookF, FaInstagram } from "react-icons/fa"; 
+import { RiQuestionFill } from "react-icons/ri";
+import { MdLocationPin } from "react-icons/md";
+import SynergyLogo from '../Images/SynergyLogo.js'
+
+//CSS
+import '../Styles/Footer.css';
+
 
 const Footer = () => {
   return (
     <footer className='footer'>
         <div className='footer-logo-and-socials'>
             <div className='footer-logo'>
-                <img src={SynergyLogoWhite} alt="synergy logo" />
+                <SynergyLogo fill="#FFFFFF" />
                 <p>SYNERGY CENTER<br></br>FOR DANCE AND THE<br></br>PERFORMING ARTS</p>
             </div>
             <div className='footer-socials'>
@@ -23,9 +30,9 @@ const Footer = () => {
                 <a href="https://goo.gl/maps/s5Y7zxw6RemQE5pdA" target="_blank" rel="noreferrer">
                     <MdLocationPin className='footer-social-icon' />
                 </a>
-                <div className='faq-social-link'>
-                    <Link to="/faq" className='footer-social-icon'><div className='faq-icon'><p>FAQ</p></div></Link>
-                </div>
+                <Link to="/faq" className='footer-social-icon'>
+                    <RiQuestionFill className='footer-social-icon' />
+                </Link>
             </div>
             <Link to="/contact" className='mobile-contact-button'>Contact Us</Link>
         </div>

@@ -37,7 +37,7 @@ const FAQEntry = ({ question, answer }) => {
 const FAQ = () => {
   return (
     <div className='faq container'>
-        <h1>Frequently Asked Questions</h1>
+        <h1>{window.innerWidth > 720 ? "Frequently Asked Questions" : "FAQ"}</h1>
         <div className='questions-container'>
             {FAQItems.map((item, index) => {
                 return (

@@ -43,7 +43,7 @@ const Pathway = ({title, blurb, icon, link}) => {
 const ClassDescription = ({ descriptionItem, index }) => {
   return (
     <div className='class-description-container' key={index}>
-        <div className='body container' id={descriptionItem.categoryUrlTag}>
+        <div id={descriptionItem.categoryUrlTag}>
             <div className='header'>
                 <h2>{descriptionItem.categoryTitle}</h2>
                 <div className='blurb'>
@@ -142,11 +142,11 @@ const Classes = () => {
               <Link to="/classtables">View All Classes</Link>
               <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noreferrer">Visit Parent Portal</a>
             </div>
-            <p>View Class Descriptions Below!</p>
           </div>
         </div>
       </div>
-      <div className='classes-descriptions' id="descriptions">
+      <div className='classes-descriptions container' id="descriptions">
+        <h1>Class Descriptions</h1>
         {ClassDescriptionItems.map((descriptionItem, index) => {
           return (
             <ClassDescription descriptionItem={descriptionItem} index={index} />
