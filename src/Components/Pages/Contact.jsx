@@ -46,10 +46,10 @@ export default class Contact extends Component {
 
             <div className='contact-form'>
                 <form>
-                    <input type="text" class="form-control" name="name" onChange={this.handleChange} value={this.state.name} placeholder="Name"/>
-                    <input type="email" class="form-control" name="email" onChange={this.handleChange} value={this.state.email} placeholder="Email"/>
-                    <input type="text" class="form-control" name="phone" onChange={this.handleChange} value={this.state.phone} placeholder="Phone Number"/>
-                    <textarea type="text" name="message" class="form-control" onChange={this.handleChange} value={this.state.message} placeholder="Write a message..."/>
+                    <input type="text" className="form-control" name="name" onChange={this.handleChange} value={this.state.name} placeholder="Name"/>
+                    <input type="email" className="form-control" name="email" onChange={this.handleChange} value={this.state.email} placeholder="Email"/>
+                    <input type="text" className="form-control" name="phone" onChange={this.handleChange} value={this.state.phone} placeholder="Phone Number"/>
+                    <textarea type="text" name="message" className="form-control" onChange={this.handleChange} value={this.state.message} placeholder="Write a message..."/>
                     <button type="submit" onClick={this.handleSubmit}>Send</button>
                 </form>
             </div>

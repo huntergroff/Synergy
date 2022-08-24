@@ -149,7 +149,7 @@ const Classes = () => {
         <h1>Class Descriptions</h1>
         {ClassDescriptionItems.map((descriptionItem, index) => {
           return (
-            <ClassDescription descriptionItem={descriptionItem} index={index} />
+            <ClassDescription descriptionItem={descriptionItem} key={index} />
           );
         })}
       </div>

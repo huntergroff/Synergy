@@ -119,9 +119,9 @@ const Teachers = () => {
           carry them through a lifetime love of dance.
         </h2>
       </div>
-      {TeacherBioItems.map((teacherItem) => {
+      {TeacherBioItems.map((teacherItem, index) => {
         return (
-          <TeacherBio name={teacherItem.name} bio={teacherItem.bio} picture={teacherItem.picture} />
+          <TeacherBio name={teacherItem.name} bio={teacherItem.bio} picture={teacherItem.picture} key={index} />
         );
       })}
     </div>

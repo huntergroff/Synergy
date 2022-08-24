@@ -41,7 +41,7 @@ const FAQ = () => {
         <div className='questions-container'>
             {FAQItems.map((item, index) => {
                 return (
-                    <FAQEntry question={item.question} answer={item.answer} />
+                    <FAQEntry question={item.question} answer={item.answer} key={index}/>
                 );
             })}
         </div>
