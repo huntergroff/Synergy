@@ -43,12 +43,11 @@ const Facilities = () => {
       </div>
       <div className='text-1'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip 
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Synergy Center for Dance is a new     square foot studio conveniently located near 
+          Browns River Middle School on River Road in Jericho. With access to the nearby schools, 
+          the market, the library and Mills River Park, Synergy makes it easy for young families to 
+          coordinate dance with many other activities. The space is thoughtfully designed with ample 
+          waiting spaces and large windows, which allow us to enjoy our beautiful surroundings year round.
         </p>
       </div>
       <div className='photos-3'>
@@ -71,12 +70,11 @@ const Facilities = () => {
       </div>
       <div className='text-2'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip 
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Synergy’s four climate studios all contain sprung floors for the protection 
+          of young developing bodies. 3 studios contain professional grade Marley dance floors, 
+          and 1 a hardwood flooring. Studios contain mirrors, ballet barres, televisions and 
+          cameras allow for remote learning or for use as teaching tools.  Our largest studio 
+          includes a mezzanine which allows parents, teachers and guests to easily view classes and performances.
         </p>
       </div>
     </div>
@@ -134,6 +132,14 @@ const Teachers = () => {
 const About = () => {
   return (
     <div className='about'>
+      <div className='about-title-and-blurb'>
+        <h1>About Us</h1>
+        <p>
+          Synergy Dance provides a family oriented, collaborative dance studio focusing on dance excellence with an emphasis on establishing 
+          healthy dance habits, comprehensive and high quality training, and artistic expression. 
+          Synergy is family owned and operated.
+        </p>
+      </div>
       <Facilities />
       <Teachers />
     </div>

@@ -90,7 +90,7 @@ const Home = () => {
       <div className='home-banners'>
         <HomeBanner
           title="Dance Classes"
-          blurb={<span>Hip Hop, Aerial, Ballet, and more, <br></br> for ages 3 to adult</span>}
+          blurb="Synergy offers age-based and skill-based progressions through classes in Ballet, Lyrical, Contemporary, Hip Hop, and now Jazz!"
           btnText="View Schedule and Register!"
           btnLink="/classes"
           image={DanceClass}
@@ -98,7 +98,7 @@ const Home = () => {
         />
         <HomeBanner
           title="Events"
-          blurb="Summer camps, masterclasses, and performances throughout the year!"
+          blurb="Look here for extra opportunities to dance. Pop-ups, masterclasses, summer camps, or special alumni events like Open House and Holly-DAZE throughout the year!"
           btnText="More info"
           btnLink="/events"
           image={OutdoorRecital}
@@ -106,7 +106,7 @@ const Home = () => {
         />
         <HomeBanner
           title="Programs"
-          blurb='SPARC repertory company, "STEP", and student ambassadors.'
+          blurb='We continue look for new ways to build our dancers and future leaders through opportunities like SPARC (our repertory company), STEP (our student teacher training program), and our student ambassador initiative.'
           btnText="Get involved!"
           btnLink="/programs"
           image={RecitalPose}
@@ -114,7 +114,7 @@ const Home = () => {
         />
         <HomeBanner
           title="Facilities"
-          blurb='Our brand-new building features 4 studios and sprung Marley floors.'
+          blurb='Our brand-new building features a climate controlled environment with large welcoming waiting spaces, 4 studios, and sprung Marley floors.'
           btnText="See more!"
           btnLink="/about#facilities"
           image={StudioFront}

@@ -86,13 +86,13 @@ const Classes = () => {
           <div className='pathways-container'>
             <Pathway 
               title="Focus"
-              blurb="Fitness classes for adults who enjoy guided movement and rythm."
+              blurb="Conditioning and fitness programs for dancers and adults."
               icon={<RiFocus3Line className='pathway-icon'/>}
               link="/classtables-focus"
             />
             <Pathway 
               title="Ignite"
-              blurb="Dance classes for students pursuing intensive training in specific genres."
+              blurb="Skill-based intensive dance training in specific genres."
               icon={<AiOutlineFire className='pathway-icon'/>}
               link="/classtables-ignite"
             />
