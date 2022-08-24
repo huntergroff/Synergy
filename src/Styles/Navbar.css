@@ -31,12 +31,13 @@ header {
     height: 100%;
 }
 
-.navbar-logo-and-title {
-    margin-bottom: var(--navbar-bottom-margin);
+.navbar svg {
+    height: 45px;
+    width: 30px;
 }
 
-.navbar-logo{
-    height: 100%;
+.navbar-logo-and-title {
+    margin-bottom: var(--navbar-bottom-margin);
 }
 
 .navbar-title {
