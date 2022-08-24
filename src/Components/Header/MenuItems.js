@@ -92,6 +92,11 @@ export const MenuItems = [
             {
                 title: "FAQ",
                 link:"/faq"
+            },
+            {
+                title: "Parent Portal",
+                external: true,
+                link: "https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
             }
         ]
     },
