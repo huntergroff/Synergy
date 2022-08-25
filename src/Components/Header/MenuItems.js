@@ -97,6 +97,10 @@ export const MenuItems = [
                 title: "Parent Portal",
                 external: true,
                 link: "https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
+            },
+            {
+                title: "Contact Us",
+                link: "/contact"
             }
         ]
     },
@@ -106,10 +110,6 @@ export const MenuItems = [
         link: "/about",
         element: <About />,
         submenu: [
-            {
-                title: "Contact Us",
-                link: "/contact"
-            },
             {
                 title: "Facilities",
                 link: "/about#facilities"

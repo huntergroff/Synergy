@@ -5,19 +5,12 @@
     padding: 5% 5% 0 5%;
 }
 
-.about-title-and-blurb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .about-title-and-blurb p {
     font-size: 23px;
     line-height: 36px;
     font-style: italic;
     border-left: 2px solid var(--synergy-teal);
     padding-left: 30px;
-    margin: 0 0 0 30px;
     width: 55%;
 }
 
@@ -175,7 +168,19 @@
     .about h1 {
         font-size: 80px;
         line-height: 90px;
-        font-weight: 700;
+        font-weight: 500;
         margin-bottom: 20px;
+    }
+
+    #facilities h1, #teachers h1 {
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .about p {
+        font-size: 20px;
+        line-height: 36px;
     }
 }
