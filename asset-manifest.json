@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Synergy/static/css/main.4d988b91.css",
-    "main.js": "/Synergy/static/js/main.7556eb00.js",
+    "main.css": "/Synergy/static/css/main.e682351a.css",
+    "main.js": "/Synergy/static/js/main.a88481dd.js",
     "static/media/pointe.jpg": "/Synergy/static/media/pointe.12c4da3eb530ff7f19cc.jpg",
     "static/media/recital-pose.jpg": "/Synergy/static/media/recital-pose.626f6a2d27d43f7e55e9.jpg",
     "static/media/studio-front.jpg": "/Synergy/static/media/studio-front.021457739eba1fc9ecb6.jpg",
@@ -19,11 +19,11 @@
     "static/media/studio-wide.webp": "/Synergy/static/media/studio-wide.ef0d8770092fbb127df9.webp",
     "static/media/amanda-biggs.jpg": "/Synergy/static/media/amanda-biggs.73bf0c6b826ef6e29b13.jpg",
     "index.html": "/Synergy/index.html",
-    "main.4d988b91.css.map": "/Synergy/static/css/main.4d988b91.css.map",
-    "main.7556eb00.js.map": "/Synergy/static/js/main.7556eb00.js.map"
+    "main.e682351a.css.map": "/Synergy/static/css/main.e682351a.css.map",
+    "main.a88481dd.js.map": "/Synergy/static/js/main.a88481dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d988b91.css",
-    "static/js/main.7556eb00.js"
+    "static/css/main.e682351a.css",
+    "static/js/main.a88481dd.js"
   ]
 }
