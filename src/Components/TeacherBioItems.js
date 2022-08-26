@@ -14,6 +14,7 @@
 //Images - add your import statement here
 import AmandaBiggs from '../Images/Teachers/amanda-biggs.jpg'
 import EmilyBrace from '../Images/Teachers/emily-brace.jpg'
+import NoPicGirl from '../Images/Teachers/no-teacher-pic-girl.jpg'
 
 //TeacherBioItems array - add new teahcers as objects here
 export const TeacherBioItems = [
@@ -26,5 +27,10 @@ export const TeacherBioItems = [
         name: "Emily Brace",
         picture: <img src={EmilyBrace} alt="Emily Brace" />,
         bio: "Emily is a twin girl mama, preschool teacher, plant eater, headstand enthusiast, and has been dancing for nearly 25 years. Emily has choreographed for the Johnson State College Dance Ensemble, performed in two large productions with the Vermont Dance Collective, danced a season as a soloist with the VanDenCross Dance Company, and taught at the Birds Nest for four years. She is excited to dance with you!"
+    },
+    {
+        name: "Next Teacher",
+        picture: <img src={NoPicGirl} alt="To Be Named" />,
+        bio: "To Be Named is a really nice person who teaches every type of dance."
     }
 ]
