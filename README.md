@@ -1,10 +1,10 @@
 # Synergy React Application
 
-This repository holds all the code for the Synergy Center for Dance React-App website. 
+This repository holds all the code for the Synergy Center for Dance React-App website. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Organization
 
-In the top level of the src folder are the App.js, inddex.js, and index.css files. These are the top-level files that run the react application.
+In the top level of the src folder are the App.js, index.js, and index.css files. These are the top-level files that run the react application.
 
 The subfolders of src are organized as follows
 * Components: all js and jsx files. The top level of the folder holds the footer, along with several "items" files, which are javascript lists that are used throughout the website to sequentially render repetitive sections of the html (such as Teacher Bios, FAQs, etc). 
@@ -13,9 +13,6 @@ The subfolders of src are organized as follows
 * Images: all images for the website. The top level of the folder holds miscellaneous pictures that are used throughout the site.
     * Staff: All the images of staff.
 * Styles: this folder holds all the css files for the website. There is one .css file for each .jsx file in "Components/Pages". Additionally, there is a file for the header, the footer, and one global css file containing root variables and rules.
-    
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -28,11 +25,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -58,33 +50,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Runs the predeploy and deploy scripts, which are currently configured to build the current app and deploy it via github pages. 
 This means that the built code will push to the gh-pages branch of the synergy git repo and will be accessible at (https://huntergroff.github.io/Synergy/)
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
