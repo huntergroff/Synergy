@@ -87,6 +87,21 @@ const Home = () => {
         <p>{mia_message ? mia_message.CONTENT_C : 'Please enjoy exploring our website!'}</p>
         <h2>-Mia</h2>
       </div> 
+      <div className='htlo-video-container'>
+        <div className='htlo-video'>
+          <iframe className='video-frame'
+            src="https://www.youtube.com/embed/obLwvDmiHtY" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen 
+          />
+          <div className='text'>
+            <h1>Synergy on Youtube</h1>
+            <p>Check out the video from a recent "HTLO" hip-hop intensive, which gives a dancing tour of our studio!</p>
+          </div>
+      </div>
+      </div>
       <div className='home-banners'>
         <HomeBanner
           title="Dance Classes"
