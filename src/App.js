@@ -9,6 +9,7 @@ import Contact from './Components/Pages/Contact';
 import Navbar from './Components/Header/Navbar';
 import { MenuItems } from './Components/Header/MenuItems.js';
 import Footer from './Components/Footer';
+import Policies from './Components/Pages/Policies';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
       {/** Other pages not included in MenuItems but requiring their own page */}
       <Route exact path="/faq" element={<FAQ />}/>
       <Route exact path="/contact" element={<Contact />}/>
+      <Route exact path="/policies" element={<Policies />}/>
       
     </Routes>
     <Footer />

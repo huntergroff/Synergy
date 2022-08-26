@@ -1,0 +1,24 @@
+@import url('./Global.css');
+
+#policies {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#policies h1 {
+    color: var(--synergy-teal);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+#policies p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#policies ul {
+    font-size: 24px;
+    line-height: 48px;
+}

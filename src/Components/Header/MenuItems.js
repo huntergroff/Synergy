@@ -7,7 +7,6 @@ import ComingSoon from '../Pages/ComingSoon';
 //Import ClassDescriptionItems to autogenerate dropdown of classes under class descriptions
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
 
-
 export const MenuItems = [
     {
         id: "1",
@@ -94,14 +93,18 @@ export const MenuItems = [
                 link:"/faq"
             },
             {
-                title: "Parent Portal",
-                external: true,
-                link: "https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
+                title: "Policies & Procedures",
+                link: "/policies"
             },
             {
                 title: "Contact Us",
                 link: "/contact"
-            }
+            },
+            {
+                title: "Parent Portal",
+                external: true,
+                link: "https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
+            },
         ]
     },
     {
@@ -110,6 +113,10 @@ export const MenuItems = [
         link: "/about",
         element: <About />,
         submenu: [
+            {
+                title: "About Us",
+                link: "/about"
+            },
             {
                 title: "Facilities",
                 link: "/about#facilities"

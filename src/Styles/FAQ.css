@@ -1,11 +1,17 @@
 @import url('./Global.css');
 
+
+.faq {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .faq h1 {
-    font-size: 6vw;
-    line-height: 6vw;
-    font-weight: 200;
     color: var(--synergy-teal);
-    margin: 0px 0px 40px 0px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
 }
 
 .faq .questions-container {
@@ -14,7 +20,6 @@
 
 .faq .question {
     width: 100%;
-    max-width: 900px;
     background-color: #FAFAFA;
     padding: 10px 12px 8px 12px;
     margin: 20px 0;
@@ -75,12 +80,4 @@
     font-size: 18px;
     line-height: 27px;
     margin: 12px 0px 0px 0px;
-}
-
-@media screen and (max-width: 980px) {
-    .faq h1 {
-        font-size: 60px;
-        line-height: 70px;
-        margin: 0px 0px 20px 0px;
-    }
 }
