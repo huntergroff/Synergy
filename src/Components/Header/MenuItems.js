@@ -3,6 +3,7 @@ import Home from '../Pages/Home';
 import Classes from '../Pages/Classes';
 import About from '../Pages/About';
 import ComingSoon from '../Pages/ComingSoon';
+import Policies from '../Pages/Policies'
 
 //Import ClassDescriptionItems to autogenerate dropdown of classes under class descriptions
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
@@ -86,7 +87,7 @@ export const MenuItems = [
         id: "5",
         title: "Resources",
         link: "/resources",
-        element: <ComingSoon />,
+        element: <Policies />,
         submenu: [
             {
                 title: "FAQ",

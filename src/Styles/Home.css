@@ -122,18 +122,16 @@
 
 .htlo-video {
     width: 100%;
-    max-width: 1400px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 8%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 8% 2%;
 }
 
 .htlo-video .text {
-    width: 30vw;
-    margin-left: 5vw;
+    width: 40vw;
     box-sizing: border-box;
 }
 
@@ -390,6 +388,7 @@
     
     .htlo-video {
         flex-direction: column;
+        padding: 8%;
     }
     
     .htlo-video .text {
@@ -401,14 +400,16 @@
     .htlo-video .text h1 {
         font-size: 8.5vw;
         line-height: 8.5vw;
-        margin-top: 20px;
+        margin-top: 30px;
         width: fit-content;
+        text-align: center;
     }
     
     .htlo-video .text p {
         font-size: 24px;
         line-height: 36px;
         margin: 20px 0;
+        text-align: center;
     }
     
     .htlo-video .video-frame {
