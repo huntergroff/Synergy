@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 import { AiOutlineCompass, AiOutlineFire, AiOutlineClockCircle } from 'react-icons/ai'
 import { RiFocus3Line } from 'react-icons/ri'
 import { GoCalendar } from 'react-icons/go'
+import { MdOutlineExitToApp } from 'react-icons/md'
+import { BsListCheck } from 'react-icons/bs'
 
 //CSS
 import '../../Styles/Classes.css'
@@ -20,14 +22,22 @@ import { ClassDescriptionItems } from '../ClassDescriptionItems';
  * @param {blurb} the small text of the link
  * @param {icon} the icon behind the link
  * @param {link} the destination of the link 
+ * @param {external} a boolean determining whether or not the link is external
  */
-const Pathway = ({title, blurb, icon, link}) => {
+const Pathway = ({title, blurb, icon, link, external}) => {
   return (
     <div className='classes-pathway'>
-        <Link to={link}>
-            <h2>{title}</h2>
-            <p>{blurb}</p>
-        </Link>
+      {external ? 
+        <a href={link} target="_blank" rel="noreferrer">
+          <h2>{title}</h2>
+          <p>{blurb}</p>
+        </a>
+      : 
+      <Link to={link}>
+        <h2>{title}</h2>
+        <p>{blurb}</p>
+      </Link>
+      }
         {icon}
     </div>
   )
@@ -73,8 +83,8 @@ const ClassDescription = ({ descriptionItem, index }) => {
 const Classes = () => {
   return (
     <>
-      <div className='classes'>
-        <div className='classes-at-synergy container'>
+      <div className='classes container'>
+        <div className='classes-at-synergy'>
           <h1>Classes at Synergy</h1>
           <h3>
             At Synergy Dance, we pride ourselves in featuring classes for all ages
@@ -104,7 +114,7 @@ const Classes = () => {
             />
           </div>
         </div>
-        <div className='container' id='schedules'>
+        <div id='schedules'>
           <h1>Schedules & Sessions</h1>
           <h3>
             The dance year is divided into four sessions, with each session including
@@ -115,20 +125,20 @@ const Classes = () => {
           </h3>
           <div className='schedules-container'>
             <Pathway 
-                title="Daily"
-                blurb="Click to view a schedule of all classes, by day of the week."
-                icon={<AiOutlineClockCircle className='pathway-icon'/>}
-                link="/classtables-daily"
-              />
-              <Pathway 
-                title="Annual"
-                blurb="Click to view the schedule for classes, sessions, and holidays in 2022- 2023."
-                icon={<GoCalendar className='pathway-icon'/>}
-                link="/"
-              />
+              title="Daily"
+              blurb="Click to view a schedule of all classes, by day of the week."
+              icon={<AiOutlineClockCircle className='pathway-icon'/>}
+              link="/classtables-daily"
+            />
+            <Pathway 
+              title="Annual"
+              blurb="Click to view the schedule for classes, sessions, and holidays in 2022- 2023."
+              icon={<GoCalendar className='pathway-icon'/>}
+              link="/"
+            />
           </div>
         </div>
-        <div className='container' id='registration'>
+        <div id='registration'>
           <h1>Registration</h1>
           <h3>
             Use the links in the table below to register for a class. You will be prompted to create an 
@@ -137,11 +147,20 @@ const Classes = () => {
             class that has a waitlist, please add your name to the waitlist and drop Mia an email. We are still 
             working to add extra classes where there are waitlists but we need to know who is interested.
           </h3>
-          <div className="registration-button-container">
-            <div className='buttons'>
-              <Link to="/classtables">View All Classes</Link>
-              <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noreferrer">Visit Parent Portal</a>
-            </div>
+          <div className='pathways-container'>
+            <Pathway 
+              title="All Classes"
+              blurb="Click to view a list of all classes with registration links."
+              icon={<BsListCheck className='pathway-icon'/>}
+              link="/classtables"
+            />
+            <Pathway 
+              title="Parent Portal"
+              blurb="Click to visit the parent portal and manage your classes."
+              icon={<MdOutlineExitToApp className='pathway-icon'/>}
+              link="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
+              external={true}
+            />
           </div>
         </div>
       </div>

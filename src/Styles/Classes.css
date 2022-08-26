@@ -1,10 +1,22 @@
 @import url('./Global.css');
 
-.classes-at-synergy {
+.classes, .classes-descriptions {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.classes-at-synergy, #schedules, #registration {
     height: fit-content;
+    padding-bottom: 200px;
+}
+
+#schedules, #registration {
+    padding-top: 50px;
 }
 
 .classes h1 {
+    width: fit-content;
     font-size: 100px;
     line-height: 100px;
     font-weight: 200;
@@ -14,7 +26,6 @@
 
 .classes h3 {
     width: 100%;
-    max-width: 800px;
     font-weight: 500;
     color: var(--synergy-teal);
     font-size: 24px;
@@ -56,19 +67,27 @@
     margin: 0 0 5px 0;
     width: fit-content;
     font-family: articulat-heavy-cf;
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
+    transition: 200ms;
+}
+
+.schedules-container h2 {
+    margin: 0;
+    font-family: articulat-heavy-cf;
+    font-size: 60px;
+    line-height: 60px;
     transition: 200ms;
 }
 
 .classes-pathway p {
     margin: 0;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
 }
 
 .pathways-container p {
-    width: 26vw;
+    width: 80%;
 }
 
 .pathway-icon {
@@ -101,67 +120,12 @@
 
 .schedules-container {
     width: 100%;
-    max-width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 30px;
     text-align: right;
-}
-
-.schedules-container h2 {
-    margin: 0;
-    font-family: articulat-heavy-cf;
-    font-size: 70px;
-    line-height: 70px;
-    transition: 200ms;
-}
-
-.registration-button-container .buttons {
-    display: flex;
-    width: 430px;
-    justify-content: space-between;
-}
-
-.registration-button-container {
-    margin-top: 20px;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    font-size: 20px;
-    line-height: 0px;
-}
-
-.registration-button-container a {
-    box-sizing: border-box;
-    display: block;
-}
-
-.registration-button-container p {
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: fit-content;
-    color: var(--synergy-teal);
-}
-
-#registration a {
-    text-decoration: none;
-    border: none;
-    padding: 20px;
-    background-color: var(--synergy-purple);
-    border-radius: 15px;
-    color: white;
-    font-family: articulat-heavy-cf;
-    width: fit-content;
-    transition-duration: 200ms;
-}
-
-#registration a:hover {
-    background-color: var(--synergy-coral);
 }
 
 .classes-descriptions, .class-description-container {
@@ -172,7 +136,7 @@
     font-weight: 200;
     font-size: 90px;
     line-height: 90px;
-    margin: 30px 0px;
+    margin: 0 0 30px 0;
     color: var(--synergy-teal)
 }
 
@@ -215,7 +179,6 @@
 .class-description-container .description {
     color: var(--synergy-coral);
     width: 100%;
-    max-width: 850px;
     border-top: 2px solid var(--synergy-coral);
     padding-top: 30px;
     margin-bottom: 30px;
@@ -277,29 +240,6 @@
 
     .classes .container {
         padding-bottom: 0;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .registration-button-container .buttons {
-        flex-direction: column;
-        width: fit-content;
-        align-items: flex-start;
-    }
-
-    .registration-button-container a {
-        margin-bottom: 20px;
-    }
-
-    .registration-button-container p {
-        margin-top: 10px;
-        font-size: 30px;
-        font-weight: 200;
-    }
-    
-    .registration-button-container {
-        flex-direction: column;
-        align-items: flex-start;
     }
 }
 
