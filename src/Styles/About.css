@@ -2,7 +2,7 @@
 
 #facilities, #teachers, .about-title-and-blurb {
     color: var(--synergy-teal);
-    padding: 5% 5% 0 5%;
+    padding: 5% 5% 20vh 5%;
 }
 
 .about-title-and-blurb p {
@@ -19,29 +19,29 @@
     display: block;
 }
 
+#facilities h2 {
+    font-weight: 200;
+    margin: 0;
+}
+
 #facilities p {
     font-size: 26px;
     line-height: 40px;
     margin: 4% 0;
+    width: 100%;
 }
 
-.about h1 {
-    font-size: 120px;
-    line-height: 130px;
-    font-weight: 200;
-    margin: 0;
+.about-title-and-blurb h1 {
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 500;
+    margin-top: 70px;
 }
 
 #facilities h1, #teachers h1 {
     font-size: 80px;
     line-height: 90px;
     font-weight: 600;
-    margin: 0;
-}
-
-#facilities .title h2 {
-    font-size: 24px;
-    font-weight: 100;
     margin: 0;
 }
 
@@ -67,24 +67,22 @@
     margin-top: 4%;
 }
 
-#facilities .text-2 {
-    border-bottom: 2px solid var(--synergy-teal);
-}
-
 #teachers {
+    margin-top: 170px;
     padding-bottom: 5%;
-}
-
-#teachers .title {
-    margin-bottom: 2%;
 }
 
 #teachers h2 {
     font-size: 26px;
     line-height: 40px;
     font-weight: 300;
-    margin: 0;
     width: 100%;
+}
+
+#teachers h4 {
+    font-size: 63px;
+    line-height: 70px;
+    margin: 200px 0 0 0;
 }
 
 #teachers .teacher {
@@ -98,7 +96,7 @@
     max-width: 300px;
     height: fit-content;
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 #teachers .teacher h3 {
@@ -165,11 +163,10 @@
         margin-bottom: 20px;
     }
 
-    .about h1 {
+    .about-title-and-blurb h1 {
         font-size: 80px;
-        line-height: 90px;
+        line-height: 100px;
         font-weight: 500;
-        margin-bottom: 20px;
     }
 
     #facilities h1, #teachers h1 {
@@ -182,5 +179,23 @@
     .about p {
         font-size: 20px;
         line-height: 36px;
+    }
+
+    #teachers .teacher h3 {
+        margin: 20px 0;
+        font-size: 36px;
+    }
+    
+    #teachers .teacher p {
+        font-size: 18px;
+    }
+
+    #teachers h4 {
+        font-size: 50px;
+        line-height: 65px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--synergy-teal);
+        margin-bottom: 20px;
+        margin-top: 150px;
     }
 }

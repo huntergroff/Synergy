@@ -122,7 +122,7 @@ export const MenuItems = [
                 link: "/about#facilities"
             },
             {
-                title: "Teachers",
+                title: "Our Team",
                 link: "/about#teachers"
             }
         ]

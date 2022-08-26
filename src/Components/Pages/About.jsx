@@ -16,8 +16,8 @@ import StudioLobby from '../../Images/studio-lobby-party.jpg'
 //CSS
 import '../../Styles/About.css'
 
-//Import the list of JS objects that generates ALL Teacher Bios.
-import { TeacherBioItems } from '../TeacherBioItems.js'
+//Import the lists of JS objects that generate ALL Staff Bios.
+import { TeacherBioItems, TABioItems, StudentTeacherBioItems, AdminBioItems } from '../StaffBioItems.js'
 
 /**
  * Renders "facilities" section
@@ -100,7 +100,18 @@ const TeacherBio = ({ name, bio, picture }) => {
 }
 
 /**
- * Renders all the teacher bios and a short blurb at the top.
+ * Renders a list of staff given a list of bio items
+ */
+const renderBios = (bioItemsList) => {
+  return bioItemsList.map((teacherItem, index) => {
+    return (
+      <TeacherBio name={teacherItem.name} bio={teacherItem.bio} picture={teacherItem.picture} key={index} />
+    );
+  })
+}
+
+/**
+ * Renders all the staff bios and a short blurb at the top.
  */
 const Teachers = () => {
   return (
@@ -117,11 +128,14 @@ const Teachers = () => {
           carry them through a lifetime love of dance.
         </h2>
       </div>
-      {TeacherBioItems.map((teacherItem, index) => {
-        return (
-          <TeacherBio name={teacherItem.name} bio={teacherItem.bio} picture={teacherItem.picture} key={index} />
-        );
-      })}
+      <h4>Teachers</h4>
+      {renderBios(TeacherBioItems)}
+      <h4>Student Teachers</h4>
+      {renderBios(StudentTeacherBioItems)}
+      <h4>Teaching Assistants</h4>
+      {renderBios(TABioItems)}
+      <h4>Administrative Assistants</h4>
+      {renderBios(AdminBioItems)}
     </div>
   )
 }
