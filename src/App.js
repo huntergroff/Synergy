@@ -10,6 +10,7 @@ import Navbar from './Components/Header/Navbar';
 import { MenuItems } from './Components/Header/MenuItems.js';
 import Footer from './Components/Footer';
 import Policies from './Components/Pages/Policies';
+import NotFound from './Components/Pages/NotFound';
 
 
 function App() {
@@ -57,7 +58,11 @@ function App() {
       <Route exact path="/faq" element={<FAQ />}/>
       <Route exact path="/contact" element={<Contact />}/>
       <Route exact path="/policies" element={<Policies />}/>
-      
+      <Route exact path="/not-found" element={<NotFound />}/>
+
+      {/** Any invalid path will bring user to the "Not Found" page */}
+      <Route path="*" element={<NotFound />} />
+
     </Routes>
     <Footer />
     </div>

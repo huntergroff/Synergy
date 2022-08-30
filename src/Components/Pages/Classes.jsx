@@ -8,6 +8,7 @@ import { RiFocus3Line } from 'react-icons/ri'
 import { GoCalendar } from 'react-icons/go'
 import { MdOutlineExitToApp } from 'react-icons/md'
 import { BsListCheck } from 'react-icons/bs'
+import SynergyCalendar from '../../Documents/SynergyCalendar.pdf'
 
 //CSS
 import '../../Styles/Classes.css'
@@ -134,7 +135,8 @@ const Classes = () => {
               title="Annual"
               blurb="Click to view the schedule for classes, sessions, and holidays in 2022- 2023."
               icon={<GoCalendar className='pathway-icon'/>}
-              link="/"
+              link={SynergyCalendar}
+              external="true"
             />
           </div>
         </div>
