@@ -123,7 +123,7 @@ const Classes = () => {
             are openings, any time.  If you join late, no worries! Please contact 
             Mia and your tuition will be prorated.
           </h3>
-          <div className='schedules-container'>
+          <div className='pathways-container'>
             <Pathway 
               title="Daily"
               blurb="Click to view a schedule of all classes, by day of the week."

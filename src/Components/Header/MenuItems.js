@@ -58,6 +58,7 @@ export const MenuItems = [
         title: "Events",
         link: "/events",
         element: <ComingSoon />,
+        /**
         submenu: [
             {
                 title: "Recital",
@@ -76,6 +77,7 @@ export const MenuItems = [
                 link: "/events#summercamps"
             }
         ]
+        */
     },
     {
         id: "4",

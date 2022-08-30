@@ -2,7 +2,7 @@
 
 .classes, .classes-descriptions {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -20,6 +20,8 @@
     font-size: 100px;
     line-height: 100px;
     font-weight: 200;
+    border-bottom: 1px solid var(--synergy-teal);
+    padding-bottom: 30px;
     color: var(--synergy-teal);
     margin: 0;
 }
@@ -30,8 +32,7 @@
     color: var(--synergy-teal);
     font-size: 24px;
     line-height: 38px;
-    border-top: 2px solid var(--synergy-teal);
-    padding-top: 30px;
+    margin-top: 40px;
 }
 
 .pathways-container {
@@ -49,10 +50,6 @@
     justify-content: center;
 }
 
-#schedules .classes-pathway {
-    width: 40%;
-}
-
 .classes-pathway a {
     text-decoration: none;
     color: var(--synergy-purple);
@@ -63,27 +60,19 @@
     justify-content: center;
 }
 
-.pathways-container h2 {
+.classes-pathway h2 {
     margin: 0 0 5px 0;
     width: fit-content;
     font-family: articulat-heavy-cf;
-    font-size: 60px;
-    line-height: 60px;
-    transition: 200ms;
-}
-
-.schedules-container h2 {
-    margin: 0;
-    font-family: articulat-heavy-cf;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
     transition: 200ms;
 }
 
 .classes-pathway p {
     margin: 0;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 21px;
+    line-height: 28px;
 }
 
 .pathways-container p {
@@ -108,26 +97,6 @@
     opacity: 16%;
 }
 
-#schedules {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-#schedules h1, #schedules h3 {
-    text-align: right;
-}
-
-.schedules-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
-    text-align: right;
-}
-
 .classes-descriptions, .class-description-container {
     width: 100%;
 }
@@ -141,7 +110,9 @@
 }
 
 .class-description-container img {
-    width: 35%;
+    width: 48%;
+    height: auto;
+    object-fit:cover;
     display: block;
 }
 
@@ -156,10 +127,6 @@
     justify-content: space-between;
     margin-bottom: 30px;
     height: fit-content;
-}
-
-.class-description-container .header img {
-    width: 48%;
 }
 
 .class-description-container .header h2 {
@@ -192,16 +159,20 @@
 }
 
 .class-description-container .title-and-age h3 {
-    margin: 0;
+    margin: 0 20px 0 0;
     font-weight: 800;
     font-size: 30px;
+    line-height: 35px;
+    max-width: 400px;
 }
 
 .class-description-container .title-and-age h4 {
     margin: 0;
     font-weight: 800;
     font-size: 20px;
-    min-width: fit-content;
+    line-height: 25px;
+    max-width: 200px;
+    text-align: right;
 }
 
 .class-description-container .description p {
@@ -211,10 +182,16 @@
 
 /** */
 @media screen and (max-width: 900px) {
-    .pathways-container, .schedules-container {
+    .pathway-icon {
+        width: auto;
+        height: 80%;
+        position: absolute;
+        right:0;
+    }
+
+    .pathways-container {
         flex-direction: column;
         align-items: center;
-        max-width: 600px;
         margin: 0;
     }
 
@@ -224,18 +201,11 @@
         margin: 20px 0;
     }
 
-    #schedules .classes-pathway {
-        width: 100%;
-        justify-content: right;
-    }
-
-    .schedules-container {
-        width: fit-content;
-    }
-
     .classes-pathway p {
+        font-size: 20px;
+        line-height: 28px;
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .classes .container {
@@ -244,9 +214,23 @@
 }
 
 @media screen and (max-width: 720px) {
+    .classes-pathway h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
     .classes h1, .classes-descriptions h1 {
-        font-size: 16vw;
-        line-height: 16vw;
+        font-size: 15vw;
+        line-height: 15vw;
+        border-bottom: 0;
+        padding-bottom: 0;
+        font-weight: 700;
+    }
+
+    .classes h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 25px;
     }
 
     .class-description-container .header .blurb {
@@ -261,4 +245,18 @@
     .class-description-container .header p {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .class-description-container .title-and-age {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .class-description-container .title-and-age h4 {
+        text-align: left;
+        max-width: 450px;
+        margin-top: 10px;
+    }
+    
 }

@@ -198,7 +198,7 @@
 
 .home-banner {
     background-color: var(--synergy-light-purple);
-    height: 20vw;
+    height: fit-content;
     padding: 10vw 5vw;
     transition: all .1s;
 }
@@ -242,8 +242,8 @@
 }
 
 .banner-info p {
-    font-size: 1.8vw;
-    line-height: 2.4vw;
+    font-size: 1.7vw;
+    line-height: 2.3vw;
     font-weight: 300;
     margin: 1vw 0 2vw 0;
     width: 100%;
@@ -381,9 +381,11 @@
     }
 
     .home-banner a {
-        font-size: 3vw;
-        line-height: 2.5vw;
-        padding: 2.5vw 2.7vw 1.8vw 2.7vw;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 20px;;
+        padding: 12px;
+        max-width: 240px;
     }
     
     .htlo-video {

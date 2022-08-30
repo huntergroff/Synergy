@@ -121,7 +121,7 @@ const Home = () => {
         />
         <HomeBanner
           title="Programs"
-          blurb='We continue look for new ways to build our dancers and future leaders through opportunities like SPARC (our repertory company), STEP (our student teacher training program), and our student ambassador initiative.'
+          blurb='We build our future leaders through opportunities like SPARC repertory company, STEP student teacher training program, and our student ambassador initiative.'
           btnText="Get involved!"
           btnLink="/programs"
           image={RecitalPose}
