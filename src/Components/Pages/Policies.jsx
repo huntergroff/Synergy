@@ -10,7 +10,8 @@ import '../../Styles/Policies.css'
 const PolicyEntry = ({ policyItem }) => {
     return (
         <div className='policy'>
-            <p><b>{policyItem.title}</b>: {policyItem.blurb}</p>
+            <h2><b>{policyItem.title}:</b></h2>
+            <div>{policyItem.blurb}</div>
             {policyItem.bullets ? 
                 <ul>
                     {policyItem.bullets.map((bullet, index) => {
@@ -20,7 +21,7 @@ const PolicyEntry = ({ policyItem }) => {
                     })}
                 </ul> 
             : <></> }
-            {policyItem.second_blurb ? <p>{policyItem.second_blurb}</p> : <></>}
+            {policyItem.second_blurb ? <div>{policyItem.second_blurb}</div> : <></>}
         </div>
     )
 }
