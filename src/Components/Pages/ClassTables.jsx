@@ -1,5 +1,5 @@
 //React Imports
-import { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 //CSS
 import '../../Styles/ClassTables.css'

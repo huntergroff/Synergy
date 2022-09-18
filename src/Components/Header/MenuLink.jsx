@@ -20,7 +20,7 @@ const MenuLink = ({ menu, depthLevel, isLastHeader }) => {
   return (
     <li className={`menu-link ${depthLevel > 0 ? 'navbar-dropdown-item' : 'navbar-header-item'}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         {/** If the main menu has the external property, render an external link. Else, render a NavLink to a different part of the website. */}
-        {menu.external ? <a href={menu.link} target="_blank" rel="noreferrer">{menu.title}</a> : <NavLink to={menu.link}>{menu.title}</NavLink>}
+        {menu.external ? <a href={menu.link} target="_blank" rel="noopener noreferrer">{menu.title}</a> : <NavLink to={menu.link}>{menu.title}</NavLink>}
         {/** If the menu has a submenu, prepare a dropdown component. */}
         {menu.submenu ? <Dropdown submenus={menu.submenu} isOpen={open} depthLevel={depthLevel + 1} isLastHeader={isLastHeader}/> : <></>}
     </li>

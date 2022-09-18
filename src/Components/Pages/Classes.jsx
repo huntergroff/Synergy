@@ -29,7 +29,7 @@ const Pathway = ({title, blurb, icon, link, external}) => {
   return (
     <div className='classes-pathway'>
       {external ? 
-        <a href={link} target="_blank" rel="noreferrer">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <h2>{title}</h2>
           <p>{blurb}</p>
         </a>

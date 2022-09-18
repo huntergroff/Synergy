@@ -29,7 +29,7 @@ const MobileMenuLink = ({ menu, toggleMenu }) => {
   /** else if the menu is an external link, create an a tag to the external site */
   } else if (menu.external) {
     menuListItem = (
-      <a href={menu.link} target="_blank" rel="noreferrer">{menu.title}</a>
+      <a href={menu.link} target="_blank" rel="noopener noreferrer">{menu.title}</a>
     )
 
   /** else if the menu has an internal link, render a Link to that page of the site */

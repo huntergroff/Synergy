@@ -1,6 +1,6 @@
 //React Imports
+import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 //Some component imports
 import ClassTables from './Components/Pages/ClassTables';

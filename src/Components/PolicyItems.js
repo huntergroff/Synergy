@@ -16,7 +16,8 @@
  *         fields expect strings and lists of strings.
  *      4. Save this file and check that your question has been added to the FAQ page of the website!
  */
-
+ import React from 'react';
+ 
  export const PolicyItems = [
     {
         title: "Registration and Jackrabbit Portal",

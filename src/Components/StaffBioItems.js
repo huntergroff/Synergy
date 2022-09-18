@@ -13,9 +13,10 @@
  */
 
 //Images - add your import statement here
-import AmandaBiggs from '../Images/Staff/amanda-biggs.jpg'
-import EmilyBrace from '../Images/Staff/emily-brace.jpg'
-import NoPicGirl from '../Images/Staff/no-teacher-pic-girl.jpg'
+import React from 'react';
+import AmandaBiggs from '../Images/Staff/amanda-biggs.jpg';
+import EmilyBrace from '../Images/Staff/emily-brace.jpg';
+import NoPicGirl from '../Images/Staff/no-teacher-pic-girl.jpg';
 
 //TeacherBioItems array - add new teahcers as objects here
 export const TeacherBioItems = [

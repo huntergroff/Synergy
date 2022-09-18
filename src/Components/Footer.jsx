@@ -21,13 +21,13 @@ const Footer = () => {
                 <p>SYNERGY CENTER<br></br>FOR DANCE AND THE<br></br>PERFORMING ARTS</p>
             </div>
             <div className='footer-socials'>
-                <a href="https://www.facebook.com/synergydancevt/" target="_blank" rel="noreferrer">
+                <a href="https://www.facebook.com/synergydancevt/" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF className='footer-social-icon' />
                 </a>
-                <a href="https://www.instagram.com/synergy.cdpa/?hl=en" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/synergy.cdpa/?hl=en" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className='footer-social-icon' />
                 </a>
-                <a href="https://goo.gl/maps/s5Y7zxw6RemQE5pdA" target="_blank" rel="noreferrer">
+                <a href="https://goo.gl/maps/s5Y7zxw6RemQE5pdA" target="_blank" rel="noopener noreferrer">
                     <MdLocationPin className='footer-social-icon' />
                 </a>
                 <Link to="/faq" className='footer-social-icon'>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <div className='footer-info' id="footerlinks">
             <h1>LINKS</h1>
-            <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noreferrer">Parent Portal</a>
+            <a href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745" target="_blank" rel="noopener noreferrer">Parent Portal</a>
             <Link to="/classes#schedules">Daily and Annual Schedules</Link>
             <Link to="/about#teachers">Teacher information</Link>
             <Link to="/about">About Us</Link>

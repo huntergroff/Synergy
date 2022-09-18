@@ -1,5 +1,5 @@
 //React Imports
-import { React, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Papa from "papaparse";
 
@@ -48,7 +48,8 @@ const Home = () => {
   
   // This useEffect hook fetches the data from google sheets on page load.
   useEffect(() => {
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQvCf3uHNT26Wb9ApDfYVSPbUIBsX7fjqejut1LCRptL8TET9DDmPElpL9IsJgosqT1aMUscfVIrzjC/pub?gid=0&single=true&output=csv", {
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQvCf3uHNT26Wb9ApDfYVSPbUIBsX7fjqejut1LCRptL8TET9DDmPElpL9IsJgosqT1aMUscfVIrzjC/pub?gid=0&single=true&output=csv", 
+    {
       download: true,
       header: true,
       complete: function(results) {
@@ -56,7 +57,7 @@ const Home = () => {
       }
     // BLOCK THIS ERROR SO THAT ABOVE USEEFFECT ONLY RUNS ONCE
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  })}, [])
+    })}, []);
 
   // splitting the google sheet data into individual items that can be used to render various dynamic messages.
   const mini_alert = googleSheetData[0];

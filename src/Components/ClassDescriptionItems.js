@@ -27,6 +27,7 @@
  */
 
 //Images - add your import statement here
+import React from 'react';
 import Pointe from '../Images/pointe.jpg'
 
 export const ClassDescriptionItems = [
