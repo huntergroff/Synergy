@@ -68,7 +68,7 @@ export default class Contact extends Component {
   handleSubmit(event) {
     event.preventDefault()
 
-    const templateId = 'template_q4q2jg2';
+    const templateId = 'template_dgcaq5r';
     const variables = {
         from_name: this.state.name,
         from_email: this.state.email,
@@ -90,7 +90,7 @@ export default class Contact extends Component {
 
   sendFeedback (templateId, variables) {
     window.emailjs.send(
-        'service_qf0w0ih', templateId,
+        'service_9e96f57', templateId,
         variables
     ).then(res => {
         console.log('Email successfully sent!');
