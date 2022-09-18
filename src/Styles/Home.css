@@ -1,7 +1,21 @@
 @import './Global.css';
 
 .bg {
-    background-image: url("../Images/studio-wide.webp");
+    /* Modified as a test to see if this is simply a relative position issue
+    this is working locally but not when pushed up to robgroff.com 
+    Src
+        --> Components
+            --> Pages
+                Home.jsx
+        --> Documents
+        --> Images
+        --> Styles
+            Home.css
+        
+
+    background-image: url("../Images/studio-wide.webp"); 
+    background-image: url("%PUBLIC_URL%/studio-wide-testing.webp");*/
+    background-image: url("../Images/studio-wide.webp"); 
     position: fixed;
 
     /* Extend Slightly off-screen for blur effect */
