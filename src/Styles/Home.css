@@ -15,7 +15,7 @@
 
     background-image: url("../Images/studio-wide.webp"); 
     background-image: url("%PUBLIC_URL%/studio-wide-testing.webp");*/
-    background-image: url("../Images/studio-wide.webp"); 
+    background-image: url("../Images/studio-wide.jpg"); 
     position: fixed;
 
     /* Extend Slightly off-screen for blur effect */
