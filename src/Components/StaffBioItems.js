@@ -14,15 +14,35 @@
 
 //Images - add your import statement here
 import React from 'react';
+import AlexBacheller from '../Images/Staff/alex-bacheller.jpg';
 import AmandaBiggs from '../Images/Staff/amanda-biggs.jpg';
+import AprilFoster from '../Images/Staff/april-foster.jpg';
+import BreaMcBride from '../Images/Staff/brea-mcbride.jpg';
+import ChristanaDavis from '../Images/Staff/christana-davis.jpg';
 import EmilyBrace from '../Images/Staff/emily-brace.jpg';
+import EmmaMontgomery from '../Images/Staff/emma-montgomery.jpg';
+import JacquelineFeiss from '../Images/Staff/jacqueline-feiss.jpg';
+import MiaGroff from '../Images/Staff/mia-groff.jpg';
+import RoseBedard from '../Images/Staff/rose-bedard.jpg';
+import TheresaRobinson from '../Images/Staff/theresa-robinson.jpg';
+
+import SummerClough from '../Images/Staff/summer-clough.jpg';
+
+import RebeccaClough from '../Images/Staff/rebecca-clough.jpg';
+
 import NoPicGirl from '../Images/Staff/no-teacher-pic-girl.jpg';
+import NoPicBoy from '../Images/Staff/no-teacher-pic-boy.jpg';
 
 //TeacherBioItems array - add new teahcers as objects here
 export const TeacherBioItems = [
     {
+        name: "Mia Groff",
+        picture: <img src={MiaGroff} alt="Mia Groff" />,
+        bio: ""
+    },
+    {
         name: "Alex Bacheller",
-        picture: <img src={NoPicGirl} alt="Alex Bacheller" />,
+        picture: <img src={AlexBacheller} alt="Alex Bacheller" />,
         bio: "Alex grew up dancing in her mother’s studio, Kerry’s Dance Center, in southern New Hampshire. She received training in ballet, tap, jazz, and hip hop. She studied both the Vaganova and Cecchetti ballet methods. Alex danced competitively through high school where she attended New Englands with her dance team. She attended workshops at Plymouth State University to study Graham modern dance and hip hop styles. In college, Alex was accepted as a member of Orchesis Dance Company, where she acted as president her junior year. During her time at UVM, she taught dance at area studios including Electric Youth and The Movement Center. After completing her degree in middle level education, Alex began teaching middle school language arts and social studies. Outside of her day job, she founded an adult dance company in Burlington called Nova Contemporary Dance Company. She’s settled in at Camels Hump Middle School as a 7th and 8th grade teacher. She’s so happy to have found a dance home at Synergy! Alex is looking forward to another year of dance in the beautiful new space."
     },
     {
@@ -32,17 +52,17 @@ export const TeacherBioItems = [
     },
     {
         name: "April Foster",
-        picture: <img src={NoPicGirl} alt="April Foster" />,
+        picture: <img src={AprilFoster} alt="April Foster" />,
         bio: "April is originally from Pittsburgh and has a lifelong love of dance. She studied dance as a dance major at the University of Cincinnati College-Conservatory of Music and in the pre-professional programs at Nutmeg Ballet Conservatory and the Conservatory of Performing Arts at Point Park University. She has extensive training in ballet, including performing soloist and principal roles in both classical ballets and contemporary dance pieces. Due to injury, she decided to change her path to psychology. She holds a MS in Psychology in Education and is a certified Progressing Ballet Technique (PBT) instructor. She draws on her dance experience, psychology background, and PBT training to lead classes that focus on building proper technique, strength, and artistry."
     },
     {
         name: "Brea McBride",
-        picture: <img src={NoPicGirl} alt="Brea McBride" />,
+        picture: <img src={BreaMcBride} alt="Brea McBride" />,
         bio: "Brea McBride is the proud owner and Artistic Director of Infinity Dance Studio in Essex Junction, VT.  She credits much of her success in opening the business to the completion of the Start-Up Course offered through the Women's Small Business Program.  Brea began her pre-professional training in her hometown of Ironton, Ohio at Yvonne Dekay’s School of Dance.  She has also lived and furthered her dance education in New Orleans, San Francisco, and New York City.  After graduating from the American Musical and Dramatic Academy in NYC, she was hired as a Mainstage Performer for Disney Cruise Lines.  Brea began her career as a dance educator at The Cynthia King Dance Studio in Brooklyn, NY.  She has taught and choreographed for several local VT studios since moving here in 2004.  Proud moments include restaging a children’s play for the Shelburne Players, choreographing a piece for the Haunted Forest, and working with the children at Camp Dream and Camp Kiniya.  Her most recent professional experience as a principal dancer in Ballet Vermont’s production of Bees and Friends was incredibly rewarding.  Brea is thrilled to have the opportunity to join the Synergy faculty!"
     },
     {
         name: "Christiana Davis",
-        picture: <img src={NoPicGirl} alt="Christiana Davis" />,
+        picture: <img src={ChristanaDavis} alt="Christiana Davis" />,
         bio: ""
     },
     {
@@ -52,32 +72,27 @@ export const TeacherBioItems = [
     },
     {
         name: "Emma Montgomery",
-        picture: <img src={NoPicGirl} alt="Emma Montgomery" />,
+        picture: <img src={EmmaMontgomery} alt="Emma Montgomery" />,
         bio: ""
     },
     {
         name: "Jacqueline Feiss",
-        picture: <img src={NoPicGirl} alt="Jacqueline Feiss" />,
+        picture: <img src={JacquelineFeiss} alt="Jacqueline Feiss" />,
         bio: "Jacqueline grew up in Connecticut and has been dancing since before she could walk. She attended Roger Williams University and obtained a degree in Dance Performance. Jacqueline performed with a variety of different dance companies and studied under many of the influential dancers of today. Jacqueline has been teaching Jazz, Tap, Modern, Contemporary, Ballet, Jazz Fusion/Funk, and Hip Hop for the past twenty years and cannot imagine her life without dance! She lives in Jericho with her husband, two young daughters, and her dog. During the day, Jacqueline works as an Educational Consultant for the Vermont I-Team and helps to support full membership and inclusion for all children. When she is not dancing or consulting, she enjoys skiing, biking, and exploring all Vermont has to offer. She is looking forward to teaching Contemporary and Adult Tap at Synergy this year."
     },
     {
-        name: "Mia Groff",
-        picture: <img src={NoPicGirl} alt="Mia Groff" />,
-        bio: ""
-    },
-    {
         name: "Rose Bedard",
-        picture: <img src={NoPicGirl} alt="Rose Bedard" />,
+        picture: <img src={RoseBedard} alt="Rose Bedard" />,
         bio: ""
     },
     {
         name: "Tanner Paffen",
-        picture: <img src={NoPicGirl} alt="Tanner Paffen" />,
+        picture: <img src={NoPicBoy} alt="Tanner Paffen" />,
         bio: ""
     },
     {
         name: "Theresa Robinson",
-        picture: <img src={NoPicGirl} alt="Theresa Robinson" />,
+        picture: <img src={TheresaRobinson} alt="Theresa Robinson" />,
         bio: "Theresa grew up in southern CT in a theatre family, acting, directing children’s theatre, assisting with costumes, immersing herself in all aspects of community theatre, and ALWAYS dancing along with her sisters.  She danced at Lyndon State College, running their dance club program there while majoring in Elementary Education.  She has also danced in our local community both in Burlington area and Jericho for many years. Holding a K-6 teaching certificate, Theresa ran her own preschool for more than 20 years and now is an Administrative Assistant at Browns River Middle School, just across the lawn!  Theresa has worked with children of all ages in our local community with Mia as Co-Director of Vermont Youth Dancers since 2010, and taught classes both at the Birds Nest and at Synergy.  Presently, she is teaching Creative Movement, Jazz 1 & 2, and Lyrical 2."
     }
 ]
@@ -135,7 +150,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Summer Clough",
-        picture: <img src={NoPicGirl} alt="Summer Clough" />,
+        picture: <img src={SummerClough} alt="Summer Clough" />,
         bio: ""
     },
     {
