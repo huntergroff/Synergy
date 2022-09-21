@@ -28,14 +28,21 @@
 
 //Images - add your import statement here
 import React from 'react';
-import Pointe from '../Images/pointe.jpg'
+import Pointe from '../Images/class-descr-pointe.jpg';
+import Ballet from '../Images/class-descr-blank.jpg';
+import ProgBalTq from '../Images/class-descr-blank.jpg';
+import Lyrical from '../Images/class-descr-blank.jpg';
+import HipHop from '../Images/class-descr-hiphop.jpg';
+import ExpTeen from '../Images/class-descr-blank.jpg';
+import ExpChildren from '../Images/class-descr-blank.jpg';
+import Focus from '../Images/class-descr-blank.jpg';
 
 export const ClassDescriptionItems = [
     {
         categoryTitle: "Ballet",
         categoryUrlTag: "ballet",
-        categoryImg: (<img src={Pointe} alt="Ballet"/>),
-        categoryBlurb: "Need a blurb for ballet!",
+        categoryImg: (<img src={Ballet} alt="Ballet"/>),
+        categoryBlurb: "Ballet grew out of the Italian Renaissance. This highly technical and classical form of dance has its own vocabulary.  Conventional poses are combined with light flowing movements such as leaps and turns.",
         classes: [
             {
                 title: "Foundations in Dance-Ballet/Lyrical 1",
@@ -77,7 +84,7 @@ export const ClassDescriptionItems = [
     {
         categoryTitle: "Progressing Ballet Technique",
         categoryUrlTag: "pbt",
-        categoryImg: (<img src={Pointe} alt="PBT"/>),
+        categoryImg: (<img src={ProgBalTq} alt="PBT"/>),
         categoryBlurb: "Not just for Ballerinas!  **Progressing Ballet Technique is an internationally recognized training program designed to train dancers in body awareness, postural awareness, balance, and core conditioning. The exercises help increase the muscle memory of correct ballet technique through a carefully designed program utilizing balance balls, resistance bands and therapy balls. The program was designed by a professional ballet dancer in conjunction with a team of physical therapists with the goal of improving the health and safety of young developing dancers and to support the establishment of good technique.",
         classes: [
             {
@@ -128,8 +135,8 @@ export const ClassDescriptionItems = [
     {
         categoryTitle: "Lyrical",
         categoryUrlTag: "lyrical",
-        categoryImg: (<img src={Pointe} alt="Lyrical"/>),
-        categoryBlurb: "Lyrical ...",
+        categoryImg: (<img src={Lyrical} alt="Lyrical"/>),
+        categoryBlurb: "Lyrical dance got its name from the definition of the word lyrical, which means “having a poetic, expressive nature”  Lyrical dance conveys emotions through movement and is influenced by modern, ballet and jazz technique and Contemporary style tends to incorporate the influences of modern dance as well as acrobatic elements.",
         classes: [
             {
                 title: "Foundations in Dance-Ballet/Lyrical",
@@ -149,7 +156,7 @@ export const ClassDescriptionItems = [
             {
                 title: "Lyrical/Contemp 3",
                 age: "10-14",
-                blurb: "This level 3 class is designed for dancers with at least 4-6 years of dance training that emphasized ballet technique. Some formal ballet training is recommended for the student to truly succeed at this level. Level 3 Contemporary is primarily designed to challenge dancer�s skills physically and mentally. The classes consist of strength, flexibility and balance exercises designed to develop posture, body alignment, transfer of weight, stretched legs and core rotation and the ability to move freely from an upright level to the floor and back to standing. Students should expect to study for several years at this level. Like Ballet, it is anticipated that there will be a wide range of students in Lyrical 3 this year. Students who have just completed Lyrical 2, should expect to register for Lyrical 3A. Students who were in 3A last year should contact Mia for class placement."
+                blurb: "This level 3 class is designed for dancers with at least 4-6 years of dance training that emphasized ballet technique. Some formal ballet training is recommended for the student to truly succeed at this level. Level 3 Contemporary is primarily designed to challenge dancer's skills physically and mentally. The classes consist of strength, flexibility and balance exercises designed to develop posture, body alignment, transfer of weight, stretched legs and core rotation and the ability to move freely from an upright level to the floor and back to standing. Students should expect to study for several years at this level. Like Ballet, it is anticipated that there will be a wide range of students in Lyrical 3 this year. Students who have just completed Lyrical 2, should expect to register for Lyrical 3A. Students who were in 3A last year should contact Mia for class placement."
             },
             {
                 title: "Lyrical/Contemp 4",
@@ -164,9 +171,47 @@ export const ClassDescriptionItems = [
         ]
     },
     {
+        categoryTitle: "Hip Hop",
+        categoryUrlTag: "hiphop",
+        categoryImg: (<img src={HipHop} alt="PBT"/>),
+        categoryBlurb: "Hip Hop dance now encompasses a range of street dance styles primarily performed to hip hop music or that have evolved as part of the hip hop culture.  It originated in the Bronx in the late 1970’s and has been influenced by a wide range of styles and made popular by dance crews in the United States.  While hip hop originated as informal street dance and then evolved into the “dance competitions or battles” of the 80’s and 90’s  it is now a widely sought after form of dance instruction with many varieties and influences.",
+        classes: [
+            {
+                title: "Foundations in Dance-Jazz/Hip Hop",
+                age: "5-7",
+                blurb: "For the brand hip hop or jazz student, this class uses a mixture of games and structured exercises to introduce the fundamentals of dance necessary for students whether they wish to move on to Hip Hop 1 or EXPLORE Jazz/Hip Hop. This is an excellent class for students who have participated in Creative Movement and are ready to participate in a more formal dance class or who anticipate that they would like to participate in the IGNITE programs in the future. Students will be exposed to the rules, etiquette and structure of more formalized dance instruction. Simple conditioning exercises that help them build the strong core, feet and leg muscles necessary to support healthy habits throughout their dance training. Students should expect to study at this level for at least one year."
+            },
+            {
+                title: "Hip Hop Level 1",
+                age: "6-8",
+                blurb: "This introduction to hip hop will introduce the fundamentals of dance and of hip hop style. With emphasis on weight transfer, musicality, and the foundations of hip hop movements, students will enjoy this playful introduction to this popular style. Younger students in Hip Hop should have completed some introduction to dance such as Creative Movement or Foundations in Dance prior to beginning in Hip Hop 1."
+            },
+            {
+                title: "Hip Hop Level 2",
+                age: "8-11",
+                blurb: "Level 2 hip hop builds on the foundations of level 1 to begin the work of isolating and opposing upper and lower body movements, introducing the ideas of style, hitting and flow. Students at this level will begin to learn short hip hop combinations to a variety of popular songs."
+            },
+            {
+                title: "Hip Hop Level 3",
+                age: "10-13",
+                blurb: "Level 3 hip hop is considered an intermediate level of hip hop training which starts to explore the complexity of many different styles within the hip hop genre. With the addition of increasingly complex movements, this high energy class will be sure to challenge the student in new ways both physically and mentally."
+            },
+            {
+                title: "Hip Hop Level 4",
+                age: "13 & up or instructor permission",
+                blurb: "Level 4 hip hop represents the entrance to advanced hip hop movement. Students are expected to have a strong foundation of hip hop training prior to reaching this level and will be expected to pick up choreography quickly and be able to observe and mimic a variety of stylistic movements."
+            },
+            {
+                title: "Hip Hop Level 5",
+                age: "14 & up or instructor permission",
+                blurb: "This advanced level hip hop class is designed for the advanced dancer of high school age or older, with many years of hip hop training. Fast paced and focused, this class will begin to look at the individual dancer and how they can add polish to their dancing. Due to the popularity of this class, it will be divided in to Level A and B for the 2019-2020 school year to allow instructors to focus on corrections for individual dancers. Level A is intended for dancers in 9th and 10th grade and Level B is intended for students in grade 11 through adult. Instructor permission is required at this level. Please contact us if you are unsure of your level for this class."
+            }
+         ]
+    },
+    {
         categoryTitle: "Explore Teen / Adult",
         categoryUrlTag: "expteenadult",
-        categoryImg: (<img src={Pointe} alt="Explore Teen / Adult"/>),
+        categoryImg: (<img src={ExpTeen} alt="Explore Teen / Adult"/>),
         categoryBlurb: "Explore Teen - Adult ...",
         classes: [
             {
@@ -194,7 +239,7 @@ export const ClassDescriptionItems = [
     {
         categoryTitle: "Explore Children",
         categoryUrlTag: "expchildren",
-        categoryImg: (<img src={Pointe} alt="Explore Children"/>),
+        categoryImg: (<img src={ExpChildren} alt="Explore Children"/>),
         categoryBlurb: "Explore Children ...",
         classes: [
             {
@@ -237,6 +282,24 @@ export const ClassDescriptionItems = [
                 age: "Elementary School",
                 blurb: "Curious about all the many styles of Jazz? Then this class is just for you. EXPLORE Jazz is perfect for the new student who wants to jump in to a high energy dance style or for the experienced dance student who wants to learn more about this many faceted dance style. From Broadway stages, to salsa studios, from African roots, to street funk, 'jazz' has it all and we're ready to jump in and EXPLORE!"
             }
+        ]
+    },
+    {
+        categoryTitle: "Focus",
+        categoryUrlTag: "focus",
+        categoryImg: (<img src={Focus} alt="Focus"/>),
+        categoryBlurb: "Explore Teen - Adult ...",
+        classes: [
+            {
+                title: "TRX with Becca",
+                age: "Teen - Adult",
+                blurb: "TRX IS SCIENTIFICALLY PROVEN TO IMPROVE TOTAL-BODY STRENGTH, STABILITY, AND EVEN CARDIOVASCULAR HEALTH. In this class we will be blending strength moves, core work, and TRX together. Hand weights as well as body weight exercises will work all muscle groups and leave you feeling stronger! Class is suitable for all levels."
+            }
+//            {
+//                title: "Barre with April",
+//                age: "Teen - Adult",
+//                blurb: "Aprils barre class combines a traditional approach of sustained holds and micro-movements. Class is set to upbeat music; you will leave no muscle untouched in this effective total body workout that will tone your muscles and make you shake. Leave stronger, more flexible and standing taller."
+//            },
         ]
     }
 ]
