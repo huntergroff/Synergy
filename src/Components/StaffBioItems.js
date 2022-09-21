@@ -38,7 +38,7 @@ export const TeacherBioItems = [
     {
         name: "Mia Groff",
         picture: <img src={MiaGroff} alt="Mia Groff" />,
-        bio: ""
+        bio: "Mia has held a life long passion for dance and brings both her enthusiasm and experience to each and every class. She is the owner of Synergy Dance and the founder of the Vermont Youth Dancers.     She has been providing dance instruction in the Jericho area for over 10 years and is the founder of the Vermont Youth Dancers, a not-for-profit organization with roughly 45 members who rehearse and produce an annual dance performance.       Mia has been a dancer her entire life and has received training from highly skilled and respected instructors herself. It has been said that one can only teach to the level which they were taught. In this respect Mia has been the recipient of outstanding dance instruction. This includes over seven years at the Westchester Ballet Company and the Enid Knapp Botsford School of Ballet in Rochester NY as well as four years dancing in college. While at Botsford, Mia received several years of training and coaching from Luba Gulyaeva who performed as a featured dancer at the Kirov, coached at the American Ballet Theater, and who, to this day is called upon by Mikhail Baryshnikov to help coach and train his dancers. Mia brings the rich experiences she has gained from years of training and performing to every class she teaches."
     },
     {
         name: "Alex Bacheller",

@@ -12,12 +12,9 @@ const ContactIntro = () => {
     <div className='contact-intro'>
         <h1>Contact Us</h1>
         <p>
-            Thank you for visiting our website.  
-            Now that we are open in our new location we are working on getting everything to run smoothly.
-            Feel free to register for an account and sign up for dance and/or fitness classes.  
-            If you have any questions feel free to send us a message with this form, and if you have any suggestions we also welcome those.  
-            We appreciate your patience through this time of Covid-19 and look forward to dancing and exercising with you.
-            Thanks again for visiting and we hope to see you soon!
+        Thank you for visiting our website.  
+        Feel free to register for an account and sign up for classes.  If you have any questions, please send us a message with this form.  
+        Someone will get back to you as soon as possible
         </p>
     </div>
   )
