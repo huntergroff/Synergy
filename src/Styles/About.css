@@ -6,7 +6,95 @@
     margin: 0 auto;
 }
 
-#facilities, #teachers, .about-title-and-blurb {
+/** About our community section **/
+
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    margin-top: 100px;
+}
+
+.about-section .img-and-next-button {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.about-section .about-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.about-section p {
+    font-size: 17px;
+    line-height: 28px;
+    color: black;
+    width: 55%;
+    margin: 0;
+}
+
+.about .next-button {
+    display: flex;
+    margin-top: 50px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.about .next-button h2 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: articulat-heavy-cf;
+}
+
+.about .next-button .next-button-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.about-section.right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.about-section.right .img-and-next-button {
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+    .about .next-button {
+        display: none;
+    }
+
+    .about-section, .about-section.right  {
+        flex-direction: column;
+    }
+
+    .about-section.right .img-and-next-button {
+        align-items: flex-start;
+    }
+
+    .about-section.right {
+        text-align: left;
+    }
+
+    .about-section .img-and-next-button, .about-section p {
+        width: 100%;
+    }
+
+    .about-section .img-and-next-button img {
+        max-width: 500px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+#facilities, #teachers, #AboutOurCommunity {
     color: var(--synergy-teal);
     padding: 5% 5% 20vh 5%;
 }
