@@ -41,6 +41,11 @@
     margin-top: 50px;
     cursor: pointer;
     width: fit-content;
+    transition-duration: 200ms;
+}
+
+.about .next-button:hover {
+    color: var(--synergy-purple);
 }
 
 .about .next-button h2 {
@@ -130,6 +135,7 @@
     line-height: 100px;
     font-weight: 500;
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 #facilities h1, #teachers h1 {

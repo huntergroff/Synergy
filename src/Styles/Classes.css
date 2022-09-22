@@ -114,6 +114,7 @@
     height: 100%;
     object-fit:cover;
     display: block;
+    margin-top: 10px;
 }
 
 .class-description-container .header {
