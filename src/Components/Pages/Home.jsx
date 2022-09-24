@@ -99,7 +99,7 @@ const Home = () => {
           />
           <div className='text'>
             <h1>Synergy on Youtube</h1>
-            <p>Check out the video from a recent "HTLO" hip-hop intensive, which gives a dancing tour of our studio!</p>
+            <p>Check out the video from HTLO's Summer 2021 Intensive for a dancing tour of Synergy's studio!</p>
           </div>
       </div>
       </div>
@@ -114,7 +114,7 @@ const Home = () => {
         />
         <HomeBanner
           title="Events"
-          blurb="Look here for extra opportunities to dance. Pop-ups, masterclasses, summer camps, or special alumni events like Open House and Holly-DAZE throughout the year!"
+          blurb="Look here for extra opportunities to dance throughout the year: pop-ups, masterclasses, summer camps, or special alumni events like Open House and Holly-DAZE"
           btnText="More info"
           btnLink="/events"
           image={OutdoorRecital}

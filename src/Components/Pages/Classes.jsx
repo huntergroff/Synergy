@@ -109,7 +109,7 @@ const Classes = () => {
             />
             <Pathway 
               title="Explore"
-              blurb="Dance classes in a peer-grouped, open-level style of program."
+              blurb="Dance classes in a peer-grouped, open-level style program."
               icon={<AiOutlineCompass className='pathway-icon'/>}
               link="/classtables-explore"
             />
@@ -118,11 +118,7 @@ const Classes = () => {
         <div id='schedules'>
           <h1>Schedules & Sessions</h1>
           <h3>
-            The dance year is divided into four sessions, with each session including
-            8 weeks of instruction.  Some sessions last a little longer with holidays 
-            breaking up the eight weeks. You can sign up for classes, where there
-            are openings, any time.  If you join late, no worries! Please contact 
-            Mia and your tuition will be prorated.
+          Our dance year is divided into four 8 week sessions incorporating breaks which align with school calendars. You can sign up for classes, where there are openings, any time. If you join late, no worries! Please contact Mia and your tuition will be prorated.
           </h3>
           <div className='pathways-container'>
             <Pathway 
@@ -143,11 +139,7 @@ const Classes = () => {
         <div id='registration'>
           <h1>Registration</h1>
           <h3>
-            Use the links in the table below to register for a class. You will be prompted to create an 
-            account if you are new to Synergy Dance. If you already have an account on our parent portal 
-            (Jackrabbit Technologies) you should register from that account. If you are interested in a 
-            class that has a waitlist, please add your name to the waitlist and drop Mia an email. We are still 
-            working to add extra classes where there are waitlists but we need to know who is interested.
+          Use the links in the table below to register for a class. You will be prompted to create an account if you are new to Synergy Dance. If you already have an account on our parent portal (Jackrabbit Technologies) you should register from that account. If you are interested in a class that has a waitlist, please add your name to the waitlist and drop Mia an email. We monitor waitlist sizes to determine the need for additional classes.
           </h3>
           <div className='pathways-container'>
             <Pathway 
@@ -158,7 +150,7 @@ const Classes = () => {
             />
             <Pathway 
               title="Parent Portal"
-              blurb="Click to visit the parent portal and manage your classes."
+              blurb="Click to visit the parent portal and manage your classes if you already have an account."
               icon={<MdOutlineExitToApp className='pathway-icon'/>}
               link="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
               external={true}

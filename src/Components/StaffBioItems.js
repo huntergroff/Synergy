@@ -78,7 +78,7 @@ export const TeacherBioItems = [
     {
         name: "Jacqueline Feiss",
         picture: <img src={JacquelineFeiss} alt="Jacqueline Feiss" />,
-        bio: "Jacqueline grew up in Connecticut and has been dancing since before she could walk. She attended Roger Williams University and obtained a degree in Dance Performance. Jacqueline performed with a variety of different dance companies and studied under many of the influential dancers of today. Jacqueline has been teaching Jazz, Tap, Modern, Contemporary, Ballet, Jazz Fusion/Funk, and Hip Hop for the past twenty years and cannot imagine her life without dance! She lives in Jericho with her husband, two young daughters, and her dog. During the day, Jacqueline works as an Educational Consultant for the Vermont I-Team and helps to support full membership and inclusion for all children. When she is not dancing or consulting, she enjoys skiing, biking, and exploring all Vermont has to offer. She is looking forward to teaching Contemporary and Adult Tap at Synergy this year."
+        bio: "Jacqueline grew up in Connecticut and has been dancing since before she could walk. She attended Roger Williams University and obtained a degree in Dance Performance. Jacqueline performed with a variety of different dance companies and studied under many of the influential dancers of today. Jacqueline has been teaching Jazz, Tap, Modern, Contemporary, Ballet, Jazz Fusion/Funk, and Hip Hop for the past twenty years and cannot imagine her life without dance! She lives in Jericho with her husband, two young daughters, and her dog. During the day, Jacqueline works as an Educational Consultant for the Vermont I-Team and helps to support full membership and inclusion for all children. When she is not dancing or consulting, she enjoys skiing, biking, and exploring all Vermont has to offer. She is looking forward to teaching Lyrical 3 at Synergy this year."
     },
     {
         name: "Rose Bedard",
@@ -168,7 +168,7 @@ export const StudentTeacherBioItems = [
 //AdminBioItems array - add new Administrative Assistants as objects here
 export const AdminBioItems = [
     {
-        name: "Anika Romanko, Anya Muller, Mia Cannizzaro, Pile Medina",
+        name: "Anika Romanko, Anya Muller, Mia Cannizzaro, Pilar Medina",
         picture: <img src={NoPicGirl} alt="Student 1" />,
         bio: ""
     }

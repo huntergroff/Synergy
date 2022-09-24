@@ -29,12 +29,14 @@
 //Images - add your import statement here
 import React from 'react';
 import Pointe from '../Images/class-descr-pointe.jpg';
-import Ballet from '../Images/class-descr-blank.jpg';
+import Ballet from '../Images/class-descr-ballet.jpg';
 import ProgBalTq from '../Images/class-descr-blank.jpg';
-import Lyrical from '../Images/class-descr-blank.jpg';
+import Lyrical from '../Images/class-descr-lyrical.jpg';
 import HipHop from '../Images/class-descr-hiphop.jpg';
+import Jazz from '../Images/class-descr-jazz.jpg';
+import ExpAdult from '../Images/class-descr-blank.jpg';
 import ExpTeen from '../Images/class-descr-blank.jpg';
-import ExpChildren from '../Images/class-descr-blank.jpg';
+import ExpChildren from '../Images/class-descr-explore-kids.jpg';
 import Focus from '../Images/class-descr-blank.jpg';
 
 export const ClassDescriptionItems = [
@@ -173,7 +175,7 @@ export const ClassDescriptionItems = [
     {
         categoryTitle: "Hip Hop",
         categoryUrlTag: "hiphop",
-        categoryImg: (<img src={HipHop} alt="PBT"/>),
+        categoryImg: (<img src={HipHop} alt="Hip Hop"/>),
         categoryBlurb: "Hip Hop dance now encompasses a range of street dance styles primarily performed to hip hop music or that have evolved as part of the hip hop culture.  It originated in the Bronx in the late 1970’s and has been influenced by a wide range of styles and made popular by dance crews in the United States.  While hip hop originated as informal street dance and then evolved into the “dance competitions or battles” of the 80’s and 90’s  it is now a widely sought after form of dance instruction with many varieties and influences.",
         classes: [
             {
@@ -209,86 +211,127 @@ export const ClassDescriptionItems = [
          ]
     },
     {
-        categoryTitle: "Explore Teen / Adult",
-        categoryUrlTag: "expteenadult",
-        categoryImg: (<img src={ExpTeen} alt="Explore Teen / Adult"/>),
-        categoryBlurb: "Explore Teen - Adult ...",
+        categoryTitle: "Jazz",
+        categoryUrlTag: "jazz",
+        categoryImg: (<img src={Jazz} alt="Jazz"/>),
+        categoryBlurb: "Jazz dance is a form of dance that combines both African and European dance styles and has been widely used in American musical theatre. This high-energy dance has a liveliness that sets it apart from traditional dance forms, such as classical ballet. Typical elements of jazz dance are  the use of isolations, precise and often quick leg, arm, and foot movements.  The use of props is more often seen in jazz dance compared to other genres.",
         classes: [
             {
-                title: "Explore Hip Hop",
-                age: "Adult",
-                blurb: "One of the most popular classes in the studio.  "
+                title: "Jazz 1",
+                age: "6-8",
+                blurb: ""
             },
             {
-                title: "Explore Jazz",
-                age: "Adult",
-                blurb: "Join us as we explore jazz/ lyrical dance based on classical technique for adults, any age, with random excursions into different music and movement. Better for those with some dance experience, but motivated beginners welcome, too."
+                title: "Jazz 2",
+                age: "9-11",
+                blurb: ""
             },
             {
-                title: "Explore Ballet",
-                age: "Adult",
-                blurb: "Experience the joy of ballet and the physical and mental benefits it provides without the pressures of performance! This ballet class is designed for adults who wish to learn and enjoy the fundamentals of a traditional ballet barre and centerwork in a class geared specifically toward adults!"
+                title: "Jazz 3",
+                age: "10-13",
+                blurb: ""
             },
             {
-                title: "Explore Street Jazz",
-                age: "Teen - Adult",
-                blurb: "Interested in adding a new style or genre to your repetoire? Street jazz is an amalgamation of several different styles, jazz, hip hop and funk that emerged out of more casual dancing in settings outside of traditional studios. Street jazz is a mix of fast, intricate footwork, graceful spins and acrobatic floor moves. This genre of dance works on dancer's creativity, their understanding of the music and their energy, fusing traditional jazz with hip hop."
+                title: "Jazz 4/5",
+                age: "14-18",
+                blurb: ""
             }
+        ]
+    },
+    {
+        categoryTitle: "Explore Adult",
+        categoryUrlTag: "expadult",
+        categoryImg: (<img src={ExpAdult} alt="Explore Adult"/>),
+        categoryBlurb: "Our Explore Adult classes are geared for adults who are trying dance for the first time, or are returning to dance after a hiatus.",
+        classes: [
+            {
+                title: "Explore Adult Hip Hop",
+                age: "Adult",
+                blurb: "Adult Hip Hop is fast becoming one of our studio's most popular classes.  This dance class is sure to get your heart beating and your mind working as you explore the many facets of hip hop dance.  Our Adult Hip Hop classes have welcomed many beginning dancers into a fun and supportive dance environment."
+            },
+            {
+                title: "Explore Adult Lyrical",
+                age: "Adult",
+                blurb: "This lyrical dance based on classical technique for adults, any age, with random excursions into jazz or contemporary styles. While this class assumes some previous dance experience, motivated beginners welcome, too and we strive to cater to a variety of physical skills or limitations."
+            }
+           // {
+           //     title: "Explore Ballet",
+           //     age: "Adult",
+           //     blurb: "Experience the joy of ballet and the physical and mental benefits it provides without the pressures of performance! This ballet class is designed for adults who wish to learn and enjoy the fundamentals of a traditional ballet barre and centerwork in a class geared specifically toward adults!"
+           // },
+           // {
+           //     title: "Explore Street Jazz",
+           //     age: "Teen - Adult",
+           //     blurb: "Interested in adding a new style or genre to your repetoire? Street jazz is an amalgamation of several different styles, jazz, hip hop and funk that emerged out of more casual dancing in settings outside of traditional studios. Street jazz is a mix of fast, intricate footwork, graceful spins and acrobatic floor moves. This genre of dance works on dancer's creativity, their understanding of the music and their energy, fusing traditional jazz with hip hop."
+           // }
+        ]
+    },
+    {
+        categoryTitle: "Explore Teen",
+        categoryUrlTag: "expteen",
+        categoryImg: (<img src={ExpTeen} alt="Explore Teen"/>),
+        categoryBlurb: "The studio current offers 3 separate EXPLORE classes geared toward our teen population Teen Jazz, Teen Lyrical and Teen Hip Hop",
+        classes: [
+           {
+            title: "",
+            age: "",
+            blurb: ""
+           }
         ]
     },
     {
         categoryTitle: "Explore Children",
         categoryUrlTag: "expchildren",
         categoryImg: (<img src={ExpChildren} alt="Explore Children"/>),
-        categoryBlurb: "Explore Children ...",
+        categoryBlurb: "Synergy offers a variety of classes for elementary and middle school students in our EXPLORE program.  These classes are designed to introduce students to the fundamentals of each dance style while maintaining age based classes.",
         classes: [
             {
                 title: "Explore Creative Movement",
                 age: "4-6",
                 blurb: "An introduction to all dance techniques encompassing dance fundamentals & terminology. Class includes creative movement, improvisation, and instruction of basic dance steps using literature and games, designed to improve motor skills, self expression, imagination, socialization and confidence. Children discover new ways of moving as they explore the elements of dance, build a movement vocabulary, and develop basic dance and ballet skills."
             },
-            {
-                title: "Explore Theatre/Jazz",
-                age: "6-8",
-                blurb: "A combination of instruction in jazz, both classic and lyrical, and character work to strengthen technique and add style. Focus on dance terminology and steps to strengthen basis of technique, while learning character through movement and increasing performance quality. Class culminates in choreography to music from movie and Broadway soundtracks."
-            },
-            {
-                title: "Explore Theatre/Jazz",
-                age: "9-11",
-                blurb: "A combination of instruction in jazz, both classic and lyrical, and character work to strengthen technique and add style. Focus on dance terminology and steps to strengthen basis of technique, while learning character through movement and increasing performance quality. Class culminates in choreography to music from movie and Broadway soundtracks. Older students will work at a more advanced level than the younger class."
-            },
+//            {
+//                title: "Explore Theatre/Jazz",
+//                age: "6-8",
+//                blurb: "A combination of instruction in jazz, both classic and lyrical, and character work to strengthen technique and add style. Focus on dance terminology and steps to strengthen basis of technique, while learning character through movement and increasing performance quality. Class culminates in choreography to music from movie and Broadway soundtracks."
+//            },
+//            {
+//                title: "Explore Theatre/Jazz",
+//                age: "9-11",
+//                blurb: "A combination of instruction in jazz, both classic and lyrical, and character work to strengthen technique and add style. Focus on dance terminology and steps to strengthen basis of technique, while learning character through movement and increasing performance quality. Class culminates in choreography to music from movie and Broadway soundtracks. Older students will work at a more advanced level than the younger class."
+//            },
             {
                 title: "Explore Middle School Ballet/Lyrical",
                 age: "5th grade and up",
-                blurb: "This class, geared toward dancers in middle school, will introduce to the students to the fundamentals of ballet technique through barre and center work, helping the student to explore the art of jumping, turning and travelling! In addition, skills learned here will help students to explore the world of Lyrical Jazz through floorwork, and lyrical combinations incorporating elements from both genres."
+                blurb: "This class, geared toward dancers in middle school, will introduce to the students to the fundamentals of ballet technique through barre and center work, helping the student to explore the art of jumping, turning and travelling! In addition, skills learned here will help students to explore the world of Lyrical Jazz through floorwork, and lyrical combinations incorporating elements from both genres. (Not offered for 2022/2023 season-please call for recommended alternatives)"
             },
             {
                 title: "Explore Elementary School Ballet/Lyrical",
                 age: "2nd grade and up",
-                blurb: "This class, geared toward dancers in elementary school, will introduce to the students to the fundamentals of ballet technique through barre and center work, helping the student to explore the art of jumping, turning and travelling! In addition, skills learned here will help students to explore the world of Lyrical Jazz through floorwork, and lyrical combinations incorporating elements from both genres."
+                blurb: "This class, geared toward dancers in elementary school, will introduce to the students to the fundamentals of ballet technique through barre and center work, helping the student to explore the art of jumping, turning and travelling! In addition, skills learned here will help students to explore the world of Lyrical Jazz through floorwork, and lyrical combinations incorporating elements from both genres. (Not offered for the 2022/2023 season-students interested in this class should consider IGNITE Lyrical 1 or IGNITE Ballet 1)"
             },
             {
                 title: "Explore Elementary School Jazz/Hip Hop",
                 age: "2nd grade and up",
-                blurb: "For students just entering the world of dance or dancers who are curious want to learn about both jazz styles and hip hop styles, this class will introduce students to elements of both genres while stressing style, musicality and technique. Jazz and Hip Hop are both upbeat and energetic styles that appeal to many young dancers. This class is designed to be pure fun!"
+                blurb: "For students just entering the world of dance or dancers who are curious want to learn about both jazz styles and hip hop styles, this class will introduce students to elements of both genres while stressing style, musicality and technique. Jazz and Hip Hop are both upbeat and energetic styles that appeal to many young dancers. This class is designed to be pure fun! (Not offered for the 2022/2023 season.  Students are encouraged to register for IGNITE Jazz 1 or IGNITE Hip Hop 1)"
             },
             {
                 title: "Explore Middle School Jazz/Hip Hop",
                 age: "5th grade and up",
                 blurb: "This class, geared toward the middle school student, is a fast paced introduction to the world of jazz and hip hop along with their similarities and their differences. Through skill based exercises and combinations in both genres, students will explore the many facets of these two different yet similarly upbeat and energetic styles of dance."
-            },
-            {
-                title: "Explore Jazz",
-                age: "Elementary School",
-                blurb: "Curious about all the many styles of Jazz? Then this class is just for you. EXPLORE Jazz is perfect for the new student who wants to jump in to a high energy dance style or for the experienced dance student who wants to learn more about this many faceted dance style. From Broadway stages, to salsa studios, from African roots, to street funk, 'jazz' has it all and we're ready to jump in and EXPLORE!"
             }
+//            {
+//                title: "Explore Jazz",
+//                age: "Elementary School",
+//                blurb: "Curious about all the many styles of Jazz? Then this class is just for you. EXPLORE Jazz is perfect for the new student who wants to jump in to a high energy dance style or for the experienced dance student who wants to learn more about this many faceted dance style. From Broadway stages, to salsa studios, from African roots, to street funk, 'jazz' has it all and we're ready to jump in and EXPLORE!"
+//            }
         ]
     },
     {
         categoryTitle: "Focus",
         categoryUrlTag: "focus",
         categoryImg: (<img src={Focus} alt="Focus"/>),
-        categoryBlurb: "Explore Teen - Adult ...",
+        categoryBlurb: "FOCUS classes are returning to Synergy after a long pause due to pandemic.  Check back regularly to see new offerings.",
         classes: [
             {
                 title: "TRX with Becca",

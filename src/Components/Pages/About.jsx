@@ -13,6 +13,7 @@ import StudioD from '../../Images/studio-d-elev.jpg'
 import StudioC from '../../Images/studio-c-elev.jpg'
 import StudioLobby from '../../Images/studio-lobby-party.jpg'
 import {HiArrowDown} from 'react-icons/hi'
+import StaffPic from '../../Images/Staff/staff-pic.jpg'
 
 //CSS
 import '../../Styles/About.css'
@@ -161,7 +162,7 @@ const AboutOurComminty = () => {
         text={<p>We are an active goal oriented community and our love of VERBS shows that we are action oriented! 
           Whether you want to FOCUS on fitness or IGNITE your dance journey or EXPLORE new styles, we hope Synergy 
           has a program for you. And as our 4 studio names reflect, we hope you find a home at Synergy…a place to 
-          ASPIRE, BELIEVE, CREATE or DREAM!</p>}
+          ASPIRE, BELIEVE, CREATE and DREAM!</p>}
         image={StudioFront}
         imageAlt="Synergy Dance"
         alignment="left"
@@ -194,7 +195,7 @@ const Facilities = () => {
       </div>
       <div className='text-1'>
         <p>
-          Synergy Center for Dance is a new     square foot studio conveniently located near 
+          Synergy Center for Dance is a new 6,000+ square foot studio conveniently located near 
           Browns River Middle School on River Road in Jericho. With access to the nearby schools, 
           the market, the library and Mills River Park, Synergy makes it easy for young families to 
           coordinate dance with many other activities. The space is thoughtfully designed with ample 
@@ -221,7 +222,7 @@ const Facilities = () => {
       </div>
       <div className='text-2'>
         <p>
-          Synergy’s four climate studios all contain sprung floors for the protection 
+          Synergy's four climate studios all contain sprung floors for the protection 
           of young developing bodies. 3 studios contain professional grade Marley dance floors, 
           and 1 a hardwood flooring. Studios contain mirrors, ballet barres, televisions and 
           cameras allow for remote learning or for use as teaching tools.  Our largest studio 
@@ -279,6 +280,10 @@ const Teachers = () => {
           carry them through a lifetime love of dance.
         </h2>
       </div>
+      <div className='photos-2'>
+        <img src={StaffPic} alt="Synergy Staff 2022-2023"></img>
+      </div>
+
       <h4>Teachers</h4>
       {renderBios(TeacherBioItems)}
       <h4>Student Teachers</h4>
