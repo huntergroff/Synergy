@@ -14,6 +14,11 @@ import StudioC from '../../Images/studio-c-elev.jpg'
 import StudioLobby from '../../Images/studio-lobby-party.jpg'
 import {HiArrowDown} from 'react-icons/hi'
 import StaffPic from '../../Images/Staff/staff-pic.jpg'
+import StudioNight from '../..//Images/studio-night-tent.jpg'
+import BarKids from '../..//Images/kids-on-bar.jpg'
+import MezzanineKids from '../..//Images/mezzanine-kids.jpg'
+import HollydazeAlumni from '../..//Images/hollydaze-alumni.jpg'
+import LilyTeaching from '../..//Images/lily-teaching.jpg'
 
 //CSS
 import '../../Styles/About.css'
@@ -25,6 +30,7 @@ import { TeacherBioItems, TABioItems, StudentTeacherBioItems, AdminBioItems } fr
 /**
  * Renders one modular portion of the about section.
  * @param refName = the name of the ref for this portion.
+ * @param title = the name of the section
  * @param text the text to be displayed
  * @param image the image to be displayed
  * @param imageAlt the alt text for the image
@@ -33,11 +39,12 @@ import { TeacherBioItems, TABioItems, StudentTeacherBioItems, AdminBioItems } fr
  * @param alignment "left" or "right" whether this about section is left or right aligned
 * @returns 
  */
-const AboutSection = ({refName, text, image, imageAlt, nextButtonText, nextButtonLink, alignment}) => {
+const AboutSection = ({refName, title, text, image, imageAlt, nextButtonText, nextButtonLink, alignment}) => {
   return (
     <div className={`about-section ${alignment}`}  ref={refName}>
       <div className='img-and-next-button'>
         <img src={image} alt={imageAlt} className='about-img' />
+        <h1 className='about-section-title'>{title}</h1>
         {nextButtonText && nextButtonLink ? 
           <div className='next-button' onClick={nextButtonLink}>
             <h2 className='next-button-text'>{nextButtonText}</h2>
@@ -84,6 +91,7 @@ const AboutOurComminty = () => {
       </div>
       <AboutSection 
         refName={ourStoryRef}
+        title="Our Story"
         text={<p>Synergy Center for Dance and the Performing Arts was founded in 2017. Synergy grew out of
         a desire to provide high quality dance instruction in a student centered, community oriented
         studio that encourages hard work, creativity and life long passion for the arts. We purchased
@@ -96,14 +104,15 @@ const AboutOurComminty = () => {
         even completed 2 years worth of outdoor recitals. Our students and staff never gave up. After
         2 years of constant re-engineering to meet the ever changing demands of the pandemic,we are
         standing strong and ready to hit the ground running toward the future.</p>}
-        image={StudioFront}
-        imageAlt="Synergy Dance"
+        image={StudioNight}
+        imageAlt="Synergy Outdoor Recital, 2020"
         nextButtonText="Our Community"
         nextButtonLink={ourCommunityScroll}
         alignment="left"
       />
       <AboutSection 
         refName={ourCommunityRef}
+        title="Our Community"
         text={<p>Our students come to our studio with varied goals. Many are busy student athletes, musicians,
         theatre lovers and more. Some are adults who want to try dance for the first time. Neither
         group has a ton of free time! Our EXPLORE programs are designed for them with age based
@@ -117,14 +126,15 @@ const AboutOurComminty = () => {
         strong dancers and well rounded people. They love the Jericho/Underhill community because
         they live here, they work here, their kids go to school here. They are our greatest asset and
         they will love and guide your children.</p>}
-        image={StudioFront}
-        imageAlt="Synergy Dance"
+        image={BarKids}
+        imageAlt="Hanging out at Synergy!"
         nextButtonText="Dance For Life"
         nextButtonLink={danceForLifeScroll}
         alignment="right"
       />
       <AboutSection 
         refName={danceForLifeRef}
+        title="Dance For Life"
         text={<p>Our programming encourages a “dance for life” paradigm. We want our dancers to be active
         and engaged in all kinds of performing arts. We hope our students leave Synergy with
         longstanding love of dance whether they plan to be life long dancers, performing artists or
@@ -136,35 +146,37 @@ const AboutOurComminty = () => {
         encourage healthy dance habits, grounded in current research and shaped into best practices.
         Our relationship with local fitness programs and physical therapists help to ensure we are
         looking out for your child at all stages of their development.</p>}
-        image={StudioFront}
-        imageAlt="Synergy Dance"
+        image={MezzanineKids}
+        imageAlt="Dancers in the Studio A Mezzanine."
         nextButtonText="Our Alumni"
         nextButtonLink={ourAlumniScroll}
         alignment="left"
       />
       <AboutSection 
         refName={ourAlumniRef}
+        title="Our Alumni"
         text={<p>The outcome of Synergy's work in developing passionate dancers and community oriented people 
-          is demonstrated by our alumni. They love to pay it forward and they don’t quickly forget the community
+          is demonstrated by our alumni. They love to pay it forward and they don't quickly forget the community
           that helped raise them. That is why you often see our alumni back in the studio during their vacations 
           or breaks teaching classes, choreographing for our companies or participating in our Holly-DAZE alumni 
           teaching event. Our former students are out in the world continuing to explore their love of dance and 
           they come home from LA, NYC, Boston and beyond to help pass on what they are learning to help grow a 
           new generation of Synergy dancers.</p>}
-        image={StudioFront}
-        imageAlt="Synergy Dance"
+        image={HollydazeAlumni}
+        imageAlt="Our alumni at Holly-daze, 2019"
         nextButtonText="Action Oriented Community"
         nextButtonLink={actionOrientedScroll}
         alignment="right"
       />
       <AboutSection 
         refName={actionOrientedRef}
+        title="Action-Oriented Community"
         text={<p>We are an active goal oriented community and our love of VERBS shows that we are action oriented! 
           Whether you want to FOCUS on fitness or IGNITE your dance journey or EXPLORE new styles, we hope Synergy 
           has a program for you. And as our 4 studio names reflect, we hope you find a home at Synergy…a place to 
           ASPIRE, BELIEVE, CREATE and DREAM!</p>}
-        image={StudioFront}
-        imageAlt="Synergy Dance"
+        image={LilyTeaching}
+        imageAlt="Synergy Ballet Intensive"
         alignment="left"
       />
     </div>
@@ -270,6 +282,7 @@ const Teachers = () => {
     <div id="teachers">
       <div className='title'>
         <h1>Our Team</h1>
+        <img src={StaffPic} alt="Synergy Staff 2022-2023" className='staff-pic'></img>
         <h2>
           Our focus at Synergy Dance is to instill a love of dance in our entire community. 
           Our students will find themselves in an environment where they feel safe to express 
@@ -279,9 +292,6 @@ const Teachers = () => {
           balance of fun that enables all our students to reach the highest level of dancing that will 
           carry them through a lifetime love of dance.
         </h2>
-      </div>
-      <div className='photos-2'>
-        <img src={StaffPic} alt="Synergy Staff 2022-2023"></img>
       </div>
 
       <h4>Teachers</h4>

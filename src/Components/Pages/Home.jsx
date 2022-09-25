@@ -6,7 +6,7 @@ import Papa from "papaparse";
 //Icons and Images
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import OutdoorRecital from '../../Images/outdoor-recital.jpg'
-import RecitalPose from '../../Images/recital-pose.jpg'
+import ChoreoWorkshop from '../../Images/choreo-workshop.jpg'
 import DanceClass from '../../Images/studio-a-class.jpg'
 import StudioFront from '../../Images/studio-front.jpg'
 
@@ -93,7 +93,7 @@ const Home = () => {
           <iframe className='video-frame'
             src="https://www.youtube.com/embed/obLwvDmiHtY" 
             title="YouTube video player" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen 
           />
@@ -125,7 +125,7 @@ const Home = () => {
           blurb='We build our future leaders through opportunities like SPARC repertory company, STEP student teacher training program, and our student ambassador initiative.'
           btnText="Get involved!"
           btnLink="/programs"
-          image={RecitalPose}
+          image={ChoreoWorkshop}
           reverse={true}
         />
         <HomeBanner
