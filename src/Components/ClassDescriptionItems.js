@@ -30,14 +30,14 @@
 import React from 'react';
 import Pointe from '../Images/class-descr-pointe.jpg';
 import Ballet from '../Images/class-descr-ballet.jpg';
-import ProgBalTq from '../Images/class-descr-blank.jpg';
+import ProgBalTq from '../Images/class-descr-pbt.jpg';
 import Lyrical from '../Images/class-descr-lyrical.jpg';
 import HipHop from '../Images/class-descr-hiphop.jpg';
 import Jazz from '../Images/class-descr-jazz.jpg';
-import ExpAdult from '../Images/class-descr-blank.jpg';
-import ExpTeen from '../Images/class-descr-blank.jpg';
+import ExpAdult from '../Images/class-descr-explore-adult.jpg';
+import ExpTeen from '../Images/class-descr-explore-teen.jpg';
 import ExpChildren from '../Images/class-descr-explore-kids.jpg';
-import Focus from '../Images/class-descr-blank.jpg';
+import Focus from '../Images/class-descr-trx.jpg';
 
 export const ClassDescriptionItems = [
     {
@@ -272,11 +272,6 @@ export const ClassDescriptionItems = [
         categoryImg: (<img src={ExpTeen} alt="Explore Teen"/>),
         categoryBlurb: "The studio current offers 3 separate EXPLORE classes geared toward our teen population Teen Jazz, Teen Lyrical and Teen Hip Hop",
         classes: [
-           {
-            title: "",
-            age: "",
-            blurb: ""
-           }
         ]
     },
     {
