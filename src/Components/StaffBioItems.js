@@ -24,6 +24,7 @@ import EmmaMontgomery from '../Images/Staff/emma-montgomery.jpg';
 import JacquelineFeiss from '../Images/Staff/jacqueline-feiss.jpg';
 import MiaGroff from '../Images/Staff/mia-groff.jpg';
 import RoseBedard from '../Images/Staff/rose-bedard.jpg';
+import TannerPaffen from '../Images/Staff/tanner-paffen.jpg';
 import TheresaRobinson from '../Images/Staff/theresa-robinson.jpg';
 
 import SummerClough from '../Images/Staff/summer-clough.jpg';
@@ -87,7 +88,7 @@ export const TeacherBioItems = [
     },
     {
         name: "Tanner Paffen",
-        picture: <img src={NoPicBoy} alt="Tanner Paffen" />,
+        picture: <img src={TannerPaffen} alt="Tanner Paffen" />,
         bio: ""
     },
     {
