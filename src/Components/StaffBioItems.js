@@ -152,12 +152,12 @@ export const StudentTeacherBioItems = [
     {
         name: "Summer Clough",
         picture: <img src={SummerClough} alt="Summer Clough" />,
-        bio: ""
+        bio: "Summer has been dancing for about 10 years and has been a student at Synergy since it was open! This is Summer's 3rd year student teaching at Synergy, and before that, she was a teacher's assistant to Mia Groff and April Foster. Summer takes ballet/pointe, contemporary, hip hop, and jazz classes at Synergy. Summer has also trained at the Burklyn Ballet Theatre (2019 VT) and Bolshoi Ballet Academy's (2020 & 2021 NYC) summer intensives and is also a part of the State Champion MMU Dance Team and Vermont Youth Dancers. Summer will be teaching Ballet 3A and Lyrical/Contemporary 4B this year. Summer is so excited to be a part of the Synergy staff and for 2 more years of teaching and taking classes!"
     },
     {
         name: "Taylor Gernander",
         picture: <img src={NoPicGirl} alt="Taylor Gernander" />,
-        bio: ""
+        bio: "Taylor was born and raised in Essex Vermont and has been a dancer for most of her life. Her first serious dance class was when she was 5 dancing Irish dance at McFadden Academy where she competed year round. Three years ago she realized that Irish dance wasn’t her thing and decided to take a lyrical class here at synergy! She instantly fell in love with the studio and decided to try hiphop and quickly realized she absolutely loved it! She took hiphop 5 and teen hiphop this past year and was asked to assistant teach which lead her to where she is now as a student teacher for teen hiphop! Teaching and dance has been Taylor’s dream careers for as long as she can remember so she is thrilled and honored to be able to get a taste of this life at age 14!"
     },
     {
         name: "Zoe Papaseraphim",
