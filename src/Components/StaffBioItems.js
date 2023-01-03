@@ -20,10 +20,13 @@ import AprilFoster from '../Images/Staff/april-foster.jpg';
 import BreaMcBride from '../Images/Staff/brea-mcbride.jpg';
 import ChristanaDavis from '../Images/Staff/christana-davis.jpg';
 import EmilyBrace from '../Images/Staff/emily-brace.jpg';
+import EllaDavis from '../Images/Staff/ella-davis.jpg';
 import EmmaMontgomery from '../Images/Staff/emma-montgomery.jpg';
 import JacquelineFeiss from '../Images/Staff/jacqueline-feiss.jpg';
 import MiaGroff from '../Images/Staff/mia-groff.jpg';
+import NaiaSurks from '../Images/Staff/naia-surks.jpg';
 import RoseBedard from '../Images/Staff/rose-bedard.jpg';
+import RosalieKosnitsky from '../Images/Staff/rosalie-kosnitsky.jpg';
 import TannerPaffen from '../Images/Staff/tanner-paffen.jpg';
 import TheresaRobinson from '../Images/Staff/theresa-robinson.jpg';
 
@@ -116,7 +119,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Ella Davis",
-        picture: <img src={NoPicGirl} alt="Ella Davis" />,
+        picture: <img src={EllaDavis} alt="Ella Davis" />,
         bio: ""
     },
     {
@@ -136,7 +139,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Naia Surks",
-        picture: <img src={NoPicGirl} alt="Naia Surks" />,
+        picture: <img src={NaiaSurks} alt="Naia Surks" />,
         bio: ""
     },
     {
@@ -146,7 +149,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Rosalie Kosnitsky",
-        picture: <img src={NoPicGirl} alt="Rosalie Kosnitsky" />,
+        picture: <img src={RosalieKosnitsky} alt="Rosalie Kosnitsky" />,
         bio: ""
     },
     {
