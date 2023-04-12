@@ -22,12 +22,14 @@ import ChristanaDavis from '../Images/Staff/christana-davis.jpg';
 import EmilyBrace from '../Images/Staff/emily-brace.jpg';
 import EllaDavis from '../Images/Staff/ella-davis.jpg';
 import EmmaMontgomery from '../Images/Staff/emma-montgomery.jpg';
+import GabbyCowan from '../Images/Staff/gabby-cowan.jpg';
 import JacquelineFeiss from '../Images/Staff/jacqueline-feiss.jpg';
 import MiaGroff from '../Images/Staff/mia-groff.jpg';
 import NaiaSurks from '../Images/Staff/naia-surks.jpg';
 import RoseBedard from '../Images/Staff/rose-bedard.jpg';
 import RosalieKosnitsky from '../Images/Staff/rosalie-kosnitsky.jpg';
 import TannerPaffen from '../Images/Staff/tanner-paffen.jpg';
+import TaylorGernander from '../Images/Staff/taylor-gernander.jpg';
 import TheresaRobinson from '../Images/Staff/theresa-robinson.jpg';
 
 import SummerClough from '../Images/Staff/summer-clough.jpg';
@@ -129,7 +131,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Gabby Cowan",
-        picture: <img src={NoPicGirl} alt="Gabby Cowan" />,
+        picture: <img src={GabbyCowan} alt="Gabby Cowan" />,
         bio: ""
     },
     {
@@ -159,7 +161,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Taylor Gernander",
-        picture: <img src={NoPicGirl} alt="Taylor Gernander" />,
+        picture: <img src={TaylorGernander} alt="Taylor Gernander" />,
         bio: "Taylor was born and raised in Essex Vermont and has been a dancer for most of her life. Her first serious dance class was when she was 5 dancing Irish dance at McFadden Academy where she competed year round. Three years ago she realized that Irish dance wasn’t her thing and decided to take a lyrical class here at synergy! She instantly fell in love with the studio and decided to try hiphop and quickly realized she absolutely loved it! She took hiphop 5 and teen hiphop this past year and was asked to assistant teach which lead her to where she is now as a student teacher for teen hiphop! Teaching and dance has been Taylor’s dream careers for as long as she can remember so she is thrilled and honored to be able to get a taste of this life at age 14!"
     },
     {
