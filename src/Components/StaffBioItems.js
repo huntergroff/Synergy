@@ -21,16 +21,20 @@ import BreaMcBride from '../Images/Staff/brea-mcbride.jpg';
 import ChristanaDavis from '../Images/Staff/christana-davis.jpg';
 import EmilyBrace from '../Images/Staff/emily-brace.jpg';
 import EllaDavis from '../Images/Staff/ella-davis.jpg';
+import EllaLavoie from '../Images/Staff/ella-lavoie.jpg';
 import EmmaMontgomery from '../Images/Staff/emma-montgomery.jpg';
 import GabbyCowan from '../Images/Staff/gabby-cowan.jpg';
 import JacquelineFeiss from '../Images/Staff/jacqueline-feiss.jpg';
+import JadaBean from '../Images/Staff/jada-bean.jpg';
 import MiaGroff from '../Images/Staff/mia-groff.jpg';
 import NaiaSurks from '../Images/Staff/naia-surks.jpg';
+import PilarMedina from '../Images/Staff/pilar-medina.jpg';
 import RoseBedard from '../Images/Staff/rose-bedard.jpg';
 import RosalieKosnitsky from '../Images/Staff/rosalie-kosnitsky.jpg';
 import TannerPaffen from '../Images/Staff/tanner-paffen.jpg';
 import TaylorGernander from '../Images/Staff/taylor-gernander.jpg';
 import TheresaRobinson from '../Images/Staff/theresa-robinson.jpg';
+import ZoePapaseraphim from '../Images/Staff/zoe-papaseraphim.jpg';
 
 import SummerClough from '../Images/Staff/summer-clough.jpg';
 
@@ -126,7 +130,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Ella Lavoie",
-        picture: <img src={NoPicGirl} alt="Ella Lavoie" />,
+        picture: <img src={EllaLavoie} alt="Ella Lavoie" />,
         bio: ""
     },
     {
@@ -136,7 +140,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Jada Bean",
-        picture: <img src={NoPicGirl} alt="Jada Bean" />,
+        picture: <img src={JadaBean} alt="Jada Bean" />,
         bio: ""
     },
     {
@@ -146,7 +150,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Pilar Medina",
-        picture: <img src={NoPicGirl} alt="Pilar Medina" />,
+        picture: <img src={PilarMedina} alt="Pilar Medina" />,
         bio: ""
     },
     {
@@ -166,7 +170,7 @@ export const StudentTeacherBioItems = [
     },
     {
         name: "Zoe Papaseraphim",
-        picture: <img src={NoPicGirl} alt="Zoe Papaseraphim" />,
+        picture: <img src={ZoePapaseraphim} alt="Zoe Papaseraphim" />,
         bio: ""
     }
 ]
