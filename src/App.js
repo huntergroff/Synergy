@@ -10,6 +10,8 @@ import Navbar from './Components/Header/Navbar';
 import { MenuItems } from './Components/Header/MenuItems.js';
 import Footer from './Components/Footer';
 import Policies from './Components/Pages/Policies';
+import Facilities from './Components/Pages/Facilities';
+import OurTeam from './Components/Pages/OurTeam';
 import NotFound from './Components/Pages/NotFound';
 
 
@@ -58,6 +60,8 @@ function App() {
       <Route exact path="/faq" element={<FAQ />}/>
       <Route exact path="/contact" element={<Contact />}/>
       <Route exact path="/policies" element={<Policies />}/>
+      <Route exact path="/facilities" element={<Facilities />}/>
+      <Route exact path="/our-team" element={<OurTeam />}/>
       <Route exact path="/not-found" element={<NotFound />}/>
 
       {/** Any invalid path will bring user to the "Not Found" page */}

@@ -5,6 +5,7 @@ import Classes from '../Pages/Classes';
 import About from '../Pages/About';
 import ComingSoon from '../Pages/ComingSoon';
 import Policies from '../Pages/Policies';
+import Recital from '../Pages/Recital'
 
 //Import ClassDescriptionItems to autogenerate dropdown of classes under class descriptions
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
@@ -58,33 +59,47 @@ export const MenuItems = [
         id: "3",
         title: "Events",
         link: "/events",
-        element: <ComingSoon />,
-        /**
+        element: <Recital />,
         submenu: [
             {
                 title: "Recital",
-                link: "/events#recital"
+                link: "/recital"
             },
             {
-                title: "Intensives",
-                link: "/events#intensives"
-            },
-            {
-                title: "Pop-ups and Masterclasses",
-                link: "/events#popups"
-            },
-            {
-                title: "Summer Camps",
-                link: "/events#summercamps"
+                title: "Other Events",
+                link: "/events"
             }
         ]
-        */
     },
     {
         id: "4",
         title: "Programs",
         link: "/programs",
-        element: <ComingSoon />
+        element: <ComingSoon />,
+        submenu: [
+            {
+                title: "SPARC",
+                link: "/sparc"
+            },
+            {
+                title: "STEP",
+                link: "/step"
+            },
+            {
+                title: "Student Ambassadors",
+                link: "/student-ambassadors"
+            },
+            {
+                title: "After School Programming",
+                link: "/after-school"
+            },
+            /*
+            {
+                title: "Summer Camps",
+                link: "/summer-camps"
+            },
+            */
+        ]
     },
     {
         id: "5",
@@ -123,11 +138,11 @@ export const MenuItems = [
             },
             {
                 title: "Facilities",
-                link: "/about#facilities"
+                link: "/facilities"
             },
             {
                 title: "Our Team",
-                link: "/about#teachers"
+                link: "/our-team"
             }
         ]
     },

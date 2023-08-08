@@ -1,7 +1,7 @@
 {
   "name": "synergy-website-app",
   "version": "0.1.0",
-   "homepage": ".",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
