@@ -14,7 +14,7 @@ import StudioC from '../../Images/studio-c-elev.jpg'
 import StudioLobby from '../../Images/studio-lobby-party.jpg'
 
 //CSS
-import '../../Styles/About.css'
+import '../../Styles/Facilities.css'
 
 //Import the lists of JS objects that generate ALL Staff Bios.
 import { TeacherBioItems, TABioItems, StudentTeacherBioItems, AdminBioItems } from '../StaffBioItems.js'
@@ -24,8 +24,7 @@ import { TeacherBioItems, TABioItems, StudentTeacherBioItems, AdminBioItems } fr
  */
 const Facilities = () => {
   return (
-    <div className='about'>
-    <div id="facilities">
+    <div id="facilities" className='container'>
       <div className='title'>
         <h1>Facilities</h1>
         <h2>16 River Road, Jericho, VT</h2>
@@ -78,7 +77,6 @@ const Facilities = () => {
           includes a mezzanine which allows parents, teachers and guests to easily view classes and performances.
         </p>
       </div>
-    </div>
     </div>
   )
 }

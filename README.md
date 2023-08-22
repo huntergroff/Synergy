@@ -14,6 +14,14 @@ The subfolders of src are organized as follows
     * Staff: All the images of staff.
 * Styles: this folder holds all the css files for the website. There is one .css file for each .jsx file in "Components/Pages". Additionally, there is a file for the header, the footer, and one global css file containing root variables and rules.
 
+## Adding a new page
+* Create a component for the page in src/Components/Pages
+* Go to src/App.js
+* Import your component under "Some component imports"
+* Scroll down to "ADD NEW PAGES HERE!"
+* Create a new 'Route' and choose any url extension to present the component.
+* If you want the page to be accessible from the main navbar, go to src/Components/Header/MenuItems.js and add a link to your new page under one of the submenus.
+
 ## Available Scripts
 
 In the project directory, you can run:

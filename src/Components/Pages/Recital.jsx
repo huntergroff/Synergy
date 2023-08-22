@@ -2,12 +2,12 @@
 import React from 'react'
 
 /**
- * Main element for the about page.
+ * Main element for the recital page.
  */
 const Recital = () => {
   return (
     <div>
-      <p>Hello</p>
+      <p>Hello :DDDD</p>
     </div>
   )
 }

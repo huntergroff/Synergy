@@ -5,7 +5,7 @@ import Classes from '../Pages/Classes';
 import About from '../Pages/About';
 import ComingSoon from '../Pages/ComingSoon';
 import Policies from '../Pages/Policies';
-import Recital from '../Pages/Recital'
+import Events from '../Pages/Events'
 
 //Import ClassDescriptionItems to autogenerate dropdown of classes under class descriptions
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
@@ -59,7 +59,7 @@ export const MenuItems = [
         id: "3",
         title: "Events",
         link: "/events",
-        element: <Recital />,
+        element: <Events />,
         submenu: [
             {
                 title: "Recital",

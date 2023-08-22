@@ -7,7 +7,6 @@
 }
 
 /** About our community section **/
-
 .about-section {
     width: 100%;
     display: flex;
@@ -101,9 +100,7 @@ h1.about-section-title {
     }
 }
 
-
-
-#facilities, #teachers, #AboutOurCommunity {
+#AboutOurCommunity {
     color: var(--synergy-teal);
     padding: 5% 5% 20vh 5%;
 }
@@ -118,23 +115,6 @@ h1.about-section-title {
     margin-bottom: 60px;
 }
 
-#facilities img {
-    width: 100%;
-    display: block;
-}
-
-#facilities h2 {
-    font-weight: 200;
-    margin: 0;
-}
-
-#facilities p {
-    font-size: 26px;
-    line-height: 40px;
-    margin: 4% 0;
-    width: 100%;
-}
-
 .about-title-and-blurb h1 {
     font-size: 80px;
     line-height: 100px;
@@ -143,36 +123,21 @@ h1.about-section-title {
     margin-bottom: 40px;
 }
 
-#facilities h1, #teachers h1 {
-    font-size: 80px;
-    line-height: 90px;
-    font-weight: 600;
-    margin: 0;
-}
-
-#facilities .photos-1, #facilities .photos-3, #facilities .photos-4 {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-}
-
-#facilities .photos-1-1, #facilities .photos-3-1, #facilities .photos-4-1 {
-    width: 66%;
-}
-
-#facilities .photos-1-2, #facilities .photos-3-2, #facilities .photos-4-2 {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#facilities .photos-1, #facilities .photos-2, #facilities .photos-4 {
-    margin-top: 4%;
-}
-
 /*main blurb*/
+#teachers {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#teachers h1 {
+    color: var(--synergy-teal);
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 0;
+}
+
 #teachers h2 {
     font-size: 24px;
     line-height: 36px;
@@ -182,11 +147,12 @@ h1.about-section-title {
 }
 
 #teachers h4 {
-    font-size: 63px;
+    font-size: 60px;
     line-height: 70px;
     padding-top: 30px;
     border-top: 2px solid var(--synergy-teal);
     margin-bottom: 32px;
+    color: var(--synergy-teal);
 }
 
 #teachers .teacher {

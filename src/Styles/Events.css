@@ -1,0 +1,85 @@
+@import url('./Global.css');
+
+.events {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.events h1, .events h2 {
+    color: var(--synergy-teal);
+}
+
+.events h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 0;
+}
+
+.events h2 {
+    max-width: 80%;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.events-header {
+    padding: 0 0 50px 0;
+}
+
+.eventbox {
+    display: flex;
+    padding: 50px 0 50px 0;
+    border-top: 1px solid #707070;
+}
+
+.eventbox h3 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.eventbox .datetime {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.eventbox .description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 550px;
+}
+
+.eventbox img {
+    width: 300px;
+    height: fit-content;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.eventbox a {
+    font-family: inherit;
+    font-weight: 800;
+    color: white;
+    background-color: var(--synergy-purple);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 200ms;
+    box-sizing: border-box;
+    display: block;
+}
+
+.eventbox a:hover {
+    background-color: var(--synergy-coral);
+}
