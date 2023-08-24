@@ -78,27 +78,35 @@
     overflow: hidden;
 }
 
-.home-alert-container.hide {
+.home-alert-container.hide, .events-alert.hide {
     display: none
 }
 
 .home-alert {
+    margin-top: 20px;
+    background-color: rgba(0,128,128,0.75);
+}
+
+.events-alert {
+    margin-top: 105px;
+    background-color: rgba(194,125,125,0.75);
+}
+
+.home-alert, .events-alert {
     position: absolute;
     top: var(--navbar-height);
-    margin-top: 20px;
     right: -50vw;
     display: flex;
     align-items: center;
-    background-color: rgba(0,128,128,0.75);
     color: white;
     transition-duration: 200ms;
 }
 
-.home-alert:hover {
+.home-alert:hover, .events-alert:hover {
     right: 0px;
 }
 
-.home-alert .icon-and-header {
+.home-alert .icon-and-header, .events-alert .icon-and-header {
     display: flex;
     align-items: center;
     transition-duration: 200ms;
@@ -110,15 +118,16 @@
     margin: 0 10px;
 }
 
-.home-alert h1 {
+.home-alert h1, .events-alert h1 {
     width: 170px;
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
     padding-top: 3px;
+    padding-right: 16px;
 }
 
-.home-alert p {
+.home-alert p, .events-alert p {
     width: 50vw;
     font-size: 16px;
     line-height: 20px;

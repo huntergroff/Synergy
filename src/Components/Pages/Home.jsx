@@ -62,6 +62,7 @@ const Home = () => {
   // splitting the google sheet data into individual items that can be used to render various dynamic messages.
   const mini_alert = googleSheetData[0];
   const mia_message = googleSheetData[1];
+  const event_alert = googleSheetData[2];
 
   return (
     <>
@@ -73,6 +74,14 @@ const Home = () => {
             <h1>{mini_alert ? mini_alert.CONTENT_A : "This Week at Synergy!"}</h1>
           </div>
             <p>{mini_alert ? mini_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
+        </div>
+
+        <div className={`events-alert ${event_alert ? '' : 'hide'}`}>
+          <div className='icon-and-header'>
+            <AiOutlineInfoCircle className='home-alert-icon'/>
+            <h1>{event_alert ? event_alert.CONTENT_A : "Upcoming Events"}</h1>
+          </div>
+            <p>{event_alert ? event_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
         </div>
       </div>
       <div className='container'>

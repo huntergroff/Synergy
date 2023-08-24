@@ -6,6 +6,7 @@ import About from '../Pages/About';
 import ComingSoon from '../Pages/ComingSoon';
 import Policies from '../Pages/Policies';
 import Events from '../Pages/Events'
+import SPARC from '../Pages/SPARC';
 
 //Import ClassDescriptionItems to autogenerate dropdown of classes under class descriptions
 import { ClassDescriptionItems } from '../ClassDescriptionItems';
@@ -75,7 +76,7 @@ export const MenuItems = [
         id: "4",
         title: "Programs",
         link: "/programs",
-        element: <ComingSoon />,
+        element: <SPARC />,
         submenu: [
             {
                 title: "SPARC",
