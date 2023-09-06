@@ -30,10 +30,8 @@ const Sparc = () => {
           some works together and some by division. Our previous performances
           were “We Belong” in 2022 and "It's How You Frame It" in 2023. We are
           looking forward to kicking off our 2024 season in a couple of weeks.
-          <br/>
-          <br/>
-          Interested in joining SPARC?
         </p>
+        <h3>Interested in joining SPARC?</h3>
         <Link to="/contact">Contact Us!</Link>
         </div>
       </div>

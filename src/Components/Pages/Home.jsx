@@ -64,10 +64,29 @@ const Home = () => {
   const mia_message = googleSheetData[1];
   const event_alert = googleSheetData[2];
 
+
+  // only show event alert if data has been recieved and has content
+  let show_event_alert = false;
+  if (event_alert) {
+    show_event_alert = event_alert.CONTENT_A !== "" && event_alert.CONTENT_B !== "";
+  }
+
+  // only show mini alert if data has been recieved and has content
+  let show_mini_alert = false;
+  if (mini_alert) {
+    show_mini_alert = mini_alert.CONTENT_A !== "" && mini_alert.CONTENT_B !== "";
+  }
+
+  // only show mia message if data has been recieved and has content
+  let show_mia_message = false;
+  if (mia_message) {
+    show_mia_message = mia_message.CONTENT_A !== "" && mia_message.CONTENT_B !== "" && mia_message.CONTENT_C !== "";
+  }
+
   return (
     <>
       <div className='bg'></div>
-      <div className={`home-alert-container ${mini_alert ? '' : 'hide'}`}>
+      <div className={`home-alert-container ${show_mini_alert ? '' : 'hide'}`}>
         <div className='home-alert'>
           <div className='icon-and-header'>
             <AiOutlineInfoCircle className='home-alert-icon'/>
@@ -76,7 +95,7 @@ const Home = () => {
             <p>{mini_alert ? mini_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
         </div>
 
-        <div className={`events-alert ${event_alert ? '' : 'hide'}`}>
+        <div className={`events-alert ${show_event_alert ? '' : 'hide'}`}>
           <div className='icon-and-header'>
             <AiOutlineInfoCircle className='home-alert-icon'/>
             <h1>{event_alert ? event_alert.CONTENT_A : "Upcoming Events"}</h1>
@@ -91,7 +110,7 @@ const Home = () => {
           <h2>Center for Dance and the<br></br>Performing Arts</h2>
         </div>
       </div>
-      <div className={`home-mia-message container ${mia_message ? '' : 'hide'}`}>
+      <div className={`home-mia-message container ${show_mia_message ? '' : 'hide'}`}>
         <h1>{mia_message ? mia_message.CONTENT_A : 'Welcome to Synergy Dance!'}</h1>
         <h3>{mia_message ? mia_message.CONTENT_B : ''}</h3>
         <p>{mia_message ? mia_message.CONTENT_C : 'Please enjoy exploring our website!'}</p>

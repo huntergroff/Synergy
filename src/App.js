@@ -60,6 +60,7 @@ function App() {
       <Route exact path="/classtables-ignite" element={<ClassTables initialClasstype="All" initialPathway="Ignite" initialSort="Days" />}/>
       <Route exact path="/classtables-focus" element={<ClassTables initialClasstype="All" initialPathway="Focus" initialSort="Days" />}/>
       <Route exact path="/classtables-daily" element={<ClassTables initialClasstype="All" initialPathway="All" initialSort="Days" />}/>
+      <Route exact path="/classtables-afterschool" element={<ClassTables initialClasstype="AfterSchool" initialPathway="All" initialSort="Days" />}/>
       
       {/** ADD NEW PAGES HERE! Other pages not included in MenuItems but requiring their own page */}
       <Route exact path="/faq" element={<FAQ />}/>

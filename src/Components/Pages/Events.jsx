@@ -21,7 +21,7 @@ const SynergyEvent = ({event}) => {
         {/* Only add location if provided with one */}
         <p className="datetime">{event.DATE_TIME ? event.DATE_TIME : ""} <br/> {event.LOCATION_OPTIONAL ? `at ${event.LOCATION_OPTIONAL}` : ""}</p>
         {event.DESCRIPTION ? <p className="description">{event.DESCRIPTION}</p> : <></>}
-        {event.LINK_OPTIONAL && event.LINKTEXT_OPTIONAL ? <a href={event.LINK_OPTIONAL} target="_blank" rel="noopener noreferrer">{event.LINKTEXT_OPTIONAL}</a> : <></>}
+        {event.LINK_OPTIONAL && event.LINK_TEXT_OPTIONAL ? <a href={event.LINK_OPTIONAL} target="_blank" rel="noopener noreferrer">{event.LINK_TEXT_OPTIONAL}</a> : <></>}
       </div>
     </div>
     )

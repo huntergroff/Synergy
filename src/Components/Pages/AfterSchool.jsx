@@ -1,4 +1,6 @@
+//React Imports
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 //CSS Imports
 import '../../Styles/Programs.css'
@@ -20,7 +22,7 @@ const AfterSchool = () => {
           <img src={BarKids} alt="Kids at Synergy" className="about-img" />
         </div>
         <div>
-          <h3>Bus Program</h3>
+          <h3>Meet The Bus Program</h3>
           <p>
             Synergy's bus program is designed to help busy parents by
             simplifying their driving load. Children within from Jericho
@@ -35,6 +37,11 @@ const AfterSchool = () => {
             does not attend due to illness, appointments or other conflicts.
             Registration is available through the website or your parent portal.
           </p>
+          <div className="links">
+            <Link to="/classtables-afterschool">
+              Register
+            </Link>
+          </div>
         </div>
       </div>
       <div className="program-blurb">
@@ -49,12 +56,14 @@ const AfterSchool = () => {
             each early release day of the school year. For more information, see
             the links below!
           </p>
-          <a href={EarlyRelease} target="_blank" rel="noopener noreferrer">
-            Learn More!
-          </a>
-          <a href={EarlyRelease} target="_blank" rel="noopener noreferrer">
-            Register via Portal
-          </a>
+          <div className="links">
+            <a href={EarlyRelease} target="_blank" rel="noopener noreferrer">
+              Learn More
+            </a>
+            <Link to="/classtables-afterschool">
+              Register
+            </Link>
+          </div>
         </div>
       </div>
     </div>

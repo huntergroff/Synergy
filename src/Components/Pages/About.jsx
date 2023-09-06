@@ -174,7 +174,7 @@ const AboutOurComminty = () => {
  */
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about container'>
       <AboutOurComminty />
     </div>
   )

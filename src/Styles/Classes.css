@@ -2,7 +2,8 @@
 
 .classes, .classes-descriptions {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -16,22 +17,22 @@
 }
 
 .classes h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
     width: fit-content;
-    font-size: 100px;
-    line-height: 100px;
-    font-weight: 200;
     border-bottom: 1px solid var(--synergy-teal);
     padding-bottom: 30px;
     color: var(--synergy-teal);
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .classes h3 {
     width: 100%;
     font-weight: 500;
     color: var(--synergy-teal);
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 32px;
     margin-top: 40px;
 }
 
@@ -63,7 +64,8 @@
 .classes-pathway h2 {
     margin: 0 0 5px 0;
     width: fit-content;
-    font-family: articulat-heavy-cf;
+    font-family: articulat-cf;
+    font-weight: 900;
     font-size: 50px;
     line-height: 50px;
     transition: 200ms;
@@ -71,7 +73,7 @@
 
 .classes-pathway p {
     margin: 0;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 28px;
 }
 
@@ -102,10 +104,10 @@
 }
 
 .classes-descriptions h1 {
-    font-weight: 200;
-    font-size: 90px;
-    line-height: 90px;
-    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 30px;
     color: var(--synergy-teal)
 }
 

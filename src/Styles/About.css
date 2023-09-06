@@ -102,7 +102,7 @@ h1.about-section-title {
 
 #AboutOurCommunity {
     color: var(--synergy-teal);
-    padding: 5% 5% 20vh 5%;
+    padding-bottom: 20vh;
 }
 
 .about-title-and-blurb p {
@@ -116,10 +116,9 @@ h1.about-section-title {
 }
 
 .about-title-and-blurb h1 {
-    font-size: 80px;
-    line-height: 100px;
-    font-weight: 500;
-    margin-top: 70px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
     margin-bottom: 40px;
 }
 
