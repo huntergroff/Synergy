@@ -8,7 +8,7 @@ import { RiFocus3Line } from 'react-icons/ri'
 import { GoCalendar } from 'react-icons/go'
 import { MdOutlineExitToApp } from 'react-icons/md'
 import { BsListCheck } from 'react-icons/bs'
-import SynergyCalendar from '../../Documents/SynergyCalendar.pdf'
+import SynergyCalendar from '../../Documents/Calendar23-24.pdf'
 
 //CSS
 import '../../Styles/Classes.css'

@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Images
-import BarKids from '../..//Images/kids-on-bar.jpg'
+import AssistantTeachers from '../../Images/assistant-teachers.jpg'
 
 /**
  * Main element for the "Student Ambassadors" page.
@@ -12,7 +12,7 @@ const StudentAmbassadors = () => {
       <h1>Student Ambassador Program</h1>
       <div className="program-blurb">
         <div className="img-and-next-button">
-          <img src={BarKids} alt="Kids at Synergy" className="about-img" />
+          <img src={AssistantTeachers} alt="Assistant Teachers" className="about-img" />
         </div>
         <p>
           Our Student Ambassadors are tasked with building a strong community.

@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 import '../../Styles/Programs.css'
 
 //Images and Docs
-import BarKids from '../..//Images/kids-on-bar.jpg'
+import AfterSchoolPhoto from '../../Images/after-school.JPG'
+import RecitalFrame from '../../Images/recital-frame.JPG'
 import EarlyRelease from '../../Documents/EarlyReleaseProgram.pdf'
 
 /**
@@ -19,7 +20,7 @@ const AfterSchool = () => {
       <h2>Bus Program and Early Release</h2>
       <div className="program-blurb">
         <div>
-          <img src={BarKids} alt="Kids at Synergy" className="about-img" />
+          <img src={AfterSchoolPhoto} alt="Kids at Synergy enjoying snacks" className="about-img" />
         </div>
         <div>
           <h3>Meet The Bus Program</h3>
@@ -46,7 +47,7 @@ const AfterSchool = () => {
       </div>
       <div className="program-blurb">
         <div>
-          <img src={BarKids} alt="Kids at Synergy" className="about-img" />
+          <img src={RecitalFrame} alt="kids on stage with frames" className="about-img" />
         </div>
         <div>
           <h3>Early Release</h3>

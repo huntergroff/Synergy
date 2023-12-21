@@ -33,8 +33,22 @@
     gap: 20px;
 }
 
-.program-blurb img {
-    width: 300px;
+.program-blurb img.about-img {
+    width: 400px;
+}
+
+.program-blurb img.large-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .program-blurb {
+        flex-direction: column;
+    }
+
+    .program-blurb img.large-img {
+        width: 100%;
+    }
 }
 
 .program-blurb p {

@@ -4,7 +4,7 @@ import React from 'react'
 import '../../Styles/Programs.css'
 
 //Images
-import BarKids from '../..//Images/kids-on-bar.jpg'
+import StudentTeacher from '../../Images/studentteacher.JPG'
 
 /**
  * Main element for the "STEP" page.
@@ -17,7 +17,7 @@ const Step = () => {
 
       <div className="program-blurb">
         <div className="img-and-next-button">
-          <img src={BarKids} alt="Kids at Synergy" className="about-img" />
+          <img src={StudentTeacher} alt="Student Teacher Excellence" className="about-img" />
         </div>
         <p>
           STEP stands for Student Teacher Excellence Program. Synergy initiated

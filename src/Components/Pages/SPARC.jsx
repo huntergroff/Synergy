@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import '../../Styles/Programs.css'
 
 //Images
-import BarKids from '../..//Images/kids-on-bar.jpg'
+import SparcRecital from '../../Images/sparcrecital.JPG'
 
 /**
  * Main element for the "SPARC" page.
@@ -18,8 +18,8 @@ const Sparc = () => {
       <h2>Synergy Performing Arts Repertory Company</h2>
 
       <div className="program-blurb">
-        <div className="img-and-next-button">
-          <img src={BarKids} alt="Kids at Synergy" className="about-img" />
+        <div className="">
+          <img src={SparcRecital} alt="Sparc Recital Cast Picture" className='large-img' />
         </div>
         <div>
         <p>
