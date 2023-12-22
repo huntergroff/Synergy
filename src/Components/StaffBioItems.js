@@ -35,7 +35,7 @@ import TannerPaffen from '../Images/Staff/tanner-paffen.jpg';
 import TaylorGernander from '../Images/Staff/taylor-gernander.jpg';
 import TheresaRobinson from '../Images/Staff/theresa-robinson.jpg';
 import ZoePapaseraphim from '../Images/Staff/zoe-papaseraphim.jpg';
-
+import ChatchPregger from '../Images/Staff/chatch-pregger.jpg';
 import SummerClough from '../Images/Staff/summer-clough.jpg';
 
 import RebeccaClough from '../Images/Staff/rebecca-clough.jpg';
@@ -69,6 +69,11 @@ export const TeacherBioItems = [
         name: "Brea McBride",
         picture: <img src={BreaMcBride} alt="Brea McBride" />,
         bio: "Brea McBride is the proud owner and Artistic Director of Infinity Dance Studio in Essex Junction, VT.  She credits much of her success in opening the business to the completion of the Start-Up Course offered through the Women's Small Business Program.  Brea began her pre-professional training in her hometown of Ironton, Ohio at Yvonne Dekay’s School of Dance.  She has also lived and furthered her dance education in New Orleans, San Francisco, and New York City.  After graduating from the American Musical and Dramatic Academy in NYC, she was hired as a Mainstage Performer for Disney Cruise Lines.  Brea began her career as a dance educator at The Cynthia King Dance Studio in Brooklyn, NY.  She has taught and choreographed for several local VT studios since moving here in 2004.  Proud moments include restaging a children’s play for the Shelburne Players, choreographing a piece for the Haunted Forest, and working with the children at Camp Dream and Camp Kiniya.  Her most recent professional experience as a principal dancer in Ballet Vermont’s production of Bees and Friends was incredibly rewarding.  Brea is thrilled to have the opportunity to join the Synergy faculty!"
+    },
+    {
+        name: "Chatch Pregger",
+        picture: <img src={ChatchPregger} alt="Chatch Pregger" />,
+        bio: "Chatch, Is the Founder and Artistic Director Ballet Vermont and The Farm to Ballet Project. He started his ballet education at the Adams School of Dance in Rutland VT and then moved on to The Nutmeg Conservatory in CT. He joined Boston Ballet II in 1999 and was promoted to Boston Ballet the following year. Since then he has been a member of the Washington Ballet and the Houston Ballet, as well as a guest artist with the Arizona Ballet, Hartford Ballet, and Texas Ballet Theatre. He has performed works by Mark Morris, Ben Stevenson, Kirk Peterson, Nacho Duato, Trey MacIntyre, Twyla Tharp, Christopher Weeldon, Antony Tudor, Michael Pink, Stanton Welch, Septime Webre, and George Balanchine, as well as many ballets from the classical repertoire including Gissel, La Bayadere and Don Quixote. Locally, Chatch took part in Burlington’s Quadricentennial festival playing Samuel de Champlain in From The New World by Heddy Maalem. He also joined the Portland Ballet in 2010 and Safe Haven Ballet in 2019 to dance the role of Cavalier in The Nutcracker. Chatch lives in Jericho with his partner Katie, his two children and their flock of chickens."
     },
     {
         name: "Christiana Davis",
