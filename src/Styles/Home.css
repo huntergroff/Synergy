@@ -87,12 +87,12 @@
     background-color: rgba(0,128,128,0.75);
 }
 
-.events-alert {
+.events-alert, .static-alert {
     margin-top: 105px;
     background-color: rgba(194,125,125,0.75);
 }
 
-.home-alert, .events-alert {
+.home-alert, .events-alert, .static-alert {
     position: absolute;
     top: var(--navbar-height);
     right: -50vw;
@@ -102,11 +102,17 @@
     transition-duration: 200ms;
 }
 
+.static-alert {
+    right: 0vw;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
 .home-alert:hover, .events-alert:hover {
     right: 0px;
 }
 
-.home-alert .icon-and-header, .events-alert .icon-and-header {
+.home-alert .icon-and-header, .events-alert .icon-and-header, .static-alert .icon-and-header {
     display: flex;
     align-items: center;
     transition-duration: 200ms;
@@ -118,7 +124,7 @@
     margin: 0 10px;
 }
 
-.home-alert h1, .events-alert h1 {
+.home-alert h1, .events-alert h1, .static-alert h1 {
     width: 170px;
     font-size: 18px;
     line-height: 20px;
@@ -334,6 +340,10 @@
     
     .home-title {
         margin-top: 0;
+    }
+
+    .static-alert {
+        display: none
     }
 
     .home-alert-container {
