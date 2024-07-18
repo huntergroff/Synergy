@@ -3,7 +3,6 @@ import React from 'react';
 import Home from '../Pages/Home';
 import Classes from '../Pages/Classes';
 import About from '../Pages/About';
-import ComingSoon from '../Pages/ComingSoon';
 import Policies from '../Pages/Policies';
 import Events from '../Pages/Events'
 import SPARC from '../Pages/SPARC';

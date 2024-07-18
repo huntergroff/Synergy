@@ -64,14 +64,15 @@ const Home = () => {
   // splitting the google sheet data into individual items that can be used to render various dynamic messages.
   const mini_alert = googleSheetData[0];
   const mia_message = googleSheetData[1];
-  const event_alert = googleSheetData[2];
+  /*const event_alert = googleSheetData[2];*/ /* TEMPORARILY REMOVED FOR CAMPS ALERT */
 
   // only show event alert if data has been recieved and has content
-  let show_event_alert = false;
-  if (event_alert) {
-    show_event_alert =
-      event_alert.CONTENT_A !== "" && event_alert.CONTENT_B !== "";
-  }
+  /* TEMPORARILY REMOVED FOR CAMPS ALERT*/
+  // let show_event_alert = false;
+  // if (event_alert) {
+  //   show_event_alert =
+  //     event_alert.CONTENT_A !== "" && event_alert.CONTENT_B !== "";
+  // }
 
   // only show mini alert if data has been recieved and has content
   let show_mini_alert = false;

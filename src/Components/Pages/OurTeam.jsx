@@ -1,38 +1,37 @@
 //React Imports
-import React, { useRef } from 'react'
+import React from "react";
 
 //Icons and Images
-import {HiArrowDown} from 'react-icons/hi'
-import StaffPic from '../../Images/Staff/staff-pic.jpg'
-import StudioNight from '../..//Images/studio-night-tent.jpg'
-import BarKids from '../..//Images/kids-on-bar.jpg'
-import MezzanineKids from '../..//Images/mezzanine-kids.jpg'
-import HollydazeAlumni from '../..//Images/hollydaze-alumni.jpg'
-import LilyTeaching from '../..//Images/lily-teaching.jpg'
+import StaffPic from "../../Images/Staff/staff-pic.jpg";
 
 //CSS
-import '../../Styles/About.css'
+import "../../Styles/About.css";
 
 //Import the lists of JS objects that generate ALL Staff Bios.
-import { TeacherBioItems, TABioItems, StudentTeacherBioItems, AdminBioItems } from '../StaffBioItems.js'
+import {
+  TeacherBioItems,
+  TABioItems,
+  StudentTeacherBioItems,
+  AdminBioItems,
+} from "../StaffBioItems.js";
 
 /**
  * Renders a single teacher bio given the following params:
  * @param {name} the teacher's name
  * @param {bio} the teacher's bio
- * @param {picture} the teacher's picture 
+ * @param {picture} the teacher's picture
  */
 const TeacherBio = ({ name, bio, picture }) => {
   return (
-    <div className='teacher'>
+    <div className="teacher">
       {picture}
-      <div className='name-and-bio'>
+      <div className="name-and-bio">
         <h3>{name}</h3>
         <p>{bio}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 /**
  * Renders a list of staff given a list of bio items
@@ -40,17 +39,22 @@ const TeacherBio = ({ name, bio, picture }) => {
 const renderBios = (bioItemsList) => {
   return bioItemsList.map((teacherItem, index) => {
     return (
-      <TeacherBio name={teacherItem.name} bio={teacherItem.bio} picture={teacherItem.picture} key={index} />
+      <TeacherBio
+        name={teacherItem.name}
+        bio={teacherItem.bio}
+        picture={teacherItem.picture}
+        key={index}
+      />
     );
-  })
-}
+  });
+};
 
 /**
  * Renders all the staff bios and a short blurb at the top.
  */
 const Teachers = () => {
   return (
-    <div id="teachers" className='container'>
+    <div id="teachers" className="container">
       <div className="title">
         <h1>Our Team</h1>
         <img
@@ -83,4 +87,4 @@ const Teachers = () => {
   );
 };
 
-export default Teachers
+export default Teachers;
