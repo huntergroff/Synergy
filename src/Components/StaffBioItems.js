@@ -38,10 +38,8 @@ import ZoePapaseraphim from '../Images/Staff/zoe-papaseraphim.jpg';
 import ChatchPregger from '../Images/Staff/chatch-pregger.jpg';
 import SummerClough from '../Images/Staff/summer-clough.jpg';
 
-import RebeccaClough from '../Images/Staff/rebecca-clough.jpg';
-
 import NoPicGirl from '../Images/Staff/no-teacher-pic-girl.jpg';
-import NoPicBoy from '../Images/Staff/no-teacher-pic-boy.jpg';
+/*import NoPicBoy from '../Images/Staff/no-teacher-pic-boy.jpg';*/
 
 //TeacherBioItems array - add new teahcers as objects here
 export const TeacherBioItems = [
