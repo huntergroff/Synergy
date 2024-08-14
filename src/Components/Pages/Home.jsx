@@ -64,15 +64,14 @@ const Home = () => {
   // splitting the google sheet data into individual items that can be used to render various dynamic messages.
   const mini_alert = googleSheetData[0];
   const mia_message = googleSheetData[1];
-  /*const event_alert = googleSheetData[2];*/ /* TEMPORARILY REMOVED FOR CAMPS ALERT */
+  const event_alert = googleSheetData[2];
 
   // only show event alert if data has been recieved and has content
-  /* TEMPORARILY REMOVED FOR CAMPS ALERT*/
-  // let show_event_alert = false;
-  // if (event_alert) {
-  //   show_event_alert =
-  //     event_alert.CONTENT_A !== "" && event_alert.CONTENT_B !== "";
-  // }
+  let show_event_alert = false;
+  if (event_alert) {
+    show_event_alert =
+      event_alert.CONTENT_A !== "" && event_alert.CONTENT_B !== "";
+  }
 
   // only show mini alert if data has been recieved and has content
   let show_mini_alert = false;
@@ -107,22 +106,17 @@ const Home = () => {
               : "We're having trouble loading this information. Please check back later!"}
           </p>
         </div>
-        {/* TEMPORARILY REMOVED FOR CAMPS ALERT
-        <div className={`events-alert ${show_event_alert ? '' : 'hide'}`}>
-          <div className='icon-and-header'>
-            <AiOutlineInfoCircle className='home-alert-icon'/>
-            <h1>{event_alert ? event_alert.CONTENT_A : "Upcoming Events"}</h1>
-          </div>
-            <p>{event_alert ? event_alert.CONTENT_B : "We're having trouble loading this information. Please check back later!"}</p>
-        </div> */}
-
-        {/* TEMPORARY CAMPS ALERT */}
-        <Link to={"/events"} className="static-alert">
+        <div className={`events-alert ${show_event_alert ? "" : "hide"}`}>
           <div className="icon-and-header">
             <AiOutlineInfoCircle className="home-alert-icon" />
-            <h1>Register for Camps Here</h1>
+            <h1>{event_alert ? event_alert.CONTENT_A : "Upcoming Events"}</h1>
           </div>
-        </Link>
+          <p>
+            {event_alert
+              ? event_alert.CONTENT_B
+              : "We're having trouble loading this information. Please check back later!"}
+          </p>
+        </div>
       </div>
       <div className="container">
         <div className="home-title">
