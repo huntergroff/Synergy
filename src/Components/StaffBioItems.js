@@ -137,8 +137,8 @@ export const TeacherBioItems = [
 //TABioItems array - add new Teaching Assistants as objects here
 export const TABioItems = [
     {
-        name: "Audrey Rodgers, Nadia Muller, Otto MableyWard",
-        picture: <img src={NoPicGirl} alt="Student 1" />,
+        name: "Audrey Rodgers, Nadia Muller",
+        picture: <img src={NoPicGirl} alt="Teaching Assistants" />,
         bio: ""
     }
 ]
@@ -200,8 +200,8 @@ export const StudentTeacherBioItems = [
 //AdminBioItems array - add new Administrative Assistants as objects here
 export const AdminBioItems = [
     {
-        name: "Anika Romanko, Anya Muller, Mia Cannizzaro, Pilar Medina",
-        picture: <img src={NoPicGirl} alt="Student 1" />,
+        name: "Anya Muller, Rivkah Anderson, Vivian Ennis, Maddie Brown, Brooklyn Belfield",
+        picture: <img src={NoPicGirl} alt="Admin Assistants" />,
         bio: ""
     }
 ]
