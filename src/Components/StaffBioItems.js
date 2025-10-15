@@ -131,7 +131,8 @@ export const TeacherBioItems = [
         picture: <img src={TannerPaffen} alt="Tanner Paffen" />,
         bio: ""
     },
-*/
+
+    */
 ]
 
 //TABioItems array - add new Teaching Assistants as objects here

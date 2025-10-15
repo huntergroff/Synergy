@@ -150,7 +150,7 @@ const Classes = () => {
             />
             <Pathway 
               title="Parent Portal"
-              blurb="Click to visit the parent portal and manage your classes if you already have an account."
+              blurb="Click to visit the parent portal and manage your classes if you already have an account. "
               icon={<MdOutlineExitToApp className='pathway-icon'/>}
               link="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
               external={true}
