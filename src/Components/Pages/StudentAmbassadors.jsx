@@ -19,7 +19,7 @@ const StudentAmbassadors = () => {
           Whether it is welcoming new students, hosting a community wide event,
           helping with recital or creating games like “Name our New GNOME” or
           holiday contests, our students ambassadors are working to help Synergy
-          be a vibrant, fun and creative community where everyone feels at home!{" "}
+          be a vibrant, fun and creative community where everyone feels at home  !{" "}
         </p>
       </div>
     </div>
