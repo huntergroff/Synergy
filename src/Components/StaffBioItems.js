@@ -82,10 +82,7 @@ export const TeacherBioItems = [
         name: "Theresa Robinson",
         picture: <img src={TheresaRobinson} alt="Theresa Robinson" />,
         bio: "Theresa grew up in southern CT in a theatre family, acting, directing children’s theatre, assisting with costumes, immersing herself in all aspects of community theatre, and ALWAYS dancing along with her sisters.  She danced at Lyndon State College, running their dance club program there while majoring in Elementary Education.  She has also danced in our local community both in Burlington area and Jericho for many years. Holding a K-6 teaching certificate, Theresa ran her own preschool for more than 20 years and now is an Administrative Assistant at Browns River Middle School, just across the lawn!  Theresa has worked with children of all ages in our local community with Mia as Co-Director of Vermont Youth Dancers since 2010, and taught classes both at the Birds Nest and at Synergy.  Presently, she is teaching Creative Movement, Jazz 1 & 2, and Lyrical 2."
-    }
-]
-
-/*
+    },
     {
         name: "Alex Bacheller",
         picture: <img src={AlexBacheller} alt="Alex Bacheller" />,
@@ -110,8 +107,11 @@ export const TeacherBioItems = [
         name: "Tanner Paffen",
         picture: <img src={TannerPaffen} alt="Tanner Paffen" />,
         bio: ""
-    },
-*/
+    }
+]
+
+
+
 
 //TABioItems array - add new Teaching Assistants as objects here
 export const TABioItems = [
