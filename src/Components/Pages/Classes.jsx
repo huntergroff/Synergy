@@ -8,7 +8,7 @@ import { RiFocus3Line } from 'react-icons/ri'
 import { GoCalendar } from 'react-icons/go'
 import { MdOutlineExitToApp } from 'react-icons/md'
 import { BsListCheck } from 'react-icons/bs'
-import SynergyCalendar from '../../Documents/AnnualCalendar.pdf'
+import SynergyCalendar from '../../Documents/Calendar23-24.pdf'
 
 //CSS
 import '../../Styles/Classes.css'
@@ -129,7 +129,7 @@ const Classes = () => {
             />
             <Pathway 
               title="Annual"
-              blurb="Click to view the schedule for classes, sessions, and holidays in 2025 - 2026."
+              blurb="Click to view the schedule for classes, sessions, and holidays in 2022- 2023."
               icon={<GoCalendar className='pathway-icon'/>}
               link={SynergyCalendar}
               external="true"
@@ -150,7 +150,7 @@ const Classes = () => {
             />
             <Pathway 
               title="Parent Portal"
-              blurb="Click to visit the parent portal and manage your classes if you already have an account. "
+              blurb="Click to visit the parent portal and manage your classes if you already have an account."
               icon={<MdOutlineExitToApp className='pathway-icon'/>}
               link="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgId=538745"
               external={true}
