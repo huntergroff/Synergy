@@ -102,8 +102,7 @@ const Events = () => {
       <div className="events-header">
         <h1>Upcoming Camps</h1>
         <h2>
-          2024 Summer Camps are now open for registration! More details on each
-          camp coming soon. See registration links below!
+          Once we get started with 2026 we will begin to post summer camp options! Check back here for updates!
         </h2>
       </div>
       <SimpleClassTables classtype="Camp" pathway="All" sort="Days" />
